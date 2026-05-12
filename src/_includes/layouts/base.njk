@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="{{ lang or 'en' }}">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{{ title }} | {{ site.name }}</title>
+    <meta name="description" content="{{ description or site.descriptionEn }}" />
+    <link rel="stylesheet" href="/assets/css/main.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    {% include "components/header.njk" %}
+    <main id="main-content" class="page-wrap">
+      {{ content | safe }}
+    </main>
+    {% include "components/footer.njk" %}
+  </body>
+</html>

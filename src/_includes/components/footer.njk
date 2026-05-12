@@ -1,0 +1,11 @@
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>
+      {% if lang == "zh" %}
+      &copy; {{ "now" | date("yyyy") }} {{ site.nameZh }}. 保留所有權利。
+      {% else %}
+      &copy; {{ "now" | date("yyyy") }} {{ site.name }}. All rights reserved.
+      {% endif %}
+    </p>
+  </div>
+</footer>

@@ -1,0 +1,18 @@
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="/{{ lang or 'en' }}/">{{ site.name }}</a>
+    <nav aria-label="Main navigation" class="site-nav">
+      {% if lang == "zh" %}
+      <a href="/zh/">首頁</a>
+      <a href="/zh/portfolio/">作品</a>
+      <a href="/zh/news/">消息</a>
+      <a href="/en/" class="lang-switch">EN</a>
+      {% else %}
+      <a href="/en/">Home</a>
+      <a href="/en/portfolio/">Portfolio</a>
+      <a href="/en/news/">News</a>
+      <a href="/zh/" class="lang-switch">中文</a>
+      {% endif %}
+    </nav>
+  </div>
+</header>
