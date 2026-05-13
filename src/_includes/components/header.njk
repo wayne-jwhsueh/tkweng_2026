@@ -1,17 +1,32 @@
 <header class="site-header">
   <div class="container header-inner">
     <a class="brand" href="/{{ lang or 'en' }}/">{{ site.name }}</a>
+    {% set currentUrl = page.url or '/' %}
     <nav aria-label="Main navigation" class="site-nav">
       {% if lang == "zh" %}
+      {% set switchUrl = currentUrl | replace('/zh/', '/en/') %}
+      {% if currentUrl == '/' %}
+      {% set switchUrl = '/en/' %}
+      {% endif %}
       <a href="/zh/">首頁</a>
+      <a href="/zh/about/">關於</a>
       <a href="/zh/portfolio/">作品</a>
+      <a href="/zh/lessons/">課程</a>
       <a href="/zh/news/">消息</a>
-      <a href="/en/" class="lang-switch">EN</a>
+      <a href="/zh/contact/">聯絡</a>
+      <a href="{{ switchUrl }}" class="lang-switch">EN</a>
       {% else %}
+      {% set switchUrl = currentUrl | replace('/en/', '/zh/') %}
+      {% if currentUrl == '/' %}
+      {% set switchUrl = '/zh/' %}
+      {% endif %}
       <a href="/en/">Home</a>
+      <a href="/en/about/">About</a>
       <a href="/en/portfolio/">Portfolio</a>
+      <a href="/en/lessons/">Lessons</a>
       <a href="/en/news/">News</a>
-      <a href="/zh/" class="lang-switch">中文</a>
+      <a href="/en/contact/">Contact</a>
+      <a href="{{ switchUrl }}" class="lang-switch">中文</a>
       {% endif %}
     </nav>
   </div>

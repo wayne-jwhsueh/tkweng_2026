@@ -6,6 +6,8 @@ date: 2026-01-20
 tags:
   - news_en
 summary: A new essay collection on memory, cities, and everyday art is now available.
+type: publication
+year: 2026
 permalink: "/en/news/new-essay-collection/index.html"
 ---
 

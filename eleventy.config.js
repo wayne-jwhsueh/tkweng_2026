@@ -23,6 +23,14 @@ module.exports = function (eleventyConfig) {
     return date.toISOString();
   });
 
+  eleventyConfig.addFilter("byType", function (items, type) {
+    if (!Array.isArray(items)) {
+      return [];
+    }
+
+    return items.filter((item) => item.data && item.data.type === type);
+  });
+
   eleventyConfig.addCollection("news_en", function (collectionApi) {
     return collectionApi
       .getFilteredByTag("news_en")

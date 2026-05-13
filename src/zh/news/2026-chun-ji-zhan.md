@@ -6,6 +6,8 @@ date: 2026-03-15
 tags:
   - news_zh
 summary: 河流與記憶系列新作將於春季展出。
+type: exhibition
+year: 2026
 permalink: "/zh/news/2026-chun-ji-zhan-lan/index.html"
 ---
 

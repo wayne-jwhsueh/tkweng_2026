@@ -33,10 +33,16 @@ src/
 			main.css
 	en/
 		index.md
+		about.md
+		lessons.md
+		contact.md
 		news/
 		portfolio/
 	zh/
 		index.md
+		about.md
+		lessons.md
+		contact.md
 		news/
 		portfolio/
 public/
@@ -53,6 +59,8 @@ For normal updates, only edit files in:
 - `src/zh/news/`
 - `src/en/portfolio/`
 - `src/zh/portfolio/`
+- `src/en/lessons.md`
+- `src/zh/lessons.md`
 - `public/images/`
 
 Avoid editing layouts/config unless you want to change site structure or design.
@@ -90,8 +98,12 @@ Output folder is `_site/`.
 	 - `title`
 	 - `date`
 	 - `summary`
+	 - `type` (`exhibition`, `publication`, `video`, or `audio`)
+	 - `year` (for archive/filter use)
 	 - `permalink`
 4. Write content below front matter
+
+News pages stay flat (no deep folders). Media sections such as Videos/Audios are filtered from `type`.
 
 ### Add a Portfolio Entry
 
@@ -120,3 +132,4 @@ When deploying:
 - Keep one topic per markdown file
 - Keep image files under `public/images/` with clear names
 - Keep URLs stable by controlling `permalink` in each file
+- Keep Chinese content in Traditional Chinese
