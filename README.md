@@ -34,14 +34,14 @@ src/
 	en/
 		index.md
 		about.md
-		lessons.md
+		services.md
 		contact.md
 		news/
 		portfolio/
 	zh/
 		index.md
 		about.md
-		lessons.md
+		services.md
 		contact.md
 		news/
 		portfolio/
@@ -59,8 +59,8 @@ For normal updates, only edit files in:
 - `src/zh/news/`
 - `src/en/portfolio/`
 - `src/zh/portfolio/`
-- `src/en/lessons.md`
-- `src/zh/lessons.md`
+- `src/en/services.md`
+- `src/zh/services.md`
 - `public/images/`
 
 Avoid editing layouts/config unless you want to change site structure or design.
