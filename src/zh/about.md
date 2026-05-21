@@ -31,3 +31,23 @@ permalink: "/zh/about/index.html"
 <p>
   本站將分階段匯入歷年展覽、出版與獎項資料，完整保留歷史內容。
 </p>
+
+<section class="hero-card">
+  <h2 class="section-title">歷史典藏精選（示範）</h2>
+  <p>
+    此次示範先匯入 2016 舊站的部分資料，確認版型、圖片與雙語流程，
+    再進行完整歷史內容遷移。
+  </p>
+  <p>
+    <img src="/images/about/weng_0004.jpg" alt="舊站典藏中的翁登科肖像" width="360" height="540" loading="lazy" />
+  </p>
+  <ul class="list-clean">
+    <li>1960 年生於台北，童年成長於育幼環境。</li>
+    <li>1979 年畢業於復興美工，主修美術。</li>
+    <li>1995 年移居加拿大，成立翁登科藝術工作室。</li>
+    <li>2016 年獲加拿大聯邦藝術家協會 SFCA 資格。</li>
+  </ul>
+  <p>
+    <img src="/images/about/award_SFCA_2016.jpg" alt="2016 年 SFCA 資格相關典藏圖片" width="640" height="480" loading="lazy" />
+  </p>
+</section>

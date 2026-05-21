@@ -30,6 +30,19 @@ permalink: "/zh/index.html"
   <div class="grid">
     {% for item in collections.portfolio_zh | slice(0, 3) %}
     <article class="card">
+      <div class="media-frame{% if not item.data.cover %} is-placeholder{% endif %}">
+        <img
+          class="card-media"
+          src="{{ item.data.cover or '/images/placeholder.jpg' }}"
+          alt="{{ item.data.coverAlt or item.data.title }}"
+          width="500"
+          height="350"
+          loading="lazy"
+        />
+        {% if not item.data.cover %}
+        <span class="media-badge" aria-hidden="true">圖片待定</span>
+        {% endif %}
+      </div>
       <div class="card-body">
         <h3><a href="{{ item.url }}">{{ item.data.title }}</a></h3>
         <p>{{ item.data.summary }}</p>

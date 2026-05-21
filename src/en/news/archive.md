@@ -1,0 +1,37 @@
+---
+layout: layouts/base.njk
+title: News Archive
+lang: en
+description: Archived news grouped by year
+permalink: "/en/news/archive/index.html"
+---
+
+<h1>News Archive</h1>
+<p class="meta">Browse archived posts by year.</p>
+
+{% set years = collections.news_en | newsYears %}
+
+{% if years.length %}
+<ul class="list-clean">
+  {% for year in years %}
+  <li><a href="#year-{{ year }}">{{ year }}</a></li>
+  {% endfor %}
+</ul>
+
+{% for year in years %}
+<h2 class="section-title" id="year-{{ year }}">{{ year }}</h2>
+<ul class="list-clean">
+  {% for post in collections.news_en | byYear(year) %}
+  <li>
+    <a href="{{ post.url }}">{{ post.data.title }}</a>
+    <div class="meta">{{ post.date | date("yyyy-MM-dd") }}</div>
+    <p>{{ post.data.summary }}</p>
+  </li>
+  {% endfor %}
+</ul>
+{% endfor %}
+{% else %}
+<p class="meta">No archive entries yet.</p>
+{% endif %}
+
+<p><a class="btn" href="/en/news/">Back to News</a></p>

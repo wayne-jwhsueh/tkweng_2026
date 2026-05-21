@@ -90,6 +90,18 @@ Output folder is `_site/`.
 
 ## Content Editing Guide
 
+### Main News Count (User Setting)
+
+To control how many posts appear on the main News page, edit:
+
+- `src/_data/site.json`
+
+Use:
+
+- `"newsMainPageCount": 5`
+
+If omitted or invalid, the site falls back to 5.
+
 ### Add a News Post
 
 1. Create a new markdown file in `src/en/news/` or `src/zh/news/`

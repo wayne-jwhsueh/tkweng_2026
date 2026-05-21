@@ -31,6 +31,49 @@ module.exports = function (eleventyConfig) {
     return items.filter((item) => item.data && item.data.type === type);
   });
 
+  eleventyConfig.addFilter("latest", function (items, count) {
+    if (!Array.isArray(items)) {
+      return [];
+    }
+
+    const parsedCount = Number.parseInt(count, 10);
+    const safeCount = Number.isInteger(parsedCount) && parsedCount > 0 ? parsedCount : 5;
+    return items.slice(0, safeCount);
+  });
+
+  eleventyConfig.addFilter("newsYears", function (items) {
+    if (!Array.isArray(items)) {
+      return [];
+    }
+
+    const years = new Set(
+      items
+        .map((item) => {
+          const date = new Date(item.date);
+          return Number.isNaN(date.getTime()) ? null : date.getFullYear();
+        })
+        .filter((year) => year !== null)
+    );
+
+    return Array.from(years).sort((a, b) => b - a);
+  });
+
+  eleventyConfig.addFilter("byYear", function (items, year) {
+    if (!Array.isArray(items)) {
+      return [];
+    }
+
+    const parsedYear = Number.parseInt(year, 10);
+    if (!Number.isInteger(parsedYear)) {
+      return [];
+    }
+
+    return items.filter((item) => {
+      const date = new Date(item.date);
+      return !Number.isNaN(date.getTime()) && date.getFullYear() === parsedYear;
+    });
+  });
+
   eleventyConfig.addCollection("news_en", function (collectionApi) {
     return collectionApi
       .getFilteredByTag("news_en")
