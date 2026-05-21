@@ -101,6 +101,34 @@ a {
   background: #efe7dd;
 }
 
+.nav-item {
+  position: relative;
+}
+
+.has-submenu .submenu {
+  position: absolute;
+  top: calc(100% + 0.25rem);
+  left: 0;
+  min-width: 10.5rem;
+  padding: 0.35rem;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--paper);
+  box-shadow: 0 8px 20px rgba(29, 26, 22, 0.08);
+  display: none;
+  z-index: 20;
+}
+
+.has-submenu .submenu a {
+  display: block;
+  border-radius: 8px;
+}
+
+.has-submenu:hover .submenu,
+.has-submenu:focus-within .submenu {
+  display: block;
+}
+
 .lang-switch {
   border: 1px solid var(--line);
 }

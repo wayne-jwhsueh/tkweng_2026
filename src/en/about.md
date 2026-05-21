@@ -10,7 +10,7 @@ permalink: "/en/about/index.html"
 
 <section class="about-intro hero-card">
   <div>
-    <img class="about-portrait" src="/images/about/weng_0004.jpg" alt="Portrait of Teng-Ko Weng" loading="lazy" />
+    <img class="about-portrait" src="/images/about/weng_0004.webp" alt="Portrait of Teng-Ko Weng" loading="lazy" />
   </div>
   <div>
     <p>
@@ -42,7 +42,7 @@ permalink: "/en/about/index.html"
   </div>
 </section>
 
-<section class="about-inspiration">
+<section>
   <h2 class="section-title">Creative Inspiration</h2>
   <p>
     <em>

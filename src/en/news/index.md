@@ -101,11 +101,6 @@ permalink: "/en/news/index.html"
   {% endfor %}
 </ul>
 
-<section>
-  <h2 class="section-title">News Archive</h2>
-  <p><a class="btn" href="/en/news/archive/">News Archive</a></p>
-</section>
-
 <script>
   (function () {
     const select = document.getElementById("news-count-en");

@@ -12,7 +12,13 @@
       <a href="/zh/about/">關於</a>
       <a href="/zh/portfolio/">作品</a>
       <a href="/zh/services/">服務</a>
-      <a href="/zh/news/">消息</a>
+      <a href="/zh/media/">媒體</a>
+      <div class="nav-item has-submenu">
+        <a href="/zh/news/">消息</a>
+        <div class="submenu" role="menu" aria-label="消息子選單">
+          <a href="/zh/news/archive/" role="menuitem">消息彙整</a>
+        </div>
+      </div>
       <a href="/zh/contact/">聯絡</a>
       <a href="{{ switchUrl }}" class="lang-switch">EN</a>
       {% else %}
@@ -24,7 +30,13 @@
       <a href="/en/about/">About</a>
       <a href="/en/portfolio/">Portfolio</a>
       <a href="/en/services/">Services</a>
-      <a href="/en/news/">News</a>
+      <a href="/en/media/">Media</a>
+      <div class="nav-item has-submenu">
+        <a href="/en/news/">News</a>
+        <div class="submenu" role="menu" aria-label="News submenu">
+          <a href="/en/news/archive/" role="menuitem">News Archive</a>
+        </div>
+      </div>
       <a href="/en/contact/">Contact</a>
       <a href="{{ switchUrl }}" class="lang-switch">中文</a>
       {% endif %}

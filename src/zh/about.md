@@ -10,7 +10,7 @@ permalink: "/zh/about/index.html"
 
 <section class="about-intro hero-card">
   <div>
-    <img class="about-portrait" src="/images/about/weng_0004.jpg" alt="翁登科肖像" loading="lazy" />
+    <img class="about-portrait" src="/images/about/weng_0004.webp" alt="翁登科肖像" loading="lazy" />
   </div>
   <div>
     <p>
