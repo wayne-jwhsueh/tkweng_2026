@@ -35,14 +35,14 @@ permalink: "/en/about/index.html"
       In 1995, Weng emigrated from Taiwan to Canada and now lives in Burnaby with his wife and three children.
       He is a senior member of the Federation of Canadian Artists (SFCA), a member of the Burnaby Art Council,
       and founder of the Teng-Ko Weng Art Studio.
-      In 2020, he established True Light Arts Academy to train and mentor students.
+      In 2020, he established Glorious Arts Institute to train and mentor students.
       With over forty years of teaching in portfolio preparation for art, design, architecture,
       and related fields, he has helped many students enter leading universities.
     </p>
   </div>
 </section>
 
-<section>
+<section class="about-inspiration">
   <h2 class="section-title">Creative Inspiration</h2>
   <p>
     <em>
