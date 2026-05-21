@@ -1,6 +1,12 @@
 <header class="site-header">
   <div class="container header-inner">
-    <a class="brand" href="/{{ lang or 'en' }}/">{{ site.name }}</a>
+    <a class="brand" href="/{{ lang or 'en' }}/">
+      {% if lang == "zh" %}
+      翁登科藝術
+      {% else %}
+      The Art of Teng Ko Weng
+      {% endif %}
+    </a>
     {% set currentUrl = page.url or '/' %}
     <nav aria-label="Main navigation" class="site-nav">
       {% if lang == "zh" %}
