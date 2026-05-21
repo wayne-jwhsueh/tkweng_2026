@@ -42,7 +42,7 @@ permalink: "/en/about/index.html"
   </div>
 </section>
 
-<section>
+<section class="about-inspiration">
   <h2 class="section-title">Creative Inspiration</h2>
   <p>
     <em>

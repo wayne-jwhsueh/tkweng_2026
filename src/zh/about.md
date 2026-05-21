@@ -35,7 +35,7 @@ permalink: "/zh/about/index.html"
   </div>
 </section>
 
-<section>
+<section class="about-inspiration">
   <h2 class="section-title">翁登科創作理念</h2>
   <p>
     <em>
