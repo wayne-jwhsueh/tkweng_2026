@@ -1,6 +1,6 @@
 <header class="site-header">
   <div class="container header-inner">
-    <a class="brand" href="/{{ lang or 'en' }}/">
+    <a class="brand {% if lang == "zh" %}brand-zh{% else %}brand-en{% endif %}" href="/{{ lang or 'en' }}/">
       {% if lang == "zh" %}
       翁登科藝術
       {% else %}
