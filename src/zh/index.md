@@ -10,7 +10,7 @@ permalink: "/zh/index.html"
   <div>
     <h1>創作、文字與作品典藏</h1>
     <p>
-      歡迎來到翁登科官方網站。這裡整理作品、出版與最新消息，
+      歡迎來到 {{ site.artistNameZh }} 官方網站。這裡整理作品、出版與最新消息，
       以清楚舒適的方式呈現，方便長期閱讀與保存。
     </p>
     <div class="cta-row">

@@ -8,7 +8,7 @@ permalink: "/index.html"
 
 <section class="hero">
   <div>
-    <h1>Welcome to Teng Ko Weng</h1>
+    <h1>Welcome to<br>{{ site.siteNameEn }}</h1>
     <p>Please choose your preferred language.</p>
   </div>
   <div class="hero-card">

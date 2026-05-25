@@ -10,7 +10,7 @@ permalink: "/en/index.html"
   <div>
     <h1>Creative Work, Writing, and Archives</h1>
     <p>
-      Welcome to the official site of T.K. Weng. This space brings together portfolio projects,
+      Welcome to the official site of {{ site.artistNameEn }}. This space brings together portfolio projects,
       publications, and current updates in one calm and readable archive.
     </p>
     <div class="cta-row">
