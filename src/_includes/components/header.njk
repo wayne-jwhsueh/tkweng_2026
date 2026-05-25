@@ -14,9 +14,21 @@
       {% if currentUrl == '/' %}
       {% set switchUrl = '/en/' %}
       {% endif %}
+      {% if currentUrl == '/zh/portfolio/xie-shi/' %}
+      {% set switchUrl = '/en/portfolio/realism/' %}
+      {% endif %}
+      {% if currentUrl == '/zh/portfolio/chou-xiang/' %}
+      {% set switchUrl = '/en/portfolio/abstract/' %}
+      {% endif %}
       <a href="/zh/">首頁</a>
       <a href="/zh/about/">關於</a>
-      <a href="/zh/portfolio/">作品</a>
+      <div class="nav-item has-submenu">
+        <a href="/zh/portfolio/">作品</a>
+        <div class="submenu" role="menu" aria-label="作品子選單">
+          <a href="/zh/portfolio/xie-shi/" role="menuitem">寫實</a>
+          <a href="/zh/portfolio/chou-xiang/" role="menuitem">抽象</a>
+        </div>
+      </div>
       <a href="/zh/services/">服務</a>
       <a href="/zh/media/">媒體</a>
       <div class="nav-item has-submenu">
@@ -32,9 +44,21 @@
       {% if currentUrl == '/' %}
       {% set switchUrl = '/zh/' %}
       {% endif %}
+      {% if currentUrl == '/en/portfolio/realism/' %}
+      {% set switchUrl = '/zh/portfolio/xie-shi/' %}
+      {% endif %}
+      {% if currentUrl == '/en/portfolio/abstract/' %}
+      {% set switchUrl = '/zh/portfolio/chou-xiang/' %}
+      {% endif %}
       <a href="/en/">Home</a>
       <a href="/en/about/">About</a>
-      <a href="/en/portfolio/">Portfolio</a>
+      <div class="nav-item has-submenu">
+        <a href="/en/portfolio/">Portfolio</a>
+        <div class="submenu" role="menu" aria-label="Portfolio submenu">
+          <a href="/en/portfolio/realism/" role="menuitem">Realism</a>
+          <a href="/en/portfolio/abstract/" role="menuitem">Abstract</a>
+        </div>
+      </div>
       <a href="/en/services/">Services</a>
       <a href="/en/media/">Media</a>
       <div class="nav-item has-submenu">

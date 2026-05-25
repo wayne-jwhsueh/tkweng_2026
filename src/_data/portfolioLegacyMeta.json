@@ -1,0 +1,286 @@
+{
+  "realism": {
+    "R0001": {
+      "saleStatus": "T",
+      "description": "Sweet Abundance / 2001 / 28.6\"x23.8\" / Oil on Canvas"
+    },
+    "R0002": {
+      "saleStatus": "T",
+      "description": "Food of Delight / 2001 / 23.8\"x19.6\" / Oil on Canvas"
+    },
+    "R0003": {
+      "saleStatus": "T",
+      "description": "Untitled / 1999 / 20.8\"x17.9\" / Oil on Canvas"
+    },
+    "R0004": {
+      "saleStatus": "T",
+      "description": "Great Delight / 1995 / 28.6\"x 23.8\" / Oil on Canvas"
+    },
+    "R0005": {
+      "saleStatus": "T",
+      "description": "Gathering of Riches / 2001 / 20.8\"x17.9\" / Oil on Canvas"
+    },
+    "R0006": {
+      "saleStatus": "T",
+      "description": "River of Joy / 28.6\"x20.8\" / Oil on Canvas"
+    },
+    "R0007": {
+      "saleStatus": "T",
+      "description": "Source of Wisdom / 2005 / 28.6\"x20.8\" / Oil on Canvas"
+    },
+    "R0008": {
+      "saleStatus": "T",
+      "description": "Inheritance / 2005 / 28.6\"x20.8\" / Oil on Canvas"
+    },
+    "R0009": {
+      "saleStatus": "T",
+      "description": "New Song and Praise / 2005 / 28.6\"x20.8\" / Oil on Canvas"
+    },
+    "R0010": {
+      "saleStatus": "T",
+      "description": "Path of Grace / 2005 / 28.6\"x20.8\" / Oil on Canvas"
+    },
+    "R0011": {
+      "saleStatus": "T",
+      "description": "Path of Life / 2005 / 28.6\"x20.8\" / Oil on Canvas"
+    },
+    "R0012": {
+      "saleStatus": "T",
+      "description": "Seat / 2005 / 28.6\"x20.8\" / Oil on Canvas"
+    },
+    "R0013": {
+      "saleStatus": "T",
+      "description": "Daylight / 2005 / 28.6\"x20.8\" / Oil on Canvas"
+    },
+    "R0014": {
+      "saleStatus": "T",
+      "description": "Rested by River / 2005 / 28.6\"x23.8\" / Oil on Canvas"
+    },
+    "R0015": {
+      "saleStatus": "T",
+      "description": "Heaven and Earth / 2005 / 28.6\"x20.8\" / Oil on Canvas"
+    },
+    "R0016": {
+      "saleStatus": "T",
+      "description": "Immanuel / 2005 / 28.6\"x20.8\" / Oil on Canvas"
+    },
+    "R0017": {
+      "saleStatus": "T",
+      "description": "Road / 2005 / 28.6\"x20.8\" / Oil on Canvas"
+    },
+    "R0018": {
+      "saleStatus": "T",
+      "description": "Daybreak / Acrylic"
+    },
+    "R0019": {
+      "saleStatus": "F",
+      "description": "Dragon Boat Festival Food / Oil"
+    },
+    "R0020": {
+      "saleStatus": "T",
+      "description": "Fish & Loaves / 53.5cm x 65.0cm / Oil on Canvas"
+    },
+    "R0021": {
+      "saleStatus": "T",
+      "description": "Loaves & Cup / 15F / Oil on Canvas"
+    },
+    "R0022": {
+      "saleStatus": "T",
+      "description": "Pot & Fruits / 10F / Oil on Canvas"
+    },
+    "R0023": {
+      "saleStatus": "T",
+      "description": "The Apples of My Eye / 30x30 / Acrylic"
+    },
+    "R0024": {
+      "saleStatus": "T",
+      "description": "Plentiful Harvest / 16x20 Acrylic"
+    },
+    "R0025": {
+      "saleStatus": "T",
+      "description": "Fish & Loaves / 24x36 / Acrylic"
+    },
+    "R0026": {
+      "saleStatus": "T",
+      "description": "Love Follows / 16x20 / Acrylic"
+    },
+    "R0027": {
+      "saleStatus": "F",
+      "description": "Cup Overflows / 30\"x30\" / Oil"
+    },
+    "R0028": {
+      "saleStatus": "T",
+      "description": "Be of One Mind / 2014 / 30\"x30\" / Oil"
+    },
+    "R0029": {
+      "saleStatus": "F",
+      "description": "Cornerstones / 2014 / 30\"x30\" / Oil"
+    },
+    "R0030": {
+      "saleStatus": "T",
+      "description": "Food For Thought / 2014 / 30\"x40\" / Acrylic on Canvas"
+    },
+    "R0031": {
+      "saleStatus": "T",
+      "description": "Grapes / 2015 / 11\"x16\" / Pastel"
+    },
+    "R0032": {
+      "saleStatus": "N",
+      "description": "My Grandma / 1985 / 89x59cm / Pastel"
+    },
+    "R0033": {
+      "saleStatus": "F",
+      "description": "Little Girl / 1990 / 12\"x16\" / Watercolor"
+    },
+    "R0034": {
+      "saleStatus": "N",
+      "description": "My Lovely Wife / 20\"x17\" / Pastel"
+    },
+    "R0035": {
+      "saleStatus": "F",
+      "description": "Cornerstones / Oil"
+    }
+  },
+  "abstract": {
+    "A0001": {
+      "saleStatus": "F",
+      "description": "In the Beginning / 2006 / 28.6\"x23.8\" / Acrylic on Canvas"
+    },
+    "A0002": {
+      "saleStatus": "T",
+      "description": "I Shall Be With You / 2006 / 45.9\"x35.7\" / Acrylic on Canvas"
+    },
+    "A0003": {
+      "saleStatus": "T",
+      "description": "Cloud In The Sky / 2006 / 28.6\"x23.8\" / Acrylic on Canvas"
+    },
+    "A0004": {
+      "saleStatus": "F",
+      "description": "Grace / 2006 / 28.6\"x23.8\" / Acrylic on Canvas"
+    },
+    "A0005": {
+      "saleStatus": "F",
+      "description": "The Heavens Speak / 2006 / 28.6\"x23.8\" / Acrylic on Canvas"
+    },
+    "A0006": {
+      "saleStatus": "T",
+      "description": "Clothes of Sea / 2006 / 28.6\"x23.8\" / Acrylic on Canvas"
+    },
+    "A0007": {
+      "saleStatus": "T",
+      "description": "River From Rock / 2003 / 18\"x14\" / Acrylic on Canvas"
+    },
+    "A0008": {
+      "saleStatus": "F",
+      "description": "Shelter / 2006 / 25.9\"x28.6\" / Acrylic on Canvas"
+    },
+    "A0009": {
+      "saleStatus": "F",
+      "description": "Flower and Grass / 2003 / 18\"x14\" / Acrylic on Canvas"
+    },
+    "A0010": {
+      "saleStatus": "T",
+      "description": "Flowers / 2006 / 28.6\"x23.8\" / Acrylic on Canvas"
+    },
+    "A0011": {
+      "saleStatus": "T",
+      "description": "Garden / 2006 / 45.9\"x35.7\" / Acrylic on Canvas"
+    },
+    "A0012": {
+      "saleStatus": "F",
+      "description": "Prodigal Son / 2006 / 45.9\"x35.7\" / Oil on Canvas"
+    },
+    "A0013": {
+      "saleStatus": "F",
+      "description": "Prayer / 1986 / 39.3\"x28.6\" / Oil on Canvas"
+    },
+    "A0014": {
+      "saleStatus": "F",
+      "description": "Carry The Cross / 2013 / 116.70cm x 90.90cm / Acrylic"
+    },
+    "A0015": {
+      "saleStatus": "T",
+      "description": "Wash The Feet Of One Another / 2006 / 45.9\"x 35.7\" / Oil on Canvas"
+    },
+    "A0016": {
+      "saleStatus": "T",
+      "description": "Light Of The World / 39x31.5 / Acrylic"
+    },
+    "A0017": {
+      "saleStatus": "F",
+      "description": "Piercing the Darkness / 24x19 / Acrylic"
+    },
+    "A0018": {
+      "saleStatus": "T",
+      "description": "Water Birds / 8x10 / Acrylic"
+    },
+    "A0019": {
+      "saleStatus": "T",
+      "description": "Prayer / 2013 / Acrylics / 91.30x72.80cm"
+    },
+    "A0020": {
+      "saleStatus": "F",
+      "description": "Rebirth / 44x57 / Oil"
+    },
+    "A0021": {
+      "saleStatus": "F",
+      "description": "The Colors of Autumn / 12\"x12\" / Acrylic"
+    },
+    "A0022": {
+      "saleStatus": "F",
+      "description": "Life the Fiery Furnace / 44\"x57\" / Oil"
+    },
+    "A0023": {
+      "saleStatus": "F",
+      "description": "Marine Pollution / 16\"x16\" / Acrylics"
+    },
+    "A0024": {
+      "saleStatus": "N",
+      "description": "Prayer at Gethsemane / 16x20 / Acrylics"
+    },
+    "A0025": {
+      "saleStatus": "T",
+      "description": "Redemption / 2013 / 116.5ｘ91.0cm / Acrylic"
+    },
+    "A0026": {
+      "saleStatus": "T",
+      "description": "Eternal Crown of Glory / 2014 / 30\"x30\" / Acrylic"
+    },
+    "A0027": {
+      "saleStatus": "T",
+      "description": "Lashes / 1993 / 50F / Oil"
+    },
+    "A0028": {
+      "saleStatus": "F",
+      "description": "Loss / 1983 / 54.5x39.5cm / Pastel"
+    },
+    "A0029": {
+      "saleStatus": "F",
+      "description": "The Cross / 1985 / 54.5x39.5cm / Acrylic"
+    },
+    "A0030": {
+      "saleStatus": "F",
+      "description": "Carry the Cross / 1987 / 162x130cm / Oil"
+    },
+    "A0031": {
+      "saleStatus": "F",
+      "description": "A Warm Embrace / 1993 / 116.5ｘ91.0cm / Oil"
+    },
+    "A0032": {
+      "saleStatus": "F",
+      "description": "Doubt / 1993 / 116.5ｘ91.0cm / Oil"
+    },
+    "A0033": {
+      "saleStatus": "F",
+      "description": "Global Warming / 6\"x9\" / Acrylic on Canvas"
+    },
+    "A0034": {
+      "saleStatus": "F",
+      "description": "Wave in the Heart / 5\" x 7\" / Acrylic"
+    },
+    "R0035": {
+      "saleStatus": "F",
+      "description": "Humbleness / Oil"
+    }
+  }
+}

@@ -5,6 +5,7 @@ lang: en
 date: 2025-06-01
 tags:
   - portfolio_en
+portfolioSection: realism
 summary: A sketch-and-essay project developed from weekly city walks.
 cover: /images/portfolio/city-notebooks-cover.jpg
 coverAlt: City notebooks project cover image

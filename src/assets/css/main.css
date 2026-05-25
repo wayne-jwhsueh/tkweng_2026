@@ -281,6 +281,200 @@ a {
   gap: 1rem;
 }
 
+.portfolio-hub-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 1.1rem 0 2rem;
+}
+
+.portfolio-hub-card {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 8px 30px rgba(29, 26, 22, 0.05);
+}
+
+.art-gallery {
+  margin: 1.2rem 0 2rem;
+}
+
+.art-grid {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 0.6rem;
+}
+
+.art-grid > p {
+  margin: 0;
+}
+
+.art-grid > p > .art-tile {
+  width: 100%;
+}
+
+.art-tile {
+  position: relative;
+  border: 1px solid var(--line);
+  background: #efe7dc;
+  border-radius: 12px;
+  overflow: hidden;
+  padding: 0;
+  text-align: left;
+  cursor: zoom-in;
+  box-shadow: 0 4px 16px rgba(29, 26, 22, 0.08);
+}
+
+.art-tile img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  transition: transform 0.25s ease;
+}
+
+.art-tile:hover img,
+.art-tile:focus-visible img {
+  transform: scale(1.04);
+}
+
+.art-label {
+  position: absolute;
+  left: 0.45rem;
+  bottom: 0.45rem;
+  padding: 0.2rem 0.45rem;
+  border-radius: 999px;
+  background: rgba(17, 14, 11, 0.75);
+  color: #efe5d9;
+  font-size: 0.73rem;
+  letter-spacing: 0.04em;
+}
+
+.art-status {
+  position: absolute;
+  top: 0.45rem;
+  right: 0.45rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  border: 1px solid transparent;
+  background: rgba(16, 13, 10, 0.72);
+  color: #f2e8db;
+}
+
+.art-status-t {
+  background: rgba(78, 27, 24, 0.9);
+  border-color: rgba(189, 104, 95, 0.8);
+}
+
+.art-status-f {
+  background: rgba(21, 63, 44, 0.88);
+  border-color: rgba(101, 194, 145, 0.7);
+}
+
+.art-status-n {
+  background: rgba(45, 44, 43, 0.88);
+  border-color: rgba(178, 176, 173, 0.6);
+}
+
+.gallery-dialog {
+  width: min(96vw, 1200px);
+  border: none;
+  border-radius: 18px;
+  padding: 0;
+  background: #14110e;
+  color: #f4ece0;
+}
+
+.gallery-dialog::backdrop {
+  background: rgba(12, 9, 7, 0.82);
+  backdrop-filter: blur(2px);
+}
+
+.gallery-dialog-inner {
+  padding: 0.9rem;
+}
+
+.gallery-dialog-topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.8rem;
+}
+
+.gallery-dialog-meta {
+  margin: 0;
+  display: flex;
+  gap: 0.8rem;
+  color: #d8c8b4;
+}
+
+.gallery-detail-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.45rem;
+  margin: 0.75rem 0;
+  padding: 0;
+}
+
+.gallery-detail-list li {
+  border: 1px solid #3b3127;
+  border-radius: 10px;
+  background: #1a1510;
+  padding: 0.45rem 0.55rem;
+}
+
+.gallery-detail-list span {
+  display: block;
+  color: #a38f77;
+  font-size: 0.74rem;
+  margin-bottom: 0.1rem;
+}
+
+.gallery-detail-list strong {
+  display: block;
+  color: #f4ece0;
+  font-size: 0.92rem;
+  font-weight: 600;
+}
+
+.gallery-close,
+.gallery-dialog-controls button {
+  border: 1px solid #534432;
+  background: #1f1913;
+  color: #f4ece0;
+  border-radius: 999px;
+  padding: 0.42rem 0.82rem;
+  font: inherit;
+  cursor: pointer;
+}
+
+.gallery-stage {
+  margin: 0.8rem 0 0.6rem;
+  border: 1px solid #3b3127;
+  border-radius: 12px;
+  background: #0f0c09;
+  overflow: hidden;
+}
+
+.gallery-stage img {
+  width: 100%;
+  max-height: min(78vh, 860px);
+  object-fit: contain;
+  background: #0f0c09;
+}
+
+.gallery-dialog-controls {
+  display: flex;
+  justify-content: center;
+  gap: 0.65rem;
+}
+
 .card {
   background: var(--paper);
   border: 1px solid var(--line);
@@ -586,6 +780,18 @@ a {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .portfolio-hub-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .art-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .gallery-detail-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .contact-grid {
     grid-template-columns: 1fr;
   }
@@ -597,6 +803,14 @@ a {
 
 @media (max-width: 620px) {
   .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .art-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .gallery-detail-list {
     grid-template-columns: 1fr;
   }
 

@@ -7,28 +7,42 @@ permalink: "/en/portfolio/index.html"
 ---
 
 <h1>Portfolio</h1>
-<p class="meta">Selected projects, artwork series, and archives.</p>
+<p class="meta">Browse the complete artwork archive by category.</p>
 
-<div class="grid">
-  {% for item in collections.portfolio_en %}
-  <article class="card">
-    <div class="media-frame{% if not item.data.cover %} is-placeholder{% endif %}">
+<div class="portfolio-hub-grid">
+  <article class="portfolio-hub-card">
+    <div class="media-frame">
       <img
         class="card-media"
-        src="{{ item.data.cover or '/images/placeholder.jpg' }}"
-        alt="{{ item.data.coverAlt or item.data.title }}"
+        src="{{ portfolioGallery.realism[0].thumb if portfolioGallery.realism[0] else '/images/placeholder.jpg' }}"
+        alt="Realism gallery cover"
         width="500"
         height="350"
         loading="lazy"
       />
-      {% if not item.data.cover %}
-      <span class="media-badge" aria-hidden="true">Image Pending</span>
-      {% endif %}
     </div>
     <div class="card-body">
-      <h2><a href="{{ item.url }}">{{ item.data.title }}</a></h2>
-      <p>{{ item.data.summary }}</p>
+      <h2><a href="/en/portfolio/realism/">Realism</a></h2>
+      <p>Detailed, observed works across still life, portraits, and studies.</p>
+      <p class="meta">{{ portfolioGallery.realism | length }} artworks</p>
     </div>
   </article>
-  {% endfor %}
+
+  <article class="portfolio-hub-card">
+    <div class="media-frame">
+      <img
+        class="card-media"
+        src="{{ portfolioGallery.abstract[0].thumb if portfolioGallery.abstract[0] else '/images/placeholder.jpg' }}"
+        alt="Abstract gallery cover"
+        width="500"
+        height="350"
+        loading="lazy"
+      />
+    </div>
+    <div class="card-body">
+      <h2><a href="/en/portfolio/abstract/">Abstract</a></h2>
+      <p>Expressive compositions focused on rhythm, spirit, and memory.</p>
+      <p class="meta">{{ portfolioGallery.abstract | length }} artworks</p>
+    </div>
+  </article>
 </div>

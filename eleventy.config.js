@@ -74,6 +74,16 @@ module.exports = function (eleventyConfig) {
     });
   });
 
+  eleventyConfig.addFilter("byPortfolioSection", function (items, section) {
+    if (!Array.isArray(items)) {
+      return [];
+    }
+
+    return items.filter(
+      (item) => item && item.data && item.data.portfolioSection === section
+    );
+  });
+
   eleventyConfig.addCollection("news_en", function (collectionApi) {
     return collectionApi
       .getFilteredByTag("news_en")

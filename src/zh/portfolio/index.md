@@ -7,28 +7,42 @@ permalink: "/zh/portfolio/index.html"
 ---
 
 <h1>作品</h1>
-<p class="meta">精選創作、系列計畫與典藏紀錄。</p>
+<p class="meta">依作品類型瀏覽完整藝術檔案。</p>
 
-<div class="grid">
-  {% for item in collections.portfolio_zh %}
-  <article class="card">
-    <div class="media-frame{% if not item.data.cover %} is-placeholder{% endif %}">
+<div class="portfolio-hub-grid">
+  <article class="portfolio-hub-card">
+    <div class="media-frame">
       <img
         class="card-media"
-        src="{{ item.data.cover or '/images/placeholder.jpg' }}"
-        alt="{{ item.data.coverAlt or item.data.title }}"
+        src="{{ portfolioGallery.realism[0].thumb if portfolioGallery.realism[0] else '/images/placeholder.jpg' }}"
+        alt="寫實作品集封面"
         width="500"
         height="350"
         loading="lazy"
       />
-      {% if not item.data.cover %}
-      <span class="media-badge" aria-hidden="true">圖片待定</span>
-      {% endif %}
     </div>
     <div class="card-body">
-      <h2><a href="{{ item.url }}">{{ item.data.title }}</a></h2>
-      <p>{{ item.data.summary }}</p>
+      <h2><a href="/zh/portfolio/xie-shi/">寫實</a></h2>
+      <p>聚焦靜物、人物與生活觀察的細膩表現。</p>
+      <p class="meta">{{ portfolioGallery.realism | length }} 件作品</p>
     </div>
   </article>
-  {% endfor %}
+
+  <article class="portfolio-hub-card">
+    <div class="media-frame">
+      <img
+        class="card-media"
+        src="{{ portfolioGallery.abstract[0].thumb if portfolioGallery.abstract[0] else '/images/placeholder.jpg' }}"
+        alt="抽象作品集封面"
+        width="500"
+        height="350"
+        loading="lazy"
+      />
+    </div>
+    <div class="card-body">
+      <h2><a href="/zh/portfolio/chou-xiang/">抽象</a></h2>
+      <p>以節奏、情感與記憶展開的抽象創作。</p>
+      <p class="meta">{{ portfolioGallery.abstract | length }} 件作品</p>
+    </div>
+  </article>
 </div>

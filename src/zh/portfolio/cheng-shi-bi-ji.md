@@ -5,6 +5,7 @@ lang: zh
 date: 2025-06-01
 tags:
   - portfolio_zh
+portfolioSection: realism
 summary: 以每週城市散步為基礎的圖文創作計畫。
 cover: /images/portfolio/city-notebooks-cover.jpg
 coverAlt: 城市筆記封面圖

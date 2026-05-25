@@ -5,6 +5,7 @@ lang: en
 date: 2025-11-10
 tags:
   - portfolio_en
+portfolioSection: abstract
 summary: Mixed-media paintings exploring water, migration, and personal memory.
 cover: /images/portfolio/river-memory-cover.jpg
 coverAlt: River and Memory cover artwork

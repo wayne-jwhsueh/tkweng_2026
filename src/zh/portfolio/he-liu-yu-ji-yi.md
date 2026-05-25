@@ -5,6 +5,7 @@ lang: zh
 date: 2025-11-10
 tags:
   - portfolio_zh
+portfolioSection: abstract
 summary: 以河流、遷徙與個人記憶為主題的複合媒材創作。
 cover: /images/portfolio/river-memory-cover.jpg
 coverAlt: 河流與記憶系列封面作品
