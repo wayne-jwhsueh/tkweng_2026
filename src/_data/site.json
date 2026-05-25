@@ -1,6 +1,8 @@
 {
-  "name": "TKWENG",
-  "nameZh": "翁登科",
+  "siteNameEn": "The Art of Teng-Ko Weng",
+  "siteNameZh": "翁登科藝術",
+  "artistNameEn": "Teng-Ko Weng",
+  "artistNameZh": "翁登科",
   "descriptionEn": "Artist, author, and creative portfolio",
   "descriptionZh": "藝術創作與著作網站",
   "newsMainPageCount": 5

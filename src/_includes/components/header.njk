@@ -2,9 +2,9 @@
   <div class="container header-inner">
     <a class="brand {% if lang == "zh" %}brand-zh{% else %}brand-en{% endif %}" href="/{{ lang or 'en' }}/">
       {% if lang == "zh" %}
-      翁登科藝術
+      {{ site.siteNameZh }}
       {% else %}
-      The Art of Teng Ko Weng
+      {{ site.siteNameEn }}
       {% endif %}
     </a>
     {% set currentUrl = page.url or '/' %}

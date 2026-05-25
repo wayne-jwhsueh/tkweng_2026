@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>{{ title }} | {{ site.name }}</title>
+    <title>{{ title }} | {{ site.siteNameEn }}</title>
     <meta name="description" content="{{ description or site.descriptionEn }}" />
     <link rel="stylesheet" href="/assets/css/main.css" />
   </head>
@@ -14,8 +14,6 @@
       {{ content | safe }}
     </main>
     {% include "components/footer.njk" %}
-    {% if page.url == "/en/contact/" or page.url == "/zh/contact/" %}
     <script src="/assets/js/contact-obfuscate.js"></script>
-    {% endif %}
   </body>
 </html>

@@ -1,16 +1,53 @@
 <footer class="site-footer">
   <div class="container footer-inner">
-    <p>
-      {% if lang == "zh" %}
-      &copy; {{ "now" | date("yyyy") }} {{ site.nameZh }}. 保留所有權利。
-      {% else %}
-      &copy; {{ "now" | date("yyyy") }} {{ site.name }}. All rights reserved.
-      {% endif %}
-    </p>
-    <p>
-      <a href="https://www.facebook.com/tengkoweng.weng">Facebook</a>
-      |
-      <a href="https://www.instagram.com/tengkoweng">Instagram</a>
-    </p>
+    <div class="footer-block footer-brand">
+      <p>
+        {% if lang == "zh" %}
+        &copy; {{ "now" | date("yyyy") }} {{ site.artistNameZh }}
+        {% else %}
+        &copy; {{ "now" | date("yyyy") }} {{ site.artistNameEn }}
+        {% endif %}
+      </p>
+    </div>
+
+    <div class="footer-block">
+      <p class="footer-heading">
+        {% if lang == "zh" %}
+        社群平台
+        {% else %}
+        Social
+        {% endif %}
+      </p>
+      <p class="footer-links">
+        <a href="https://www.facebook.com/tengkoweng.weng">Facebook</a>
+        <a href="https://www.instagram.com/tengkoweng">Instagram</a>
+      </p>
+    </div>
+
+    <div class="footer-block">
+      <p class="footer-heading">
+        {% if lang == "zh" %}
+        聯絡方式
+        {% else %}
+        Contact
+        {% endif %}
+      </p>
+      <p class="footer-contact-line">
+        {% if lang == "zh" %}
+        電子郵件：
+        {% else %}
+        Email:
+        {% endif %}
+        <span data-secret="email"></span>
+      </p>
+      <p class="footer-contact-line">
+        {% if lang == "zh" %}
+        電話：
+        {% else %}
+        Phone:
+        {% endif %}
+        <span data-secret="phoneA"></span> / <span data-secret="phoneB"></span>
+      </p>
+    </div>
   </div>
 </footer>

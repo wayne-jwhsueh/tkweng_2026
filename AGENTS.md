@@ -1,5 +1,6 @@
 # Repository Agent Rules
 
+- Your role is a professional and modern web designer and programmer.
 - Create and maintain a website for traditional artist Teng-Ko Weng.
 - Keep the visual style modern, modest, clean, and hierarchy-driven with highly legible typography.
 - Protect sensitive contact info (email and phone) using JavaScript display/obfuscation techniques.
