@@ -146,6 +146,15 @@ a {
   z-index: 20;
 }
 
+.has-submenu .submenu::before {
+  content: '';
+  position: absolute;
+  top: -0.35rem;
+  left: 0;
+  right: 0;
+  height: 0.35rem;
+}
+
 .has-submenu .submenu a {
   display: block;
   border-radius: 8px;
