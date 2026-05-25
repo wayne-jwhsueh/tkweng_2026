@@ -12,8 +12,7 @@ permalink: "/zh/contact/index.html"
     如需課程諮詢、展覽合作或作品相關詢問，歡迎透過電子郵件或社群平台聯絡。
   </p>
   <div class="contact-social">
-    <a href="https://www.facebook.com/tengkoweng.weng">Facebook</a>
-    <a href="https://www.instagram.com/tengkoweng">Instagram</a>
+    {% include "components/social-links.njk" %}
   </div>
 </section>
 

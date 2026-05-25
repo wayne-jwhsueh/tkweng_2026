@@ -12,8 +12,7 @@ permalink: "/en/contact/index.html"
     For classes, exhibition collaboration, and artwork inquiries, please contact by email or social channels.
   </p>
   <div class="contact-social">
-    <a href="https://www.facebook.com/tengkoweng.weng">Facebook</a>
-    <a href="https://www.instagram.com/tengkoweng">Instagram</a>
+    {% include "components/social-links.njk" %}
   </div>
 </section>
 
