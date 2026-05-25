@@ -11,6 +11,9 @@ permalink: "/en/about/index.html"
 <section class="about-intro hero-card">
   <div>
     <img class="about-portrait" src="/images/about/weng_0004.webp" alt="Portrait of Teng-Ko Weng" loading="lazy" />
+    <p class="about-award">
+      <img src="/images/about/award_SFCA_2016.jpg" alt="Federation of Canadian Artists SFCA recognition" loading="lazy" />
+    </p>
   </div>
   <div>
     <p>
@@ -55,9 +58,6 @@ permalink: "/en/about/index.html"
 
 <section class="hero-card">
   <h2 class="section-title">Art Exhibition / Life History</h2>
-  <p class="about-award">
-    <img src="/images/about/award_SFCA_2016.jpg" alt="Federation of Canadian Artists SFCA recognition" loading="lazy" />
-  </p>
   <p class="meta">Federation of Canadian Artists (SFCA) Senior Member</p>
   <ul class="timeline-list">
     <li><span class="timeline-year">2022</span><span>Joint Exhibition hosted by Taiwanese Canadian Cultural Society.</span></li>

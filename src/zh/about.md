@@ -11,6 +11,10 @@ permalink: "/zh/about/index.html"
 <section class="about-intro hero-card">
   <div>
     <img class="about-portrait" src="/images/about/weng_0004.webp" alt="翁登科肖像" loading="lazy" />
+    <p class="about-award">
+      <img src="/images/about/award_SFCA_2016.jpg" alt="加拿大聯邦藝術家協會 SFCA 資格認證" loading="lazy" />
+    </p>
+    <p class="meta" style="text-align:center;">加拿大聯邦藝術家聯盟 SFCA 最高榮譽資深藝術家</p>
   </div>
   <div>
     <p>
@@ -47,10 +51,6 @@ permalink: "/zh/about/index.html"
 
 <section class="hero-card">
   <h2 class="section-title">生平及展出年表</h2>
-  <p class="about-award">
-    <img src="/images/about/award_SFCA_2016.jpg" alt="加拿大聯邦藝術家協會 SFCA 資格認證" loading="lazy" />
-  </p>
-  <p class="meta">加拿大聯邦藝術家聯盟 SFCA 最高榮譽資深藝術家</p>
   <ul class="timeline-list">
     <li><span class="timeline-year">2022</span><span>加拿大加西台灣藝術家協會聯展，台加文化協會展出。</span></li>
     <li><span class="timeline-year">2022</span><span>獲邀請展加拿大聯邦藝術家聯盟 SFCA 最高榮譽資深藝術家評審員展。</span></li>
