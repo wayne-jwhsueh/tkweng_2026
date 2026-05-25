@@ -19,14 +19,26 @@ body {
   padding: 0;
 }
 
+html {
+  font-size: 17px;
+}
+
 body {
-  font-family: "Noto Serif TC", "Source Serif 4", Georgia, serif;
+  font-family: "DM Sans", "Noto Sans TC", -apple-system, system-ui, sans-serif;
+  font-optical-sizing: auto;
+  text-rendering: optimizeLegibility;
   color: var(--ink);
   background:
     radial-gradient(circle at 20% 10%, #efe5d9 0, transparent 45%),
     radial-gradient(circle at 80% 0%, #e7ddd1 0, transparent 35%),
     var(--bg);
   line-height: 1.75;
+}
+
+/* Chinese pages: Noto Sans TC (黑體) — screen-native CJK sans, far more
+   legible on 1080p than any Ming/Song serif typeface */
+html[lang="zh"] body {
+  font-family: "Noto Sans TC", "DM Sans", -apple-system, system-ui, sans-serif;
 }
 
 img {
