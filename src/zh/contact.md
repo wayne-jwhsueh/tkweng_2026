@@ -20,10 +20,10 @@ permalink: "/zh/contact/index.html"
   <article class="contact-card">
     <h2>溫哥華西區工作室</h2>
     <ul class="contact-facts">
-      <li><strong>地址：</strong>306-5970 East Boulevard, Vancouver, BC, V6M 3V4</li>
-      <li><strong>電話：</strong><span data-secret="phoneA"></span> 或 <span data-secret="phoneB"></span></li>
-      <li><strong>電子郵件：</strong><span data-secret="email"></span></li>
-      <li><strong>開放時間：</strong>週一至週六，上午 9:00 至下午 6:00</li>
+      <li><i class="fa-solid fa-location-dot fa-fw" aria-label="地址"></i> 306-5970 East Boulevard, Vancouver, BC, V6M 3V4</li>
+      <li><i class="fa-solid fa-phone fa-fw" aria-label="電話"></i><span data-secret="phoneA"></span> 或 <span data-secret="phoneB"></span></li>
+      <li><i class="fa-solid fa-envelope fa-fw" aria-label="電子郵件"></i><span data-secret="email"></span></li>
+      <li><i class="fa-solid fa-clock fa-fw" aria-label="開放時間"></i> 週一至週六，上午 9:00 至下午 6:00</li>
     </ul>
     <p>
       <a href="https://www.google.com/maps/search/?api=1&query=306-5970+East+Boulevard,+Vancouver,+BC,+V6M+3V4" target="_blank" rel="noopener noreferrer">
@@ -44,10 +44,10 @@ permalink: "/zh/contact/index.html"
   <article class="contact-card">
     <h2>本拿比工作室</h2>
     <ul class="contact-facts">
-      <li><strong>地址：</strong>9985 David Drive, Burnaby, BC, V3J 1H4, Canada</li>
-      <li><strong>電話：</strong><span data-secret="phoneA"></span> 或 <span data-secret="phoneB"></span></li>
-      <li><strong>電子郵件：</strong><span data-secret="email"></span></li>
-      <li><strong>開放時間：</strong>週一至週六，上午 9:00 至下午 6:00</li>
+      <li><i class="fa-solid fa-location-dot fa-fw" aria-label="地址"></i> 9985 David Drive, Burnaby, BC, V3J 1H4, Canada</li>
+      <li><i class="fa-solid fa-phone fa-fw" aria-label="電話"></i><span data-secret="phoneA"></span> 或 <span data-secret="phoneB"></span></li>
+      <li><i class="fa-solid fa-envelope fa-fw" aria-label="電子郵件"></i><span data-secret="email"></span></li>
+      <li><i class="fa-solid fa-clock fa-fw" aria-label="開放時間"></i> 週一至週六，上午 9:00 至下午 6:00</li>
     </ul>
     <p>
       <a href="https://www.google.com/maps/search/?api=1&query=9985+David+Drive,+Burnaby,+BC,+V3J+1H4,+Canada" target="_blank" rel="noopener noreferrer">

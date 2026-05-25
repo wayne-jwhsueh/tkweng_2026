@@ -32,19 +32,11 @@
         {% endif %}
       </p>
       <p class="footer-contact-line">
-        {% if lang == "zh" %}
-        電子郵件：
-        {% else %}
-        Email:
-        {% endif %}
+        <i class="fa-solid fa-envelope fa-fw" aria-label="{% if lang == 'zh' %}電子郵件{% else %}Email{% endif %}"></i>
         <span data-secret="email"></span>
       </p>
       <p class="footer-contact-line">
-        {% if lang == "zh" %}
-        電話：
-        {% else %}
-        Phone:
-        {% endif %}
+        <i class="fa-solid fa-phone fa-fw" aria-label="{% if lang == 'zh' %}電話{% else %}Phone{% endif %}"></i>
         <span data-secret="phoneA"></span> / <span data-secret="phoneB"></span>
       </p>
     </div>

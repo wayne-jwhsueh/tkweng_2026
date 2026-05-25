@@ -457,6 +457,13 @@ a {
   border-bottom: 0;
 }
 
+.contact-facts .fa-fw,
+.footer-contact-line .fa-fw {
+  margin-right: 0.45em;
+  opacity: 0.65;
+  vertical-align: middle;
+}
+
 .site-footer {
   position: relative;
   margin-top: 3rem;

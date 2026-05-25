@@ -20,10 +20,10 @@ permalink: "/en/contact/index.html"
   <article class="contact-card">
     <h2>Vancouver Studio</h2>
     <ul class="contact-facts">
-      <li><strong>Address:</strong> 306-5970 East Boulevard, Vancouver, BC, V6M 3V4</li>
-      <li><strong>Phone:</strong> <span data-secret="phoneA"></span> or <span data-secret="phoneB"></span></li>
-      <li><strong>Email:</strong> <span data-secret="email"></span></li>
-      <li><strong>Hours:</strong> Monday to Saturday, 9:00 AM to 6:00 PM</li>
+      <li><i class="fa-solid fa-location-dot fa-fw" aria-label="Address"></i> 306-5970 East Boulevard, Vancouver, BC, V6M 3V4</li>
+      <li><i class="fa-solid fa-phone fa-fw" aria-label="Phone"></i> <span data-secret="phoneA"></span> or <span data-secret="phoneB"></span></li>
+      <li><i class="fa-solid fa-envelope fa-fw" aria-label="Email"></i> <span data-secret="email"></span></li>
+      <li><i class="fa-solid fa-clock fa-fw" aria-label="Hours"></i> Monday to Saturday, 9:00 AM to 6:00 PM</li>
     </ul>
     <p>
       <a href="https://www.google.com/maps/search/?api=1&query=306-5970+East+Boulevard,+Vancouver,+BC,+V6M+3V4" target="_blank" rel="noopener noreferrer">
@@ -44,10 +44,10 @@ permalink: "/en/contact/index.html"
   <article class="contact-card">
     <h2>Burnaby Studio</h2>
     <ul class="contact-facts">
-      <li><strong>Address:</strong> 9985 David Drive, Burnaby, BC, V3J 1H4, Canada</li>
-      <li><strong>Phone:</strong> <span data-secret="phoneA"></span> or <span data-secret="phoneB"></span></li>
-      <li><strong>Email:</strong> <span data-secret="email"></span></li>
-      <li><strong>Hours:</strong> Monday to Saturday, 9:00 AM to 6:00 PM</li>
+      <li><i class="fa-solid fa-location-dot fa-fw" aria-label="Address"></i> 9985 David Drive, Burnaby, BC, V3J 1H4, Canada</li>
+      <li><i class="fa-solid fa-phone fa-fw" aria-label="Phone"></i> <span data-secret="phoneA"></span> or <span data-secret="phoneB"></span></li>
+      <li><i class="fa-solid fa-envelope fa-fw" aria-label="Email"></i> <span data-secret="email"></span></li>
+      <li><i class="fa-solid fa-clock fa-fw" aria-label="Hours"></i> Monday to Saturday, 9:00 AM to 6:00 PM</li>
     </ul>
     <p>
       <a href="https://www.google.com/maps/search/?api=1&query=9985+David+Drive,+Burnaby,+BC,+V3J+1H4,+Canada" target="_blank" rel="noopener noreferrer">
