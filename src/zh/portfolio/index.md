@@ -22,7 +22,7 @@ permalink: "/zh/portfolio/index.html"
       />
     </div>
     <div class="card-body">
-      <h2><a href="/zh/portfolio/xie-shi/">寫實</a></h2>
+      <h2><a href="/zh/portfolio/realism/">寫實</a></h2>
       <p>聚焦靜物、人物與生活觀察的細膩表現。</p>
       <p class="meta">{{ portfolioGallery.realism | length }} 件作品</p>
     </div>
@@ -40,7 +40,7 @@ permalink: "/zh/portfolio/index.html"
       />
     </div>
     <div class="card-body">
-      <h2><a href="/zh/portfolio/chou-xiang/">抽象</a></h2>
+      <h2><a href="/zh/portfolio/abstract/">抽象</a></h2>
       <p>以節奏、情感與記憶展開的抽象創作。</p>
       <p class="meta">{{ portfolioGallery.abstract | length }} 件作品</p>
     </div>

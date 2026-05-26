@@ -3,7 +3,7 @@ layout: layouts/base.njk
 title: 抽象作品集
 lang: zh
 description: 翁登科抽象作品全覽
-permalink: "/zh/portfolio/chou-xiang/index.html"
+permalink: "/zh/portfolio/abstract/index.html"
 ---
 
 <h1>抽象</h1>

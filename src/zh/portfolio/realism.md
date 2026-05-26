@@ -3,7 +3,7 @@ layout: layouts/base.njk
 title: 寫實作品集
 lang: zh
 description: 翁登科寫實作品全覽
-permalink: "/zh/portfolio/xie-shi/index.html"
+permalink: "/zh/portfolio/realism/index.html"
 ---
 
 <h1>寫實</h1>
