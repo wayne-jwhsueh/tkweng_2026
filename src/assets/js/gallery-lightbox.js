@@ -21,12 +21,12 @@
       en: {
         T: "Sold",
         F: "For Sale",
-        N: "Not For Sale"
+        N: "Artist Collection"
       },
       zh: {
         T: "已售",
         F: "可洽購",
-        N: "非賣品"
+        N: "畫家珍藏"
       }
     };
 

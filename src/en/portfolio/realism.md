@@ -34,7 +34,7 @@ permalink: "/en/portfolio/realism/index.html"
       />
       <span class="art-label">{{ art.id }}</span>
       <span class="art-status art-status-{{ art.saleStatus | lower }}">
-        {% if art.saleStatus == 'T' %}Sold{% elseif art.saleStatus == 'F' %}For Sale{% else %}Not For Sale{% endif %}
+        {% if art.saleStatus == 'T' %}Sold{% elseif art.saleStatus == 'F' %}For Sale{% else %}Artist Collection{% endif %}
       </span>
     </button>
     {% endfor %}

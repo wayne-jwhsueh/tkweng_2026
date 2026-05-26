@@ -34,7 +34,7 @@ permalink: "/zh/portfolio/chou-xiang/index.html"
       />
       <span class="art-label">{{ art.id }}</span>
       <span class="art-status art-status-{{ art.saleStatus | lower }}">
-        {% if art.saleStatus == 'T' %}已售{% elseif art.saleStatus == 'F' %}可洽購{% else %}非賣品{% endif %}
+        {% if art.saleStatus == 'T' %}已售{% elseif art.saleStatus == 'F' %}可洽購{% else %}畫家珍藏{% endif %}
       </span>
     </button>
     {% endfor %}
