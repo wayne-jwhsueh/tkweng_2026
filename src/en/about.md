@@ -14,6 +14,7 @@ permalink: "/en/about/index.html"
     <p class="about-award">
       <img src="/images/about/award_SFCA_2016.jpg" alt="Federation of Canadian Artists SFCA recognition" loading="lazy" />
     </p>
+    <p class="meta" style="text-align:center;">Federation of Canadian Artists (SFCA) Senior Member</p>
   </div>
   <div>
     <p>
@@ -58,7 +59,6 @@ permalink: "/en/about/index.html"
 
 <section class="hero-card">
   <h2 class="section-title">Art Exhibition / Life History</h2>
-  <p class="meta">Federation of Canadian Artists (SFCA) Senior Member</p>
   <ul class="timeline-list">
     <li><span class="timeline-year">2022</span><span>Joint Exhibition hosted by Taiwanese Canadian Cultural Society.</span></li>
     <li><span class="timeline-year">2022</span><span>Invited Joint Exhibition of Senior Members of Federation of Canadian Artists (SFCA).</span></li>
