@@ -6,22 +6,27 @@ description: Artist, author, and portfolio home
 permalink: "/en/index.html"
 ---
 
-<section class="hero">
-  <div>
-    <h1>Creative Work, Writing, and Archives</h1>
-    <p>
-      Welcome to the official site of {{ site.artistNameEn }}. This space brings together portfolio projects,
-      publications, and current updates in one calm and readable archive.
+<section class="hero hero-fullbleed">
+  <img
+    class="hero-bg-image"
+    src="/images/hero/teng_ko_weng___love_follows___16x20___acrylic.webp"
+    alt=""
+    role="presentation"
+    loading="eager"
+    fetchpriority="high"
+  />
+  <div class="hero-overlay" aria-hidden="true"></div>
+  <div class="hero-inner">
+    <p class="hero-eyebrow">{{ site.artistNameEn }} &nbsp;&middot;&nbsp; Artist</p>
+    <h1>Painting with<br>Light and Faith</h1>
+    <p class="hero-desc">
+      Four decades of oil and acrylic works &mdash; exhibited across Canada, Taiwan, and the United States.
     </p>
     <div class="cta-row">
       <a class="btn btn-primary" href="/en/portfolio/">View Portfolio</a>
-      <a class="btn" href="/en/news/">Read News</a>
+      <a class="btn" href="/en/about/">About the Artist</a>
     </div>
-  </div>
-  <div class="hero-card">
-    <p><strong>Focus Areas</strong></p>
-    <p>Painting, writing, mixed media, and selected cultural projects.</p>
-    <p class="meta">Bilingual content available in English and Traditional Chinese.</p>
+    <p class="hero-caption">Love Follows &nbsp;&middot;&nbsp; Acrylic</p>
   </div>
 </section>
 

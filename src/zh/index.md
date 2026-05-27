@@ -6,22 +6,27 @@ description: 藝術創作與著作網站首頁
 permalink: "/zh/index.html"
 ---
 
-<section class="hero">
-  <div>
-    <h1>創作、文字與作品典藏</h1>
-    <p>
-      歡迎來到 {{ site.artistNameZh }} 官方網站。這裡整理作品、出版與最新消息，
-      以清楚舒適的方式呈現，方便長期閱讀與保存。
+<section class="hero hero-fullbleed">
+  <img
+    class="hero-bg-image"
+    src="/images/hero/teng_ko_weng___love_follows___16x20___acrylic.webp"
+    alt=""
+    role="presentation"
+    loading="eager"
+    fetchpriority="high"
+  />
+  <div class="hero-overlay" aria-hidden="true"></div>
+  <div class="hero-inner">
+    <p class="hero-eyebrow">{{ site.artistNameZh }} &nbsp;&middot;&nbsp; 畫家</p>
+    <h1>光與信仰<br>交織的筆觸</h1>
+    <p class="hero-desc">
+      四十年油畫與壓克力創作，展出足跡遍及加拿大、台灣與美國。
     </p>
     <div class="cta-row">
       <a class="btn btn-primary" href="/zh/portfolio/">瀏覽作品</a>
-      <a class="btn" href="/zh/news/">最新消息</a>
+      <a class="btn" href="/zh/about/">關於畫家</a>
     </div>
-  </div>
-  <div class="hero-card">
-    <p><strong>重點領域</strong></p>
-    <p>繪畫、寫作、複合媒材與文化專案。</p>
-    <p class="meta">網站提供繁體中文與英文內容。</p>
+    <p class="hero-caption">愛相隨 &nbsp;&middot;&nbsp; 壓克力</p>
   </div>
 </section>
 
