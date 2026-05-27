@@ -80,7 +80,6 @@ a {
   z-index: 10;
   background: rgba(28, 23, 18, 0.97);
   backdrop-filter: blur(6px);
-  border-bottom: 1px solid #3d3328;
   box-shadow: 0 7px 20px rgba(0, 0, 0, 0.3);
 }
 
@@ -92,6 +91,18 @@ a {
   background: url('/images/bg_eye.webp') center 35% / cover no-repeat;
   opacity: 0.11;
   mix-blend-mode: screen;
+  pointer-events: none;
+}
+
+.site-header::after {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, #9a5c43 22%, #9a5c43 78%, transparent);
   pointer-events: none;
 }
 
@@ -815,7 +826,6 @@ a {
   margin-top: 3rem;
   padding: 1.8rem 0 2rem;
   background: #1d1a16;
-  border-top: 1px solid #3d3328;
 }
 
 .site-footer::before {
@@ -825,7 +835,7 @@ a {
   top: 0;
   left: 0;
   right: 0;
-  height: 3px;
+  height: 4px;
   background: linear-gradient(90deg, transparent, #9a5c43 22%, #9a5c43 78%, transparent);
 }
 
