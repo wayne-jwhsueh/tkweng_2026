@@ -26,7 +26,9 @@ permalink: "/zh/index.html"
       <a class="btn" href="/zh/about/">關於畫家</a>
     </div>
     <p id="hero-cap" class="hero-caption"></p>
+    <a id="hero-link" href="" class="hero-gallery-link" hidden>查看作品</a>
   </div>
+  <script id="gallery-pool" type="application/json">{{ heroPool | json | safe }}</script>
 </section>
 
 <section>

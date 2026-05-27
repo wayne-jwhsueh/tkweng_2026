@@ -126,5 +126,16 @@
         previous();
       }
     });
+
+    // Deep-link: open image matching URL hash on page load (e.g. /en/portfolio/realism/#r0015)
+    const hashId = window.location.hash.slice(1).toUpperCase();
+    if (hashId) {
+      const deepIndex = items.findIndex(
+        (item) => (item.getAttribute("data-id") || "").toUpperCase() === hashId
+      );
+      if (deepIndex >= 0) {
+        open(deepIndex);
+      }
+    }
   });
 })();

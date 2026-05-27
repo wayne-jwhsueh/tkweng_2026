@@ -26,7 +26,9 @@ permalink: "/en/index.html"
       <a class="btn" href="/en/about/">About the Artist</a>
     </div>
     <p id="hero-cap" class="hero-caption"></p>
+    <a id="hero-link" href="" class="hero-gallery-link" hidden>View in Gallery</a>
   </div>
+  <script id="gallery-pool" type="application/json">{{ heroPool | json | safe }}</script>
 </section>
 
 <section>

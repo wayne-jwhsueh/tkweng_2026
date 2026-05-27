@@ -2,6 +2,8 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ "src/assets": "assets" });
   eleventyConfig.addPassthroughCopy({ "public/images": "images" });
 
+  eleventyConfig.addFilter("json", (value) => JSON.stringify(value));
+
   eleventyConfig.addFilter("date", function (value, format) {
     const date = value === "now" ? new Date() : new Date(value);
 

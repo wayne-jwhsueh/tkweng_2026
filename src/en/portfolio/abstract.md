@@ -17,6 +17,7 @@ permalink: "/en/portfolio/abstract/index.html"
       class="art-tile"
       type="button"
       data-gallery-item
+      data-id="{{ art.id }}"
       data-full="{{ art.src }}"
       data-thumb="{{ art.thumb }}"
       data-title="{{ art.titleEn }}"
