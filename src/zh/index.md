@@ -8,12 +8,11 @@ permalink: "/zh/index.html"
 
 <section class="hero hero-fullbleed">
   <img
+    id="hero-bg"
     class="hero-bg-image"
-    src="/images/hero/teng_ko_weng___love_follows___16x20___acrylic.webp"
+    src=""
     alt=""
     role="presentation"
-    loading="eager"
-    fetchpriority="high"
   />
   <div class="hero-overlay" aria-hidden="true"></div>
   <div class="hero-inner">
@@ -26,7 +25,7 @@ permalink: "/zh/index.html"
       <a class="btn btn-primary" href="/zh/portfolio/">瀏覽作品</a>
       <a class="btn" href="/zh/about/">關於畫家</a>
     </div>
-    <p class="hero-caption">愛相隨 &nbsp;&middot;&nbsp; 壓克力</p>
+    <p id="hero-cap" class="hero-caption"></p>
   </div>
 </section>
 

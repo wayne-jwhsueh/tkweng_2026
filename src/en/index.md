@@ -8,12 +8,11 @@ permalink: "/en/index.html"
 
 <section class="hero hero-fullbleed">
   <img
+    id="hero-bg"
     class="hero-bg-image"
-    src="/images/hero/teng_ko_weng___love_follows___16x20___acrylic.webp"
+    src=""
     alt=""
     role="presentation"
-    loading="eager"
-    fetchpriority="high"
   />
   <div class="hero-overlay" aria-hidden="true"></div>
   <div class="hero-inner">
@@ -26,7 +25,7 @@ permalink: "/en/index.html"
       <a class="btn btn-primary" href="/en/portfolio/">View Portfolio</a>
       <a class="btn" href="/en/about/">About the Artist</a>
     </div>
-    <p class="hero-caption">Love Follows &nbsp;&middot;&nbsp; Acrylic</p>
+    <p id="hero-cap" class="hero-caption"></p>
   </div>
 </section>
 
