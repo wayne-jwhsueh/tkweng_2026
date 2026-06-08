@@ -1,141 +1,96 @@
-(function () {
-  const galleries = Array.from(document.querySelectorAll("[data-gallery]"));
-  if (!galleries.length) {
-    return;
-  }
+import PhotoSwipeLightbox from "/assets/js/photoswipe-lightbox.esm.min.js";
+import PhotoSwipe from "/assets/js/photoswipe.esm.min.js";
 
-  galleries.forEach((gallery) => {
-    const items = Array.from(gallery.querySelectorAll("[data-gallery-item]"));
-    const dialog = gallery.querySelector("[data-gallery-dialog]");
-    const imageEl = gallery.querySelector("[data-gallery-dialog-image]");
-    const captionEl = gallery.querySelector("[data-gallery-dialog-caption]");
-    const countEl = gallery.querySelector("[data-gallery-dialog-count]");
-    const yearEl = gallery.querySelector("[data-gallery-dialog-year]");
-    const sizeEl = gallery.querySelector("[data-gallery-dialog-size]");
-    const mediumEl = gallery.querySelector("[data-gallery-dialog-medium]");
-    const statusEl = gallery.querySelector("[data-gallery-dialog-status]");
+const pageLang = document.documentElement.lang === "zh" ? "zh" : "en";
 
-    const pageLang = document.documentElement.getAttribute("lang") === "zh" ? "zh" : "en";
+const statusLabels = {
+  en: { T: "Sold", F: "For Sale", N: "Artist Collection" },
+  zh: { T: "已售", F: "可洽購", N: "畫家珍藏" },
+};
 
-    const statusLabelMap = {
-      en: {
-        T: "Sold",
-        F: "For Sale",
-        N: "Artist Collection"
-      },
-      zh: {
-        T: "已售",
-        F: "可洽購",
-        N: "畫家珍藏"
-      }
-    };
+const metaLabels = {
+  en: { year: "Year", size: "Size", medium: "Medium", status: "Status" },
+  zh: { year: "年份", size: "尺寸", medium: "媒材", status: "狀態" },
+};
 
-    if (!items.length || !dialog || !imageEl || !captionEl || !countEl) {
-      return;
-    }
+document.querySelectorAll("[data-gallery]").forEach((gallery) => {
+  const items = Array.from(gallery.querySelectorAll("[data-gallery-item]"));
+  if (!items.length) return;
 
-    let currentIndex = 0;
+  const dataSource = items.map((btn) => ({
+    src: btn.dataset.full || btn.dataset.thumb,
+    msrc: btn.dataset.thumb,
+    width: Number(btn.dataset.width) || 1600,
+    height: Number(btn.dataset.height) || 1200,
+    alt: btn.dataset.title || "",
+    cropped: true,
+    _year: btn.dataset.year || "",
+    _size: btn.dataset.size || "",
+    _medium: btn.dataset.medium || "",
+    _status: btn.dataset.status || "N",
+  }));
 
-    function render(index) {
-      const item = items[index];
-      const full = item.getAttribute("data-full") || item.getAttribute("data-thumb");
-      const title = item.getAttribute("data-title") || "Artwork";
-      const year = item.getAttribute("data-year") || "-";
-      const size = item.getAttribute("data-size") || "-";
-      const medium = item.getAttribute("data-medium") || "-";
-      const status = item.getAttribute("data-status") || "N";
+  const lang = pageLang;
+  const labels = metaLabels[lang];
+  const statusMap = statusLabels[lang];
 
-      imageEl.src = full;
-      imageEl.alt = title;
-      captionEl.textContent = title;
-      countEl.textContent = `${index + 1} / ${items.length}`;
-      if (yearEl) {
-        yearEl.textContent = year;
-      }
-      if (sizeEl) {
-        sizeEl.textContent = size;
-      }
-      if (mediumEl) {
-        mediumEl.textContent = medium;
-      }
-      if (statusEl) {
-        statusEl.textContent = statusLabelMap[pageLang][status] || statusLabelMap[pageLang].N;
-      }
-      currentIndex = index;
-    }
-
-    function open(index) {
-      render(index);
-      if (typeof dialog.showModal === "function") {
-        dialog.showModal();
-      } else {
-        dialog.setAttribute("open", "open");
-      }
-    }
-
-    function close() {
-      if (typeof dialog.close === "function") {
-        dialog.close();
-      } else {
-        dialog.removeAttribute("open");
-      }
-    }
-
-    function next() {
-      render((currentIndex + 1) % items.length);
-    }
-
-    function previous() {
-      render((currentIndex - 1 + items.length) % items.length);
-    }
-
-    items.forEach((item, index) => {
-      item.addEventListener("click", () => open(index));
-      item.addEventListener("keydown", (event) => {
-        if (event.key === "Enter" || event.key === " ") {
-          event.preventDefault();
-          open(index);
-        }
-      });
-    });
-
-    dialog.addEventListener("click", (event) => {
-      if (event.target === dialog) {
-        close();
-      }
-    });
-
-    dialog.querySelector("[data-gallery-close]")?.addEventListener("click", close);
-    dialog.querySelector("[data-gallery-next]")?.addEventListener("click", next);
-    dialog.querySelector("[data-gallery-prev]")?.addEventListener("click", previous);
-
-    document.addEventListener("keydown", (event) => {
-      if (!dialog.open) {
-        return;
-      }
-
-      if (event.key === "Escape") {
-        close();
-      }
-
-      if (event.key === "ArrowRight") {
-        next();
-      }
-
-      if (event.key === "ArrowLeft") {
-        previous();
-      }
-    });
-
-    // Deep-link: open image matching URL hash on page load (e.g. /en/portfolio/realism/#r0015)
-    const hashId = window.location.hash.slice(1).toUpperCase();
-    if (hashId) {
-      const deepIndex = items.findIndex(
-        (item) => (item.getAttribute("data-id") || "").toUpperCase() === hashId
-      );
-      if (deepIndex >= 0) {
-        open(deepIndex);
-      }
-    }
+  const lightbox = new PhotoSwipeLightbox({
+    pswpModule: PhotoSwipe,
+    bgOpacity: 0.9,
+    getThumbBoundsFn: (index) => {
+      const btn = items[index];
+      if (!btn) return;
+      const img = btn.querySelector("img");
+      if (!img) return;
+      const rect = img.getBoundingClientRect();
+      return { x: rect.left, y: rect.top + window.scrollY, w: rect.width };
+    },
   });
-})();
+
+  // Custom bottom caption bar with artwork metadata
+  lightbox.on("uiRegister", () => {
+    lightbox.pswp.ui.registerElement({
+      name: "artwork-caption",
+      order: 9,
+      isButton: false,
+      appendTo: "root",
+      onInit: (el, pswp) => {
+        function updateCaption() {
+          const item = pswp.currSlide && pswp.currSlide.data;
+          if (!item) return;
+          const statusText = statusMap[item._status] || statusMap["N"];
+          el.innerHTML = `<div class="pswp-caption">
+  <div class="pswp-caption-title">
+    <span class="pswp-caption-name">${item.alt}</span>
+    <span class="pswp-caption-count">${pswp.currIndex + 1}\u2009/\u2009${dataSource.length}</span>
+  </div>
+  <ul class="pswp-meta-list">
+    <li><span>${labels.year}</span><strong>${item._year || "\u2014"}</strong></li>
+    <li><span>${labels.size}</span><strong>${item._size || "\u2014"}</strong></li>
+    <li><span>${labels.medium}</span><strong>${item._medium || "\u2014"}</strong></li>
+    <li><span>${labels.status}</span><strong>${statusText}</strong></li>
+  </ul>
+</div>`;
+        }
+        pswp.on("change", updateCaption);
+      },
+    });
+  });
+
+  items.forEach((btn, index) => {
+    btn.addEventListener("click", () => lightbox.loadAndOpen(index, dataSource));
+  });
+
+  lightbox.init();
+
+  // Deep-link: open image matching URL hash on page load (e.g. /en/portfolio/realism/#r0015)
+  const hashId = window.location.hash.slice(1).toUpperCase();
+  if (hashId) {
+    const deepIndex = items.findIndex(
+      (btn) => (btn.dataset.id || "").toUpperCase() === hashId
+    );
+    if (deepIndex >= 0) {
+      lightbox.loadAndOpen(deepIndex, dataSource);
+    }
+  }
+});

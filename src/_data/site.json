@@ -5,5 +5,6 @@
   "artistNameZh": "翁登科",
   "descriptionEn": "Artist, author, and creative portfolio",
   "descriptionZh": "藝術創作與著作網站",
-  "newsMainPageCount": 5
+  "newsMainPageCount": 5,
+  "homePageNewsMaxAgeDays": 60
 }

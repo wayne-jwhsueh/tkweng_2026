@@ -1,6 +1,11 @@
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ "src/assets": "assets" });
   eleventyConfig.addPassthroughCopy({ "public/images": "images" });
+  eleventyConfig.addPassthroughCopy({
+    "node_modules/photoswipe/dist/photoswipe-lightbox.esm.min.js": "assets/js/photoswipe-lightbox.esm.min.js",
+    "node_modules/photoswipe/dist/photoswipe.esm.min.js": "assets/js/photoswipe.esm.min.js",
+    "node_modules/photoswipe/dist/photoswipe.css": "assets/css/photoswipe.css",
+  });
 
   eleventyConfig.addFilter("json", (value) => JSON.stringify(value));
 
@@ -22,6 +27,14 @@ module.exports = function (eleventyConfig) {
       return `${year}-${month}-${day}`;
     }
 
+    if (format === "MMM yyyy") {
+      return new Intl.DateTimeFormat("en", {
+        month: "short",
+        year: "numeric",
+        timeZone: "UTC"
+      }).format(date);
+    }
+
     return date.toISOString();
   });
 
@@ -41,6 +54,26 @@ module.exports = function (eleventyConfig) {
     const parsedCount = Number.parseInt(count, 10);
     const safeCount = Number.isInteger(parsedCount) && parsedCount > 0 ? parsedCount : 5;
     return items.slice(0, safeCount);
+  });
+
+  eleventyConfig.addFilter("filterRecent", function (items, days) {
+    if (!Array.isArray(items)) {
+      return [];
+    }
+
+    const parsedDays = Number.parseInt(days, 10);
+    const safeDays = Number.isInteger(parsedDays) && parsedDays > 0 ? parsedDays : 60;
+    const maxAgeMs = safeDays * 24 * 60 * 60 * 1000;
+    const now = Date.now();
+
+    return items.filter((item) => {
+      const itemDate = new Date(item && item.date);
+      if (Number.isNaN(itemDate.getTime())) {
+        return false;
+      }
+
+      return now - itemDate.getTime() <= maxAgeMs;
+    });
   });
 
   eleventyConfig.addFilter("newsYears", function (items) {

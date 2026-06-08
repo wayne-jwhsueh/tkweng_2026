@@ -25,6 +25,8 @@ permalink: "/zh/portfolio/realism/index.html"
       data-size="{{ art.size }}"
       data-medium="{{ art.medium }}"
       data-status="{{ art.saleStatus }}"
+      data-width="{{ art.width }}"
+      data-height="{{ art.height }}"
       aria-label="開啟 {{ art.titleZh }}"
     >
       <img
@@ -40,29 +42,4 @@ permalink: "/zh/portfolio/realism/index.html"
     </button>
     {% endfor %}
   </div>
-
-  <dialog class="gallery-dialog" data-gallery-dialog aria-label="作品檢視">
-    <div class="gallery-dialog-inner">
-      <div class="gallery-dialog-topbar">
-        <p class="gallery-dialog-meta">
-          <span data-gallery-dialog-caption>作品</span>
-          <span data-gallery-dialog-count>1 / 1</span>
-        </p>
-        <button class="gallery-close" type="button" data-gallery-close aria-label="關閉檢視器">關閉</button>
-      </div>
-      <ul class="gallery-detail-list">
-        <li><span>年份</span><strong data-gallery-dialog-year>-</strong></li>
-        <li><span>尺寸</span><strong data-gallery-dialog-size>-</strong></li>
-        <li><span>媒材</span><strong data-gallery-dialog-medium>-</strong></li>
-        <li><span>狀態</span><strong data-gallery-dialog-status>-</strong></li>
-      </ul>
-      <figure class="gallery-stage">
-        <img data-gallery-dialog-image src="/images/placeholder.jpg" alt="作品" />
-      </figure>
-      <div class="gallery-dialog-controls">
-        <button type="button" data-gallery-prev aria-label="上一件作品">上一件</button>
-        <button type="button" data-gallery-next aria-label="下一件作品">下一件</button>
-      </div>
-    </div>
-  </dialog>
 </section>

@@ -6,6 +6,10 @@ description: 藝術創作與著作網站首頁
 permalink: "/zh/index.html"
 ---
 
+{% set homeNewsMaxAgeDays = site.homePageNewsMaxAgeDays %}
+{% set latestNews = collections.news_zh | filterRecent(homeNewsMaxAgeDays) | latest(1) %}
+{% set latestPost = latestNews[0] %}
+
 <section class="hero hero-fullbleed">
   <img
     id="hero-bg"
@@ -25,47 +29,15 @@ permalink: "/zh/index.html"
       <a class="btn btn-primary" href="/zh/portfolio/">瀏覽作品</a>
       <a class="btn" href="/zh/about/">關於畫家</a>
     </div>
+    <div class="hero-news-slot"{{ " hidden" if not latestPost }}>
+      <a class="hero-news-chip" href="{{ latestPost.url if latestPost else '#' }}" aria-label="最新消息：{{ latestPost.data.title if latestPost else '' }}">
+        <span class="hero-news-label">最新</span>
+        <span class="hero-news-title">{{ latestPost.data.title if latestPost else "" }}</span>
+        <span class="hero-news-date">{{ latestPost.date | date("MMM yyyy") if latestPost else "" }}</span>
+      </a>
+    </div>
     <p id="hero-cap" class="hero-caption"></p>
     <a id="hero-link" href="" class="hero-gallery-link" hidden>查看作品</a>
   </div>
   <script id="gallery-pool" type="application/json">{{ heroPool | json | safe }}</script>
-</section>
-
-<section>
-  <h2 class="section-title">精選作品</h2>
-  <div class="grid">
-    {% for item in collections.portfolio_zh | slice(0, 3) %}
-    <article class="card">
-      <div class="media-frame{% if not item.data.cover %} is-placeholder{% endif %}">
-        <img
-          class="card-media"
-          src="{{ item.data.cover or '/images/placeholder.jpg' }}"
-          alt="{{ item.data.coverAlt or item.data.title }}"
-          width="500"
-          height="350"
-          loading="lazy"
-        />
-        {% if not item.data.cover %}
-        <span class="media-badge" aria-hidden="true">圖片待定</span>
-        {% endif %}
-      </div>
-      <div class="card-body">
-        <h3><a href="{{ item.url }}">{{ item.data.title }}</a></h3>
-        <p>{{ item.data.summary }}</p>
-      </div>
-    </article>
-    {% endfor %}
-  </div>
-</section>
-
-<section>
-  <h2 class="section-title">最新消息</h2>
-  <ul class="list-clean">
-    {% for post in collections.news_zh | slice(0, 3) %}
-    <li>
-      <a href="{{ post.url }}">{{ post.data.title }}</a>
-      <div class="meta">{{ post.date | date("yyyy-MM-dd") }}</div>
-    </li>
-    {% endfor %}
-  </ul>
 </section>

@@ -1,5 +1,6 @@
 const fs = require("node:fs");
 const path = require("node:path");
+const { imageSize } = require("image-size");
 const legacyMeta = require("./portfolioLegacyMeta.json");
 
 const legacyZhTitleMap = {
@@ -150,6 +151,17 @@ function loadCategory(category, labels) {
     const sequence = String(index + 1).padStart(2, "0");
     const zhTitle = zhTitles[id] || details.title || `${labels.zh} ${sequence}`;
 
+    let imgWidth = 0;
+    let imgHeight = 0;
+    try {
+      const buf = fs.readFileSync(path.join(categoryDir, fileName));
+      const dims = imageSize(buf);
+      imgWidth = dims.width || 0;
+      imgHeight = dims.height || 0;
+    } catch (_) {
+      // unreadable or unsupported format – PhotoSwipe will skip the zoom animation
+    }
+
     return {
       id,
       src: `/images/portfolio/${category}/${fileName}`,
@@ -162,7 +174,9 @@ function loadCategory(category, labels) {
       size: details.size,
       medium: details.medium,
       legacyDescription: meta.description || "",
-      saleStatus: meta.saleStatus || "N"
+      saleStatus: meta.saleStatus || "N",
+      width: imgWidth,
+      height: imgHeight
     };
   });
 }

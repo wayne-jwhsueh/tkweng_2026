@@ -102,6 +102,23 @@ Use:
 
 If omitted or invalid, the site falls back to 5.
 
+### Homepage News Lifespan (User Setting)
+
+The homepage can show a small hero-overlay ticker (1 latest item), filtered by recency.
+
+To control how old a post can be and still appear in the hero ticker, edit:
+
+- `src/_data/site.json`
+
+Use:
+
+- `"homePageNewsMaxAgeDays": 60`
+
+Fallback/stability rule:
+
+- If `homePageNewsMaxAgeDays` is missing, invalid, `0`, or negative, the site automatically falls back to `60`.
+- If no posts are within the configured age window, the homepage ticker is hidden.
+
 ### Add a News Post
 
 1. Create a new markdown file in `src/en/news/` or `src/zh/news/`

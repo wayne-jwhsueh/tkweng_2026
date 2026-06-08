@@ -25,6 +25,8 @@ permalink: "/en/portfolio/abstract/index.html"
       data-size="{{ art.size }}"
       data-medium="{{ art.medium }}"
       data-status="{{ art.saleStatus }}"
+      data-width="{{ art.width }}"
+      data-height="{{ art.height }}"
       aria-label="Open {{ art.titleEn }}"
     >
       <img
@@ -40,29 +42,4 @@ permalink: "/en/portfolio/abstract/index.html"
     </button>
     {% endfor %}
   </div>
-
-  <dialog class="gallery-dialog" data-gallery-dialog aria-label="Artwork detail">
-    <div class="gallery-dialog-inner">
-      <div class="gallery-dialog-topbar">
-        <p class="gallery-dialog-meta">
-          <span data-gallery-dialog-caption>Artwork</span>
-          <span data-gallery-dialog-count>1 / 1</span>
-        </p>
-        <button class="gallery-close" type="button" data-gallery-close aria-label="Close viewer">Close</button>
-      </div>
-      <ul class="gallery-detail-list">
-        <li><span>Year</span><strong data-gallery-dialog-year>-</strong></li>
-        <li><span>Size</span><strong data-gallery-dialog-size>-</strong></li>
-        <li><span>Medium</span><strong data-gallery-dialog-medium>-</strong></li>
-        <li><span>Status</span><strong data-gallery-dialog-status>-</strong></li>
-      </ul>
-      <figure class="gallery-stage">
-        <img data-gallery-dialog-image src="/images/placeholder.jpg" alt="Artwork" />
-      </figure>
-      <div class="gallery-dialog-controls">
-        <button type="button" data-gallery-prev aria-label="Previous artwork">Previous</button>
-        <button type="button" data-gallery-next aria-label="Next artwork">Next</button>
-      </div>
-    </div>
-  </dialog>
 </section>
