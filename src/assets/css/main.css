@@ -206,6 +206,7 @@ a {
   min-height: 92vh;
   width: 100vw;
   margin-left: calc(50% - 50vw);
+  margin-bottom: -3rem; /* negates .site-footer margin-top: 3rem, removing the gap on full-bleed hero pages */
   overflow: hidden;
   /* override the grid layout from .hero */
   display: flex;
