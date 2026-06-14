@@ -7,63 +7,55 @@ permalink: "/zh/media/index.html"
 ---
 
 <h1>媒體</h1>
-<p class="meta">整理過去的訪談、對談影片與音訊內容。</p>
-
-{% set videos = collections.news_zh | byType("video") %}
-{% set audios = collections.news_zh | byType("audio") %}
+<p class="meta">歲月留聲。收錄藝術家珍貴的專訪與對談紀錄，邀您一同走進翁登科的藝術世界，聆聽創作背後的生命故事。</p>
 
 <section>
   <h2 class="section-title">訪談影片</h2>
-  <ul class="list-clean">
-    {% for post in videos %}
-    <li class="news-item">
-      <div class="media-frame{% if not post.data.cover %} is-placeholder{% endif %}">
-        <img
-          class="news-media"
-          src="{{ post.data.cover or '/images/placeholder.jpg' }}"
-          alt="{{ post.data.coverAlt or post.data.title }}"
-          loading="lazy"
-        />
-        {% if not post.data.cover %}
-        <span class="media-badge" aria-hidden="true">圖片待定</span>
-        {% endif %}
-      </div>
-      <a href="{{ post.url }}">{{ post.data.title }}</a>
-      <div class="meta">{{ post.date | date("yyyy-MM-dd") }}</div>
-      <p>{{ post.data.summary }}</p>
-    </li>
-    {% else %}
-    <li>
-      <p class="meta">目前沒有影片內容。</p>
-    </li>
-    {% endfor %}
-  </ul>
+  <article class="media-entry">
+    <div class="media-entry-head">
+      <h3>好消息電視訪談－翁登科（國語）</h3>
+      <span class="media-entry-date">2013</span>
+    </div>
+    <div class="media-embed-wrap">
+      <iframe
+        src="https://www.youtube.com/embed/23VbRQYY6EE"
+        title="好消息電視訪談－翁登科（國語）"
+        loading="lazy"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+    </div>
+  </article>
+
+  <article class="media-entry">
+    <div class="media-entry-head">
+      <h3>電視訪談（粵語）</h3>
+      <span class="media-entry-date">2013</span>
+    </div>
+    <div class="media-embed-wrap">
+      <iframe
+        src="https://www.youtube.com/embed/2_cqBeeMyVg"
+        title="電視訪談（粵語）"
+        loading="lazy"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+    </div>
+  </article>
 </section>
 
 <section>
   <h2 class="section-title">訪談音訊</h2>
-  <ul class="list-clean">
-    {% for post in audios %}
-    <li class="news-item">
-      <div class="media-frame{% if not post.data.cover %} is-placeholder{% endif %}">
-        <img
-          class="news-media"
-          src="{{ post.data.cover or '/images/placeholder.jpg' }}"
-          alt="{{ post.data.coverAlt or post.data.title }}"
-          loading="lazy"
-        />
-        {% if not post.data.cover %}
-        <span class="media-badge" aria-hidden="true">圖片待定</span>
-        {% endif %}
-      </div>
-      <a href="{{ post.url }}">{{ post.data.title }}</a>
-      <div class="meta">{{ post.date | date("yyyy-MM-dd") }}</div>
-      <p>{{ post.data.summary }}</p>
-    </li>
-    {% else %}
-    <li>
-      <p class="meta">目前沒有音訊內容。</p>
-    </li>
-    {% endfor %}
-  </ul>
+  <article class="media-entry">
+    <div class="media-entry-head">
+      <h3>好消息電台訪談（國語）</h3>
+      <span class="media-entry-date">2013</span>
+    </div>
+    <p>旅居加拿大畫家翁登科分享生活經歷與見證的電台訪談。</p>
+    <ul>
+      <li><a href="http://www.goodnews.org.tw/content.php?id=41078" target="_blank" rel="noopener noreferrer">前往好消息電台</a></li>
+    </ul>
+  </article>
 </section>
