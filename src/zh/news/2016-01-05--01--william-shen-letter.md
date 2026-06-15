@@ -11,7 +11,7 @@ year: 2016
 source: backup_2016
 cover: /images/news/student_williamShen_0002.jpg
 coverAlt: 2016 年 William Shen 相關典藏圖片
-permalink: "/zh/news/william-shen-gan-xie-xin-2016/index.html"
+permalink: "/zh/news/2016-01-05--01--william-shen-letter/"
 ---
 
 此則消息由 2016 舊站內容遷移。

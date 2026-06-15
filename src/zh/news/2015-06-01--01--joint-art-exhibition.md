@@ -11,7 +11,7 @@ year: 2015
 source: backup_2016
 cover: /images/news/news_0005.jpg
 coverAlt: 2015 年聯展宣傳圖
-permalink: "/zh/news/qu-guo-zhong-weng-deng-ke-lian-zhan-2015/index.html"
+permalink: "/zh/news/2015-06-01--01--joint-art-exhibition/"
 ---
 
 此則消息由 2016 舊站內容遷移。

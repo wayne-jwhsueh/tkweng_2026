@@ -11,7 +11,7 @@ year: 2015
 source: backup_2016
 cover: /images/news/news_0005_eng.jpg
 coverAlt: Poster image for the July 2015 joint exhibition
-permalink: "/en/news/joint-art-exhibition-july-2015/index.html"
+permalink: "/en/news/2015-06-01--01--joint-art-exhibition/"
 ---
 
 This entry is migrated from the 2016 archive.

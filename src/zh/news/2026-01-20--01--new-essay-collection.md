@@ -8,7 +8,7 @@ tags:
 summary: 收錄記憶、城市與日常藝術觀察的新散文集正式出版。
 type: publication
 year: 2026
-permalink: "/zh/news/xin-san-wen-ji/index.html"
+permalink: "/zh/news/2026-01-20--01--new-essay-collection/"
 ---
 
 最新散文集已於各大通路上架。

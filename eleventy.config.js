@@ -1,3 +1,67 @@
+const fs = require("fs/promises");
+const path = require("path");
+const sharp = require("sharp");
+
+const NEWS_IMAGE_DIR = path.join(process.cwd(), "public", "images", "news");
+const NEWS_THUMB_DIR = path.join(process.cwd(), "_site", "images", "news", "thumbs");
+const NEWS_THUMB_URL_PREFIX = "/images/news/thumbs/";
+const NEWS_THUMB_EXT = ".jpg";
+
+function getNewsThumbFilename(coverUrl) {
+  if (typeof coverUrl !== "string" || !coverUrl.startsWith("/images/news/")) {
+    return "";
+  }
+
+  return `${path.parse(coverUrl).name}-thumb${NEWS_THUMB_EXT}`;
+}
+
+function getNewsThumbUrl(coverUrl) {
+  const filename = getNewsThumbFilename(coverUrl);
+  return filename ? `${NEWS_THUMB_URL_PREFIX}${filename}` : "";
+}
+
+async function generateNewsThumbnails() {
+  let imageEntries = [];
+
+  try {
+    imageEntries = await fs.readdir(NEWS_IMAGE_DIR, { withFileTypes: true });
+  } catch (error) {
+    if (error && error.code !== "ENOENT") {
+      console.warn("Unable to read news images directory.", error);
+    }
+    return;
+  }
+
+  const sourceFiles = imageEntries.filter(
+    (entry) => entry.isFile() && /\.(avif|jpe?g|png|webp)$/i.test(entry.name)
+  );
+
+  if (!sourceFiles.length) {
+    return;
+  }
+
+  await fs.mkdir(NEWS_THUMB_DIR, { recursive: true });
+
+  await Promise.all(
+    sourceFiles.map(async (entry) => {
+      const parsed = path.parse(entry.name);
+      const inputPath = path.join(NEWS_IMAGE_DIR, entry.name);
+      const outputPath = path.join(NEWS_THUMB_DIR, `${parsed.name}-thumb${NEWS_THUMB_EXT}`);
+
+      await sharp(inputPath)
+        .resize({
+          width: 560,
+          height: 315,
+          fit: "cover",
+          position: "centre"
+        })
+        .flatten({ background: "#fffdf9" })
+        .jpeg({ quality: 78, progressive: true })
+        .toFile(outputPath);
+    })
+  );
+}
+
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ "src/assets": "assets" });
   eleventyConfig.addPassthroughCopy({ "public/images": "images" });
@@ -8,6 +72,19 @@ module.exports = function (eleventyConfig) {
   });
 
   eleventyConfig.addFilter("json", (value) => JSON.stringify(value));
+  eleventyConfig.addFilter("newsThumbUrl", getNewsThumbUrl);
+
+  eleventyConfig.on("eleventy.before", async () => {
+    await generateNewsThumbnails();
+  });
+
+  eleventyConfig.addFilter("previewExcerpt", function (value, maxWords) {
+    const text = (value || "").toString().replace(/<[^>]*>/g, " ").replace(/\s+/g, " ").trim();
+    const limit = Number.isInteger(maxWords) && maxWords > 0 ? maxWords : 12;
+    if (!text) return "";
+    const words = text.split(" ");
+    return words.length > limit ? words.slice(0, limit).join(" ") + " ..." : text;
+  });
 
   eleventyConfig.addFilter("date", function (value, format) {
     const date = value === "now" ? new Date() : new Date(value);

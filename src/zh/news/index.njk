@@ -1,0 +1,47 @@
+---
+layout: layouts/base.njk
+title: 最新消息
+lang: zh
+description: 最新消息與公告
+permalink: "/zh/news/index.html"
+---
+
+<h1>最新消息</h1>
+<p class="meta">近期動態、活動與出版資訊。</p>
+
+{% set years = collections.news_zh | newsYears %}
+
+<div class="news-layout">
+  <nav class="news-year-nav" aria-label="依年份瀏覽">
+    {% for year in years %}
+    <a href="#year-{{ year }}">{{ year }}</a>
+    {% endfor %}
+  </nav>
+
+  <div class="news-year-content">
+    {% for year in years %}
+    <h2 class="section-title" id="year-{{ year }}">{{ year }}</h2>
+    <ul class="list-clean news-list">
+      {% for post in collections.news_zh | byYear(year) %}
+      {% set thumb = post.data.cover | newsThumbUrl %}
+      <li class="news-item">
+        <article class="news-card{{ ' is-text-only' if not thumb }}">
+          {% if thumb %}
+          <a class="news-card-media" href="{{ post.url }}" aria-label="查看 {{ post.data.title }}">
+            <img class="news-media" src="{{ thumb }}" alt="{{ post.data.coverAlt or post.data.title }}" width="560" height="315" loading="lazy" />
+          </a>
+          {% endif %}
+          <div class="news-card-body">
+            <div class="news-card-date">{{ post.date | date("yyyy-MM-dd") }}</div>
+            <h3 class="news-card-title"><a href="{{ post.url }}">{{ post.data.title }}</a></h3>
+            <p class="news-card-summary">{{ post.data.summary | previewExcerpt(20) }}</p>
+            <p class="news-card-link"><a href="{{ post.url }}">閱讀內容</a></p>
+          </div>
+        </article>
+      </li>
+      {% endfor %}
+    </ul>
+    {% endfor %}
+  </div>
+</div>
+

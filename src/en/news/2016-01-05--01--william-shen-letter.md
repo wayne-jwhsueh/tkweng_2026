@@ -12,7 +12,7 @@ year: 2016
 source: backup_2016
 cover: /images/news/student_williamShen_0002.jpg
 coverAlt: William Shen archive photo from 2016 news
-permalink: "/en/news/william-shen-letter-2016/index.html"
+permalink: "/en/news/2016-01-05--01--william-shen-letter/"
 ---
 
 This entry is migrated from the 2016 archive.

@@ -8,7 +8,7 @@ tags:
 summary: A new essay collection on memory, cities, and everyday art is now available.
 type: publication
 year: 2026
-permalink: "/en/news/new-essay-collection/index.html"
+permalink: "/en/news/2026-01-20--01--new-essay-collection/"
 ---
 
 The latest essay collection is now available through major local bookstores.

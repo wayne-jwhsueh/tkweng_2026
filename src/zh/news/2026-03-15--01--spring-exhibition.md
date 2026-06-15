@@ -8,7 +8,7 @@ tags:
 summary: 河流與記憶系列新作將於春季展出。
 type: exhibition
 year: 2026
-permalink: "/zh/news/2026-chun-ji-zhan-lan/index.html"
+permalink: "/zh/news/2026-03-15--01--spring-exhibition/"
 ---
 
 「河流與記憶」系列新作，將於今年春季舉辦小型展覽。

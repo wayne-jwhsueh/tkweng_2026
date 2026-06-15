@@ -8,7 +8,7 @@ tags:
 summary: New paintings from the River and Memory series will be shown this spring.
 type: exhibition
 year: 2026
-permalink: "/en/news/spring-exhibition-2026/index.html"
+permalink: "/en/news/2026-03-15--01--spring-exhibition/"
 ---
 
 A new selection from the **River and Memory** series will be presented in a small spring exhibition.
