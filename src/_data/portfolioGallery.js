@@ -151,23 +151,23 @@ function loadCategory(category, labels) {
     const sequence = String(index + 1).padStart(2, "0");
     const zhTitle = zhTitles[id] || details.title || `${labels.zh} ${sequence}`;
 
-    let imgWidth = 0;
-    let imgHeight = 0;
-    try {
-      const buf = fs.readFileSync(path.join(categoryDir, fileName));
-      const dims = imageSize(buf);
-      imgWidth = dims.width || 0;
-      imgHeight = dims.height || 0;
-    } catch (_) {
-      // unreadable or unsupported format – PhotoSwipe will skip the zoom animation
-    }
+     let imgWidth = 0;
+     let imgHeight = 0;
+     try {
+       const buf = fs.readFileSync(path.join(categoryDir, fileName));
+       const dims = imageSize(buf);
+       imgWidth = dims.width || 0;
+       imgHeight = dims.height || 0;
+     } catch (_) {
+       // unreadable or unsupported format – PhotoSwipe will skip the zoom animation
+     }
 
-    return {
-      id,
-      src: `/images/portfolio/${category}/${fileName}`,
-      thumb: hasThumb
-        ? `/images/portfolio/${category}/thumbs/${fileName}`
-        : `/images/portfolio/${category}/${fileName}`,
+     return {
+       id,
+       src: `/images/portfolio/${category}/${fileName}`,
+       thumb: hasThumb
+         ? `/images/portfolio/${category}/thumbs/${fileName}`
+         : `/images/portfolio/${category}/${fileName}`,
       titleEn: details.title || `${labels.en} ${sequence}`,
       titleZh: zhTitle,
       year: details.year,
