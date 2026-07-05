@@ -151,6 +151,12 @@ a {
   color: #f5ece3;
 }
 
+.site-nav a.is-active {
+  background: #5a4630;
+  color: #f5ece3;
+  font-weight: 600;
+}
+
 .nav-item {
   position: relative;
 }
