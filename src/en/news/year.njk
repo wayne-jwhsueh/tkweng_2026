@@ -1,9 +1,14 @@
 ---
 layout: layouts/base.njk
-title: News
 lang: en
-description: Latest updates and announcements
-permalink: "/en/news/index.html"
+pagination:
+  data: "collections.news_years_en"
+  size: 1
+  alias: yearGroup
+permalink: "/en/news/{{ yearGroup.year }}/index.html"
+eleventyComputed:
+  title: "News {{ yearGroup.year }}"
+  description: "News from {{ yearGroup.year }}"
 ---
 {% from "components/news-cards.njk" import tabs, cards %}
 
@@ -11,12 +16,11 @@ permalink: "/en/news/index.html"
 <p class="meta">Recent updates, events, and publication notes.</p>
 
 {% set years = collections.news_en | newsYears %}
-{% set currentYear = years[0] %}
 
-{{ tabs(years, currentYear, "/en/news/", "en") }}
+{{ tabs(years, yearGroup.year, "/en/news/", "en") }}
 
 <div id="news-year-panel">
-  {{ cards(collections.news_en | byYear(currentYear), "en") }}
+  {{ cards(yearGroup.posts, "en") }}
 </div>
 
 <script src="/assets/js/news-tabs.js" defer></script>

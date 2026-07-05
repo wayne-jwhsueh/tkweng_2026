@@ -974,6 +974,42 @@ a {
   }
 }
 
+.news-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 0.6rem;
+  margin-top: 1.5rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.news-tabs a.news-tab {
+  display: inline-block;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--muted);
+  text-decoration: none;
+  padding: 0.3rem 0.85rem;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  transition: color 0.15s, border-color 0.15s, background-color 0.15s;
+}
+
+.news-tabs a.news-tab:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+.news-tabs a.news-tab.is-active {
+  color: #fff;
+  background-color: var(--accent);
+  border-color: var(--accent);
+}
+
+#news-year-panel .news-list {
+  margin-top: 1.5rem;
+}
+
 .cta-row {
   display: flex;
   flex-wrap: wrap;

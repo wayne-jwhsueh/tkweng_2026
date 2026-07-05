@@ -1,0 +1,26 @@
+---
+layout: layouts/base.njk
+lang: zh
+pagination:
+  data: "collections.news_years_zh"
+  size: 1
+  alias: yearGroup
+permalink: "/zh/news/{{ yearGroup.year }}/index.html"
+eleventyComputed:
+  title: "最新消息 {{ yearGroup.year }}"
+  description: "{{ yearGroup.year }} 年最新消息"
+---
+{% from "components/news-cards.njk" import tabs, cards %}
+
+<h1>最新消息</h1>
+<p class="meta">近期動態、活動與出版資訊。</p>
+
+{% set years = collections.news_zh | newsYears %}
+
+{{ tabs(years, yearGroup.year, "/zh/news/", "zh") }}
+
+<div id="news-year-panel">
+  {{ cards(yearGroup.posts, "zh") }}
+</div>
+
+<script src="/assets/js/news-tabs.js" defer></script>

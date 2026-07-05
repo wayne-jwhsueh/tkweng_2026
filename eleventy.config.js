@@ -209,6 +209,29 @@ module.exports = function (eleventyConfig) {
       .sort((a, b) => b.date - a.date);
   });
 
+  function groupNewsByYear(posts) {
+    const years = Array.from(
+      new Set(posts.map((post) => new Date(post.date).getFullYear()))
+    ).sort((a, b) => b - a);
+
+    return years.map((year) => ({
+      year,
+      posts: posts.filter((post) => new Date(post.date).getFullYear() === year),
+    }));
+  }
+
+  eleventyConfig.addCollection("news_years_en", function (collectionApi) {
+    return groupNewsByYear(
+      collectionApi.getFilteredByTag("news_en").sort((a, b) => b.date - a.date)
+    );
+  });
+
+  eleventyConfig.addCollection("news_years_zh", function (collectionApi) {
+    return groupNewsByYear(
+      collectionApi.getFilteredByTag("news_zh").sort((a, b) => b.date - a.date)
+    );
+  });
+
   eleventyConfig.addCollection("portfolio_en", function (collectionApi) {
     return collectionApi
       .getFilteredByTag("portfolio_en")
