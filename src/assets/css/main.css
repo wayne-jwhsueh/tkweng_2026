@@ -421,6 +421,15 @@ a {
   margin: 0 auto 0.5rem;
 }
 
+.news-cover-image {
+  width: 100%;
+  max-width: 640px;
+  height: auto;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  margin-bottom: 1.25rem;
+}
+
 .about-intro .about-award {
   width: 100%;
   margin-top: 0.75rem;

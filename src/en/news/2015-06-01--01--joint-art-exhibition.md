@@ -14,7 +14,7 @@ coverAlt: Poster image for the July 2015 joint exhibition
 permalink: "/en/news/2015-06-01--01--joint-art-exhibition/"
 ---
 
-This entry is migrated from the 2016 archive.
+<img class="news-cover-image" src="/images/news/news_0005_eng.jpg" alt="Poster image for the July 2015 joint exhibition" loading="lazy" />
 
 - Date: July 3, 2015 to July 15, 2015
 - Venue: CCM Canada at Crystal Mall (2nd Floor), Burnaby

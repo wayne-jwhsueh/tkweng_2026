@@ -14,7 +14,7 @@ coverAlt: 2015 年聯展宣傳圖
 permalink: "/zh/news/2015-06-01--01--joint-art-exhibition/"
 ---
 
-此則消息由 2016 舊站內容遷移。
+<img class="news-cover-image" src="/images/news/news_0005.jpg" alt="2015 年聯展宣傳圖" loading="lazy" />
 
 - 時間：2015 年 7 月 3 日至 7 月 15 日
 - 地點：Crystal Mall 二樓中信中心（Burnaby）
