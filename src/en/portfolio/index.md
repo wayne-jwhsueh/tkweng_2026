@@ -19,7 +19,9 @@ permalink: "/en/portfolio/index.html"
         width="500"
         height="350"
         loading="lazy"
+        data-random-thumb="realism-thumb-pool"
       />
+      <script id="realism-thumb-pool" type="application/json">{{ portfolioGallery.realism | pluck("thumb") | json | safe }}</script>
     </div>
     <div class="card-body">
       <h2><a href="/en/portfolio/realism/">Realism</a></h2>
@@ -37,7 +39,9 @@ permalink: "/en/portfolio/index.html"
         width="500"
         height="350"
         loading="lazy"
+        data-random-thumb="abstract-thumb-pool"
       />
+      <script id="abstract-thumb-pool" type="application/json">{{ portfolioGallery.abstract | pluck("thumb") | json | safe }}</script>
     </div>
     <div class="card-body">
       <h2><a href="/en/portfolio/abstract/">Abstract</a></h2>

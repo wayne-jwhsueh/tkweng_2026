@@ -72,6 +72,7 @@ module.exports = function (eleventyConfig) {
   });
 
   eleventyConfig.addFilter("json", (value) => JSON.stringify(value));
+  eleventyConfig.addFilter("pluck", (items, key) => (items || []).map((item) => item[key]));
   eleventyConfig.addFilter("newsThumbUrl", getNewsThumbUrl);
 
   eleventyConfig.on("eleventy.before", async () => {
