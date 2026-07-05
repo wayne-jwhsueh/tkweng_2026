@@ -2,13 +2,13 @@
 layout: layouts/base.njk
 title: 服務
 lang: zh
-description: 藝術課程、委託創作、修復與諮詢服務
+description: 藝術課程、委託創作與諮詢服務
 permalink: "/zh/services/index.html"
 ---
 
 <h1>服務</h1>
 <p class="meta">
-  翁登科提供多項結合數十年專業經驗的服務，涵蓋油畫教學、委託創作、作品修復與藝術諮詢。
+  翁登科提供多項結合數十年專業經驗的服務，涵蓋油畫教學、委託創作與藝術諮詢。
   如需洽詢，請至<a href="/zh/contact/">聯絡頁面</a>。
 </p>
 
@@ -22,10 +22,6 @@ permalink: "/zh/services/index.html"
     <button class="service-tab" id="tab-commission" data-tab="commission" role="tab" aria-selected="false" aria-controls="panel-commission" tabindex="-1">
       <i class="fa-solid fa-paintbrush service-tab-icon" aria-hidden="true"></i>
       <span class="service-tab-label">委託創作</span>
-    </button>
-    <button class="service-tab" id="tab-restoration" data-tab="restoration" role="tab" aria-selected="false" aria-controls="panel-restoration" tabindex="-1">
-      <i class="fa-solid fa-toolbox service-tab-icon" aria-hidden="true"></i>
-      <span class="service-tab-label">修復與保養</span>
     </button>
     <button class="service-tab" id="tab-consultation" data-tab="consultation" role="tab" aria-selected="false" aria-controls="panel-consultation" tabindex="-1">
       <i class="fa-solid fa-comments service-tab-icon" aria-hidden="true"></i>
@@ -74,25 +70,6 @@ permalink: "/zh/services/index.html"
       </ul>
       <p class="service-panel-foot">
         每件委託均由翁登科親自處理，從構圖、尺寸到媒材皆與委託方密切溝通。
-      </p>
-    </section>
-
-    <section class="service-panel" id="panel-restoration" role="tabpanel" aria-labelledby="tab-restoration" data-panel="restoration" hidden>
-      <h2 class="service-panel-title">
-        <span class="icon-badge"><i class="fa-solid fa-toolbox" aria-hidden="true"></i></span>
-        油畫修復與保養
-      </h2>
-      <p>
-        針對老化或受損油畫提供專業修復服務，包含：
-      </p>
-      <ul class="service-list">
-        <li>表面裂縫評估與修復</li>
-        <li>畫布穩固與托裱諮詢</li>
-        <li>清漆清除與重新上漆</li>
-        <li>色彩補色與局部修整</li>
-      </ul>
-      <p class="service-panel-foot">
-        適合家傳收藏、典藏作品，或長期存放的油畫。施工前可先進行狀況評估。
       </p>
     </section>
 

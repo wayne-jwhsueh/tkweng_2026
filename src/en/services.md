@@ -2,7 +2,7 @@
 layout: layouts/base.njk
 title: Services
 lang: en
-description: Art lessons, commissioned paintings, restoration, and consultation
+description: Art lessons, commissioned paintings, and consultation
 permalink: "/en/services/index.html"
 ---
 
@@ -22,10 +22,6 @@ permalink: "/en/services/index.html"
     <button class="service-tab" id="tab-commission" data-tab="commission" role="tab" aria-selected="false" aria-controls="panel-commission" tabindex="-1">
       <i class="fa-solid fa-paintbrush service-tab-icon" aria-hidden="true"></i>
       <span class="service-tab-label">Commissioned Work</span>
-    </button>
-    <button class="service-tab" id="tab-restoration" data-tab="restoration" role="tab" aria-selected="false" aria-controls="panel-restoration" tabindex="-1">
-      <i class="fa-solid fa-toolbox service-tab-icon" aria-hidden="true"></i>
-      <span class="service-tab-label">Restoration &amp; Repair</span>
     </button>
     <button class="service-tab" id="tab-consultation" data-tab="consultation" role="tab" aria-selected="false" aria-controls="panel-consultation" tabindex="-1">
       <i class="fa-solid fa-comments service-tab-icon" aria-hidden="true"></i>
@@ -75,26 +71,6 @@ permalink: "/en/services/index.html"
       </ul>
       <p class="service-panel-foot">
         Each commission is handled personally, with close collaboration on composition, scale, and medium.
-      </p>
-    </section>
-
-    <section class="service-panel" id="panel-restoration" role="tabpanel" aria-labelledby="tab-restoration" data-panel="restoration" hidden>
-      <h2 class="service-panel-title">
-        <span class="icon-badge"><i class="fa-solid fa-toolbox" aria-hidden="true"></i></span>
-        Oil Painting Restoration and Repair
-      </h2>
-      <p>
-        Specialist care for aging and damaged oil paintings, including:
-      </p>
-      <ul class="service-list">
-        <li>Surface crack assessment and repair</li>
-        <li>Canvas stabilisation and relining consultation</li>
-        <li>Varnish removal and re-varnishing</li>
-        <li>Colour touch-up and retouching</li>
-      </ul>
-      <p class="service-panel-foot">
-        Suitable for family heirlooms, collected works, and paintings that have been in storage.
-        Condition assessment available before any work begins.
       </p>
     </section>
 
