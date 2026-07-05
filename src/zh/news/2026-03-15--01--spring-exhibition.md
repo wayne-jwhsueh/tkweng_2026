@@ -19,3 +19,6 @@ permalink: "/zh/news/2026-03-15--01--spring-exhibition/"
 - 開放時間：11:00 至 18:00
 
 開幕後將陸續補上現場照片與相關紀錄。
+
+{% from "components/back-to-news.njk" import backToNews %}
+{{ backToNews(lang, year) }}

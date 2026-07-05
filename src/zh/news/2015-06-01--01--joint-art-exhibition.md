@@ -21,3 +21,6 @@ permalink: "/zh/news/2015-06-01--01--joint-art-exhibition/"
 - 開幕茶會：7 月 6 日下午 2:00
 
 歡迎蒞臨參觀與交流。
+
+{% from "components/back-to-news.njk" import backToNews %}
+{{ backToNews(lang, year) }}

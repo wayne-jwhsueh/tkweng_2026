@@ -17,3 +17,6 @@ This volume gathers short reflections written over the past five years, focusing
 - city walks and sketch notes
 - reading and visual culture
 - the role of memory in everyday objects
+
+{% from "components/back-to-news.njk" import backToNews %}
+{{ backToNews(lang, year) }}

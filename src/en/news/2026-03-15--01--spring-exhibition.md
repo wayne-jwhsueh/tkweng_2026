@@ -19,3 +19,6 @@ Details:
 - Open hours: 11:00 to 18:00
 
 More updates and photos will be added after opening week.
+
+{% from "components/back-to-news.njk" import backToNews %}
+{{ backToNews(lang, year) }}

@@ -17,3 +17,6 @@ permalink: "/zh/news/2026-01-20--01--new-essay-collection/"
 - 城市散步與速寫筆記
 - 閱讀與視覺文化
 - 日常物件中的記憶感
+
+{% from "components/back-to-news.njk" import backToNews %}
+{{ backToNews(lang, year) }}

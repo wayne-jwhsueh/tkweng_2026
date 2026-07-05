@@ -1052,6 +1052,11 @@ a {
   color: #fff;
 }
 
+.news-entry-footer {
+  margin-top: 2.5rem;
+  text-align: right;
+}
+
 .contact-hero {
   margin: 2rem 0 1.25rem;
   padding: 1rem 1.1rem;

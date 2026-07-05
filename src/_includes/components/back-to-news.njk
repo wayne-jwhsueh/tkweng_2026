@@ -1,0 +1,3 @@
+{% macro backToNews(lang, year) %}
+<p class="news-entry-footer"><a class="btn" href="/{{ lang }}/news/{{ year }}/">{{ "Back to News" if lang == "en" else "返回消息主頁" }}</a></p>
+{% endmacro %}

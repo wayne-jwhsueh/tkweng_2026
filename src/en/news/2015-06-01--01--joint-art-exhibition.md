@@ -21,3 +21,6 @@ permalink: "/en/news/2015-06-01--01--joint-art-exhibition/"
 - Opening: July 6 at 2:00 PM
 
 Please join and support the exhibition.
+
+{% from "components/back-to-news.njk" import backToNews %}
+{{ backToNews(lang, year) }}
