@@ -63,11 +63,11 @@ permalink: "/en/services/index.html"
         Custom original paintings created to your brief. Suitable for:
       </p>
       <ul class="service-list">
-        <li>Family and personal portraits</li>
-        <li>Publication and book cover illustrations</li>
-        <li>Commemorative and gift paintings</li>
-        <li>Interior and architectural artwork</li>
-        <li>Community and institutional projects</li>
+        <li><strong>Family and Personal Portraits</strong> — Likeness-driven paintings of loved ones, pets, or milestone moments, in a medium suited to the subject and setting.</li>
+        <li><strong>Publication and Book Cover Illustrations</strong> — Original artwork created to a brief for editorial, publishing, or cover design use.</li>
+        <li><strong>Commemorative and Gift Paintings</strong> — Custom pieces marking anniversaries, retirements, or special occasions.</li>
+        <li><strong>Interior and Architectural Artwork</strong> — Paintings, sculptures, and installations scaled and themed to complement a specific room, building, or space.</li>
+        <li><strong>Community and Institutional Projects</strong> — Larger commissions for schools, businesses, or public organizations, from concept through installation.</li>
       </ul>
       <p class="service-panel-foot">
         Each commission is handled personally, with close collaboration on composition, scale, and medium.
@@ -83,11 +83,11 @@ permalink: "/en/services/index.html"
         Practical advice and guidance from an experienced professional eye, including:
       </p>
       <ul class="service-list">
-        <li>Framing and presentation recommendations</li>
-        <li>Display and lighting arrangement for home or gallery</li>
-        <li>Style and composition direction for collectors</li>
-        <li>Condition review and care advice for existing works</li>
-        <li>Art acquisition guidance</li>
+        <li><strong>Framing and Presentation Recommendations</strong> — Guidance on frame style, matting, and glazing to best present a piece.</li>
+        <li><strong>Display and Lighting Arrangement</strong> — Advice on hanging placement and lighting for a home or gallery setting.</li>
+        <li><strong>Style and Composition Direction</strong> — Input for collectors weighing new acquisitions or building a cohesive collection.</li>
+        <li><strong>Condition Review and Care Advice</strong> — Assessment of an existing work's condition and recommendations for its upkeep.</li>
+        <li><strong>Art Acquisition Guidance</strong> — Support in evaluating and selecting artwork for purchase.</li>
       </ul>
       <p class="service-panel-foot">
         Sometimes a single honest opinion makes a significant difference — as anyone who has ever
