@@ -10,7 +10,7 @@ permalink: "/zh/about/index.html"
 
 <section class="about-intro hero-card">
   <div>
-    <img class="about-portrait" src="/images/about/weng_0004.webp" alt="翁登科肖像" loading="lazy" />
+    <img class="about-portrait" src="/images/about/weng_0001__473x600.webp" alt="翁登科肖像" loading="lazy" />
     <p class="about-award">
       <img src="/images/about/award_SFCA_2016.jpg" alt="加拿大聯邦藝術家協會 SFCA 資格認證" loading="lazy" />
     </p>

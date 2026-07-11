@@ -10,7 +10,7 @@ permalink: "/en/about/index.html"
 
 <section class="about-intro hero-card">
   <div>
-    <img class="about-portrait" src="/images/about/weng_0004.webp" alt="Portrait of Teng-Ko Weng" loading="lazy" />
+    <img class="about-portrait" src="/images/about/weng_0001__473x600.webp" alt="Portrait of Teng-Ko Weng" loading="lazy" />
     <p class="about-award">
       <img src="/images/about/award_SFCA_2016.jpg" alt="Federation of Canadian Artists SFCA recognition" loading="lazy" />
     </p>
