@@ -2,7 +2,7 @@
 layout: layouts/base.njk
 title: About
 lang: en
-description: Biography and artistic journey of Teng-Ko Weng
+description: Teng-Ko Weng's life story of faith, art, and the Trinity Art Movement
 permalink: "/en/about/index.html"
 ---
 
@@ -16,32 +16,42 @@ permalink: "/en/about/index.html"
     </p>
     <p class="meta" style="text-align:center;">Federation of Canadian Artists (SFCA) Senior Member</p>
   </div>
-  <div>
+  <div class="about-copy">
     <p>
-      Teng-ko Weng, born in 1960 in Taipei, Taiwan, was raised in an orphanage.
-      To pay for his tuition, Teng-ko worked part time as a street artist and art teacher.
-      His experiences on the street exposed him to a variety of styles and mediums.
-      Teng-ko studied at the Fu Sing Trade School in Taiwan, where he graduated with a Diploma in Fine Arts in 1979.
-      When he was 20, Teng-ko fell ill to meningitis and lost part of his hearing.
-      Teng-ko owes his miraculous recovery to his Christian faith.
-      His life experiences and extensive learning process laid a profound foundation for his art career.
+      Teng-Ko Weng believes that all creation flows from a response to God's grace.
+      Born in Taipei, Taiwan in 1960, he showed artistic talent from an early age.
+      Due to his family's financial hardship, he worked while completing his education,
+      graduating in 1979 from Fu Hsing Trade and Industrial Arts School, and from that point on
+      committed himself to becoming a professional artist.
+      At the age of twenty, a serious illness brought him close to death and left him with significant hearing loss.
+      This experience became a turning point in his faith.
+      From that point on, he came to see clearly that the meaning of his life and his art lies not in what he
+      himself can accomplish, but in what God chooses to accomplish through him.
     </p>
     <p>
-      Weng's work has received critical acclaim and several first-prize awards.
-      He has published an album of his paintings, an autobiography, and a calendar with his oil paintings.
-      In 1993, he earned a religious artistic award from a Christian art organization in the United States.
-      His works are frequently shown in galleries and museums.
-      He has participated in many exhibitions, including the Second Annual Christian Arts Festival in Los Angeles,
-      and has also hosted solo exhibitions at Pang Pik Gallery, Hao Lai Art Center, Shadbolt Center,
-      Langley Centennial Museum, and Deer Lake Gallery.
+      In his younger years, he developed the ability to paint with both hands and both feet at once,
+      even holding a brush in his mouth, and was once invited to demonstrate this on Taiwanese television.
+      Looking back now, what he values is not the skill itself, but what that gift reminds him of &mdash;
+      that every ability is given to glorify the One who gives it, not to draw attention to oneself.
     </p>
     <p>
-      In 1995, Weng emigrated from Taiwan to Canada and now lives in Burnaby with his wife and three children.
-      He is a senior member of the Federation of Canadian Artists (SFCA), a member of the Burnaby Art Council,
-      and founder of the Teng-Ko Weng Art Studio.
-      In 2020, he established Glorious Arts Institute to train and mentor students.
-      With over forty years of teaching in portfolio preparation for art, design, architecture,
-      and related fields, he has helped many students enter leading universities.
+      In 1995, Teng-Ko Weng was approved by the Canadian government to immigrate under the Outstanding Artist
+      category, and now lives in Burnaby, British Columbia.
+      For more than fifty years, he has continued to respond through his art to faith, life, and the times.
+      Through the lens of his Christian faith, he has repeatedly observed how distinction, order, and unity
+      coexist within both creation and the creative process, and from this observation he has developed the
+      artistic vision of the Trinity Art Movement.
+      His works have been exhibited in Taiwan, Canada, the United States, and Malaysia, and are held in the
+      permanent collections of Taipei Veterans General Hospital and a public educational institution in
+      Langley, British Columbia.
+      He is a Senior Signature Member (SFCA) of the Federation of Canadian Artists, and in 2026, his painting
+      &ldquo;Light of Hope&rdquo; (盼望之光) received the Juror's Honourable Mention Award at the 2026 Medals
+      exhibition.
+    </p>
+    <p>
+      In 2020, he founded <a class="about-link" href="https://www.gloriousart.ca/" target="_blank" rel="noopener">Glorious Art Institute</a>, where he continues to teach and create, guiding students to
+      build not only technical skill, but a vision that sees the light of life itself.
+      It is his hope that every step of his life, whether hardship, gift, or achievement, would point toward God.
     </p>
   </div>
 </section>
@@ -50,9 +60,8 @@ permalink: "/en/about/index.html"
   <h2 class="section-title">Creative Inspiration</h2>
   <p>
     <em>
-      My painting creative artistic inspiration is to glorify the Creator of the Universe,
-      the Creator of all lives on earth, and to praise His eternal love.
-      Therefore, I believe my painting inspiration is linked to life and faith.
+      &ldquo;Artistic creation is a true expression of the life within, describing and praising the wonderful
+      and great love of the God who created the universe and all living things.&rdquo;
     </em>
   </p>
 </section>

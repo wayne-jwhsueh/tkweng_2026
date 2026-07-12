@@ -441,11 +441,59 @@ a {
   margin-top: 0.75rem;
 }
 
+.about-copy p {
+  margin: 0 0 1.15rem;
+}
+
+.about-copy p:last-child {
+  margin-bottom: 0;
+}
+
+.about-link {
+  color: var(--accent);
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-color: var(--accent-soft);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+  transition: text-decoration-color 0.15s ease, color 0.15s ease;
+}
+
+.about-link:hover,
+.about-link:focus-visible {
+  color: var(--ink);
+  text-decoration-color: var(--accent);
+}
+
+.about-copy p:first-of-type::first-letter {
+  float: left;
+  font-family: var(--serif, Georgia, "Noto Serif TC", serif);
+  font-size: 3.4rem;
+  line-height: 0.85;
+  padding: 0.1rem 0.5rem 0 0;
+  color: var(--accent);
+}
+
 .about-inspiration {
   position: relative;
   isolation: isolate;
   margin: 2rem 0 4rem;
   padding: 1.25rem 0;
+}
+
+.about-inspiration p {
+  position: relative;
+  max-width: 46rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  text-align: center;
+  font-size: 1.15rem;
+  line-height: 1.7;
+}
+
+.about-inspiration em {
+  font-style: italic;
+  color: var(--ink);
 }
 
 .about-inspiration::before {
