@@ -57,13 +57,21 @@ permalink: "/en/about/index.html"
 </section>
 
 <section class="about-inspiration">
-  <h2 class="section-title">Creative Inspiration</h2>
-  <p>
-    <em>
-      &ldquo;Artistic creation is a true expression of the life within, describing and praising the wonderful
-      and great love of the God who created the universe and all living things.&rdquo;
-    </em>
-  </p>
+  <h2 class="section-title about-inspiration-title">Creative Inspiration</h2>
+  <div class="about-inspiration-frame">
+    <div class="about-inspiration-bleed">
+      <img id="inspiration-bg" class="about-inspiration-bg" src="" alt="" role="presentation" loading="lazy" />
+    </div>
+    <blockquote class="about-inspiration-quote">
+      <p>
+        <em>
+          &ldquo;Artistic creation is a true expression of the life within, describing and praising the wonderful
+          and great love of the God who created the universe and all living things.&rdquo;
+        </em>
+      </p>
+    </blockquote>
+  </div>
+  <script id="inspiration-pool" type="application/json">{{ aboutInspirationPool | json | safe }}</script>
 </section>
 
 <section class="hero-card">

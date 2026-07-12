@@ -47,13 +47,21 @@ permalink: "/zh/about/index.html"
 </section>
 
 <section class="about-inspiration">
-  <h2 class="section-title">翁登科創作理念</h2>
-  <p>
-    <em>
-      「藝術創作是內在生命的一種真實表現，
-      表達並頌讚創造宇宙萬物之上帝的奇妙偉大之愛。」
-    </em>
-  </p>
+  <h2 class="section-title about-inspiration-title">翁登科創作理念</h2>
+  <div class="about-inspiration-frame">
+    <div class="about-inspiration-bleed">
+      <img id="inspiration-bg" class="about-inspiration-bg" src="" alt="" role="presentation" loading="lazy" />
+    </div>
+    <blockquote class="about-inspiration-quote">
+      <p>
+        <em>
+          「藝術創作是內在生命的一種真實表現，
+          表達並頌讚創造宇宙萬物之上帝的奇妙偉大之愛。」
+        </em>
+      </p>
+    </blockquote>
+  </div>
+  <script id="inspiration-pool" type="application/json">{{ aboutInspirationPool | json | safe }}</script>
 </section>
 
 <section class="hero-card">

@@ -475,19 +475,72 @@ a {
 }
 
 .about-inspiration {
-  position: relative;
-  isolation: isolate;
   margin: 2rem 0 4rem;
-  padding: 1.25rem 0;
 }
 
-.about-inspiration p {
-  position: relative;
-  max-width: 46rem;
-  margin: 0 auto;
-  padding: 0 1.5rem;
+.about-inspiration-title {
+  margin-top: 0;
+  margin-bottom: 1.75rem;
   text-align: center;
-  font-size: 1.15rem;
+}
+
+.about-inspiration-frame {
+  position: relative;
+  isolation: isolate;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  min-height: 14rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  box-shadow: inset 0 1px 0 var(--line), inset 0 -1px 0 var(--line);
+}
+
+.about-inspiration-bleed {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  z-index: -2;
+}
+
+.about-inspiration-bg {
+  position: absolute;
+  top: -30%;
+  left: 0;
+  width: 100%;
+  height: 160%;
+  margin: 0;
+  border: 0;
+  transform: translateY(var(--parallax-y, 0px));
+  object-fit: cover;
+  object-position: center;
+  opacity: 0;
+  transition: opacity 0.8s ease;
+}
+
+.about-inspiration-bg.is-visible {
+  opacity: 1;
+}
+
+.about-inspiration-quote {
+  position: relative;
+  z-index: 1;
+  width: min(34rem, calc(100% - 3rem));
+  margin: 0;
+  padding: 1.6rem 2rem;
+  background: rgba(255, 253, 249, 0.86);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border: 1px solid rgba(255, 253, 249, 0.9);
+  border-radius: 4px;
+  box-shadow: 0 1.2rem 2.5rem rgba(29, 26, 22, 0.16);
+}
+
+.about-inspiration-quote p {
+  margin: 0;
+  text-align: center;
+  font-size: 1.1rem;
   line-height: 1.7;
 }
 
@@ -496,21 +549,20 @@ a {
   color: var(--ink);
 }
 
-.about-inspiration::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 50%;
-  width: 100vw;
-  transform: translateX(-50%);
-  background: #fff;
-  box-shadow: inset 0 1px 0 var(--line), inset 0 -1px 0 var(--line);
-  z-index: -1;
+@media (prefers-reduced-motion: reduce) {
+  .about-inspiration-bg {
+    transform: translateY(0);
+  }
 }
 
-.about-inspiration .section-title {
-  margin-top: 0;
+@media (max-width: 900px) {
+  .about-inspiration-frame {
+    min-height: 16rem;
+  }
+
+  .about-inspiration-quote {
+    padding: 1.3rem 1.5rem;
+  }
 }
 
 .about-award img {
