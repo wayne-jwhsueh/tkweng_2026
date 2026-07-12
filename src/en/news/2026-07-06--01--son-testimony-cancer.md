@@ -15,6 +15,12 @@ coverAlt: Video thumbnail for Lu-Ka Weng's testimony interview
 permalink: "/en/news/2026-07-06--01--son-testimony-cancer/"
 ---
 
+<div class="news-entry-header">
+  <p class="news-entry-date">{{ date | date("yyyy-MM-dd") }}</p>
+  <h1 class="news-entry-title">{{ title }}</h1>
+  {% if author %}<p class="news-entry-author">{{ 'By' if lang == 'en' else '作者：' }} {{ author }}</p>{% endif %}
+</div>
+
 <div class="media-embed-wrap">
   <iframe
     src="https://www.youtube.com/embed/h58PUo1YTUY"

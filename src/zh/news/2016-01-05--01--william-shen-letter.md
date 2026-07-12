@@ -15,6 +15,12 @@ coverAlt: 2016 年 William Shen 相關典藏圖片
 permalink: "/zh/news/2016-01-05--01--william-shen-letter/"
 ---
 
+<div class="news-entry-header">
+  <p class="news-entry-date">{{ date | date("yyyy-MM-dd") }}</p>
+  <h1 class="news-entry-title">{{ title }}</h1>
+  {% if author %}<p class="news-entry-author">{{ 'By' if lang == 'en' else '作者：' }} {{ author }}</p>{% endif %}
+</div>
+
 <img class="news-cover-image" src="/images/news/student_williamShen_0002.jpg" alt="2016 年 William Shen 相關典藏圖片" loading="lazy" />
 
 William Shen 在信中提到，得知其作品獲得加拿大全國青年肖像競賽獎項後，首先想到的是對翁老師的感謝。內容並回顧多年學習中，從基礎訓練、創作興趣到升學方向所得到的指導與支持。

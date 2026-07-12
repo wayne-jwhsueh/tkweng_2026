@@ -1087,6 +1087,30 @@ a {
   font-size: 0.95rem;
 }
 
+.news-entry-header {
+  margin: 2rem 0 1.5rem;
+}
+
+.news-entry-date {
+  margin: 0 0 0.4rem;
+  color: var(--accent);
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.news-entry-title {
+  margin: 0 0 0.5rem;
+  font-size: 2rem;
+  line-height: 1.25;
+}
+
+.news-entry-author {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
 .news-layout {
   display: grid;
   grid-template-columns: 7rem 1fr;

@@ -11,6 +11,15 @@
     });
   }
 
+  function updateLangSwitch(year) {
+    var langSwitch = document.querySelector(".lang-switch");
+    if (!langSwitch) return;
+    langSwitch.setAttribute(
+      "href",
+      langSwitch.getAttribute("href").replace(/\/news\/\d{4}\/?$/, "/news/" + year + "/")
+    );
+  }
+
   container.addEventListener("click", function (event) {
     var tab = event.target.closest(".news-tab");
     if (!tab || tab.classList.contains("is-active")) {
@@ -33,6 +42,7 @@
 
         panel.innerHTML = newPanel.innerHTML;
         setActiveTab(year);
+        updateLangSwitch(year);
         document.title = doc.title;
         history.pushState({ year: year }, "", tab.href);
       })

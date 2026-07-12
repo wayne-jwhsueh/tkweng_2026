@@ -15,6 +15,12 @@ coverAlt: 2015 年聯展宣傳圖
 permalink: "/zh/news/2015-06-01--01--joint-art-exhibition/"
 ---
 
+<div class="news-entry-header">
+  <p class="news-entry-date">{{ date | date("yyyy-MM-dd") }}</p>
+  <h1 class="news-entry-title">{{ title }}</h1>
+  {% if author %}<p class="news-entry-author">{{ 'By' if lang == 'en' else '作者：' }} {{ author }}</p>{% endif %}
+</div>
+
 <img class="news-cover-image" src="/images/news/news_0005.jpg" alt="2015 年聯展宣傳圖" loading="lazy" />
 
 - 時間：2015 年 7 月 3 日至 7 月 15 日

@@ -16,6 +16,12 @@ coverAlt: William Shen archive photo from 2016 news
 permalink: "/en/news/2016-01-05--01--william-shen-letter/"
 ---
 
+<div class="news-entry-header">
+  <p class="news-entry-date">{{ date | date("yyyy-MM-dd") }}</p>
+  <h1 class="news-entry-title">{{ title }}</h1>
+  {% if author %}<p class="news-entry-author">{{ 'By' if lang == 'en' else '作者：' }} {{ author }}</p>{% endif %}
+</div>
+
 <img class="news-cover-image" src="/images/news/student_williamShen_0002.jpg" alt="William Shen archive photo from 2016 news" loading="lazy" />
 
 William Shen shared a letter of thanks to Mr. Weng after receiving recognition in a national young artist portrait competition in Canada. The letter highlights Mr. Weng's long-term guidance, strong technical training, and encouragement for students pursuing art pathways.
