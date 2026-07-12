@@ -3,6 +3,7 @@ layout: layouts/base.njk
 title: Guo-Zhong Qu and Teng-Ko Weng Joint Art Exhibition
 lang: en
 date: 2015-06-01
+ogType: article
 tags:
   - news_en
 summary: Announcement for a joint exhibition held at Crystal Mall, Burnaby, in July 2015.

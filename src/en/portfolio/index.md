@@ -3,6 +3,7 @@ layout: layouts/base.njk
 title: Portfolio
 lang: en
 description: Selected works and projects
+image: /images/portfolio/realism/r0001.jpg
 permalink: "/en/portfolio/index.html"
 ---
 

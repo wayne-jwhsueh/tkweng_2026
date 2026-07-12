@@ -3,6 +3,7 @@ layout: layouts/base.njk
 title: Abstract Gallery
 lang: en
 description: Abstract works by Teng-Ko Weng
+image: /images/portfolio/abstract/a0001.jpg
 permalink: "/en/portfolio/abstract/index.html"
 ---
 

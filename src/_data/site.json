@@ -6,5 +6,7 @@
   "descriptionEn": "Artist, author, and creative portfolio",
   "descriptionZh": "藝術創作與著作網站",
   "newsMainPageCount": 5,
-  "homePageNewsMaxAgeDays": 60
+  "homePageNewsMaxAgeDays": 60,
+  "url": "https://tkweng.com",
+  "defaultImage": "/images/about/weng_0001__473x600.webp"
 }

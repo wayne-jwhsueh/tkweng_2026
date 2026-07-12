@@ -4,6 +4,7 @@ title: "「小人物、大故事」神的信實在苦難中不改變——翁路
 author: 翁路加
 lang: zh
 date: 2026-07-06
+ogType: article
 tags:
   - news_zh
 summary: 翁登科老師之子翁路加弟兄分享多年抗癌歷程中的見證，述說神在苦難中不變的信實，鼓勵正經歷病痛與困境的人。

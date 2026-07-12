@@ -5,6 +5,7 @@ pagination:
   data: "collections.news_years_zh"
   size: 1
   alias: yearGroup
+  addAllPagesToCollections: true
 permalink: "/zh/news/{{ yearGroup.year }}/index.html"
 eleventyComputed:
   title: "最新消息 {{ yearGroup.year }}"

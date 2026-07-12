@@ -4,6 +4,7 @@ title: A Letter of Appreciation from William Shen
 author: William Shen
 lang: en
 date: 2016-01-05
+ogType: article
 tags:
   - news_en
 summary: A translated appreciation letter reflecting on study progress, mentorship, and major youth portrait recognition.

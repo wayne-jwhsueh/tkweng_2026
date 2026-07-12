@@ -1,0 +1,35 @@
+{% set personName = site.artistNameZh if lang == "zh" else site.artistNameEn %}
+{% set person = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": personName,
+  "url": site.url + "/" + (lang or "en") + "/about/",
+  "image": site.url + site.defaultImage,
+  "jobTitle": "Artist",
+  "sameAs": [
+    "https://www.facebook.com/tengkoweng.weng",
+    "https://www.instagram.com/tengkoweng"
+  ]
+} %}
+<script type="application/ld+json">{{ person | json | safe }}</script>
+
+{% if date and author %}
+{% set article = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": title,
+  "description": summary or description,
+  "datePublished": date | date("yyyy-MM-dd"),
+  "image": site.url + (cover or site.defaultImage),
+  "url": site.url + page.url,
+  "author": {
+    "@type": "Person",
+    "name": author
+  },
+  "publisher": {
+    "@type": "Person",
+    "name": site.artistNameZh if lang == "zh" else site.artistNameEn
+  }
+} %}
+<script type="application/ld+json">{{ article | json | safe }}</script>
+{% endif %}

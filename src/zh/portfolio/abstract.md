@@ -3,6 +3,7 @@ layout: layouts/base.njk
 title: 抽象作品集
 lang: zh
 description: 翁登科抽象作品全覽
+image: /images/portfolio/abstract/a0001.jpg
 permalink: "/zh/portfolio/abstract/index.html"
 ---
 

@@ -4,6 +4,7 @@ title: "A Son's Testimony: God's Faithfulness Through Years of Battling Cancer"
 author: Lu-Ka Weng
 lang: en
 date: 2026-07-06
+ogType: article
 tags:
   - news_en
 summary: Teng-Ko Weng's son, Lu-Ka Weng, shares his testimony of God's unchanging faithfulness through years of battling cancer, offering encouragement to others facing suffering.

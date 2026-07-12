@@ -3,6 +3,7 @@ layout: layouts/base.njk
 title: William Shen 給翁老師的一封感謝信
 lang: zh
 date: 2016-01-05
+ogType: article
 tags:
   - news_zh
 summary: 分享學生在肖像競賽獲獎後，對長期教學引導與人格榜樣的感謝。

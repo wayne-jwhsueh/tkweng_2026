@@ -3,6 +3,7 @@ layout: layouts/base.njk
 title: 寫實作品集
 lang: zh
 description: 翁登科寫實作品全覽
+image: /images/portfolio/realism/r0001.jpg
 permalink: "/zh/portfolio/realism/index.html"
 ---
 

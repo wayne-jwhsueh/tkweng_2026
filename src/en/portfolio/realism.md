@@ -3,6 +3,7 @@ layout: layouts/base.njk
 title: Realism Gallery
 lang: en
 description: Realism works by Teng-Ko Weng
+image: /images/portfolio/realism/r0001.jpg
 permalink: "/en/portfolio/realism/index.html"
 ---
 

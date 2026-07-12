@@ -3,6 +3,7 @@ layout: layouts/base.njk
 title: 作品
 lang: zh
 description: 精選作品與專案
+image: /images/portfolio/realism/r0001.jpg
 permalink: "/zh/portfolio/index.html"
 ---
 

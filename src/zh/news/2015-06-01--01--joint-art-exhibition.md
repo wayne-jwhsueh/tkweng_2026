@@ -3,6 +3,7 @@ layout: layouts/base.njk
 title: 曲國仲・翁登科 7 月聯展
 lang: zh
 date: 2015-06-01
+ogType: article
 tags:
   - news_zh
 summary: 2015 年 7 月於本拿比 Crystal Mall 舉辦之聯展公告。
