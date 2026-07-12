@@ -480,8 +480,29 @@ a {
 
 .about-inspiration-title {
   margin-top: 0;
-  margin-bottom: 1.75rem;
+  margin-bottom: 1.1rem;
+  padding-bottom: 0.9rem;
   text-align: center;
+  font-family: var(--serif, Georgia, "Noto Serif TC", serif);
+  font-style: italic;
+  font-weight: 500;
+  font-size: clamp(1.4rem, 2.6vw, 1.9rem);
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  color: var(--accent);
+  position: relative;
+}
+
+.about-inspiration-title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 3.5rem;
+  height: 2px;
+  background: var(--accent);
+  opacity: 0.6;
 }
 
 .about-inspiration-frame {
@@ -489,7 +510,8 @@ a {
   isolation: isolate;
   width: 100vw;
   margin-left: calc(50% - 50vw);
-  min-height: 14rem;
+  min-height: 22rem;
+  padding: 3rem 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -528,11 +550,11 @@ a {
   z-index: 1;
   width: min(34rem, calc(100% - 3rem));
   margin: 0;
-  padding: 1.6rem 2rem;
-  background: rgba(255, 253, 249, 0.86);
+  padding: 0.6rem 2rem 1.6rem;
+  background: rgba(255, 253, 249, 0.4);
   backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(6px);
-  border: 1px solid rgba(255, 253, 249, 0.9);
+  border: 1px solid rgba(255, 253, 249, 0.6);
   border-radius: 4px;
   box-shadow: 0 1.2rem 2.5rem rgba(29, 26, 22, 0.16);
 }
@@ -557,11 +579,12 @@ a {
 
 @media (max-width: 900px) {
   .about-inspiration-frame {
-    min-height: 16rem;
+    min-height: 20rem;
+    padding: 2.4rem 0;
   }
 
   .about-inspiration-quote {
-    padding: 1.3rem 1.5rem;
+    padding: 0.6rem 1.5rem 1.3rem;
   }
 }
 
