@@ -143,7 +143,8 @@ function loadCategory(category, labels) {
   );
 
   return imageFiles.map((fileName, index) => {
-    const thumbPath = path.join(thumbsDir, fileName);
+    const thumbFileName = `${path.parse(fileName).name}.webp`;
+    const thumbPath = path.join(thumbsDir, thumbFileName);
     const hasThumb = fs.existsSync(thumbPath);
     const id = fileId(fileName);
     const meta = categoryMeta[id] || {};
@@ -166,7 +167,7 @@ function loadCategory(category, labels) {
        id,
        src: `/images/portfolio/${category}/${fileName}`,
        thumb: hasThumb
-         ? `/images/portfolio/${category}/thumbs/${fileName}`
+         ? `/images/portfolio/${category}/thumbs/${thumbFileName}`
          : `/images/portfolio/${category}/${fileName}`,
       titleEn: details.title || `${labels.en} ${sequence}`,
       titleZh: zhTitle,

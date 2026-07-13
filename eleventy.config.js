@@ -62,6 +62,55 @@ async function generateNewsThumbnails() {
   );
 }
 
+const PORTFOLIO_ROOT = path.join(process.cwd(), "public", "images", "portfolio");
+const PORTFOLIO_CATEGORIES = ["abstract", "realism"];
+
+async function generatePortfolioThumbnails() {
+  for (const category of PORTFOLIO_CATEGORIES) {
+    const categoryDir = path.join(PORTFOLIO_ROOT, category);
+    const thumbsDir = path.join(categoryDir, "thumbs");
+
+    let imageEntries = [];
+    try {
+      imageEntries = await fs.readdir(categoryDir, { withFileTypes: true });
+    } catch (error) {
+      if (error && error.code !== "ENOENT") {
+        console.warn(`Unable to read portfolio images directory for ${category}.`, error);
+      }
+      continue;
+    }
+
+    const sourceFiles = imageEntries.filter(
+      (entry) => entry.isFile() && /\.(jpe?g|png|webp)$/i.test(entry.name)
+    );
+
+    if (!sourceFiles.length) {
+      continue;
+    }
+
+    await fs.mkdir(thumbsDir, { recursive: true });
+
+    await Promise.all(
+      sourceFiles.map(async (entry) => {
+        const parsed = path.parse(entry.name);
+        const inputPath = path.join(categoryDir, entry.name);
+        const outputPath = path.join(thumbsDir, `${parsed.name}.webp`);
+
+        await sharp(inputPath)
+          .resize({
+            width: 600,
+            height: 600,
+            fit: "cover",
+            position: "centre"
+          })
+          .sharpen({ sigma: 0.6 })
+          .webp({ quality: 82 })
+          .toFile(outputPath);
+      })
+    );
+  }
+}
+
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ "src/assets": "assets" });
   eleventyConfig.addPassthroughCopy({ "public/images": "images" });
@@ -77,6 +126,7 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.on("eleventy.before", async () => {
     await generateNewsThumbnails();
+    await generatePortfolioThumbnails();
   });
 
   eleventyConfig.addFilter("previewExcerpt", function (value, maxWords) {
