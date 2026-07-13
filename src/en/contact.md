@@ -2,18 +2,15 @@
 layout: layouts/base.njk
 title: Contact
 lang: en
-description: Contact and social channels
+description: Studio locations and contact information
 permalink: "/en/contact/index.html"
 ---
 
 <h1>Contact</h1>
 <section class="contact-hero">
   <p class="contact-lead">
-    For classes, exhibition collaboration, and artwork inquiries, please contact by email or social channels.
+    Reach us at either of our two Metro Vancouver studios.
   </p>
-  <div class="contact-social">
-    {% include "components/social-links.njk" %}
-  </div>
 </section>
 
 <section class="contact-grid" aria-label="Studio contacts">

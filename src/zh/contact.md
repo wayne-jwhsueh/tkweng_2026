@@ -2,18 +2,15 @@
 layout: layouts/base.njk
 title: 聯絡
 lang: zh
-description: 聯絡方式與社群平台
+description: 工作室地點與聯絡方式
 permalink: "/zh/contact/index.html"
 ---
 
 <h1>聯絡</h1>
 <section class="contact-hero">
   <p class="contact-lead">
-    如需課程諮詢、展覽合作或作品相關詢問，歡迎透過電子郵件或社群平台聯絡。
+    我們在大溫哥華地區設有兩間工作室，歡迎就近洽詢。
   </p>
-  <div class="contact-social">
-    {% include "components/social-links.njk" %}
-  </div>
 </section>
 
 <section class="contact-grid" aria-label="工作室聯絡資訊">
