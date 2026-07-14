@@ -73,7 +73,7 @@
       "description": "Daybreak / Acrylic"
     },
     "R0019": {
-      "saleStatus": "F",
+      "saleStatus": "T",
       "description": "Dragon Boat Festival Food / Oil"
     },
     "R0020": {
@@ -85,7 +85,7 @@
       "description": "Loaves & Cup / 15F / Oil on Canvas"
     },
     "R0022": {
-      "saleStatus": "T",
+      "saleStatus": "F",
       "description": "Pot & Fruits / 10F / Oil on Canvas"
     },
     "R0023": {
@@ -105,7 +105,7 @@
       "description": "Love Follows / 16x20 / Acrylic"
     },
     "R0027": {
-      "saleStatus": "F",
+      "saleStatus": "T",
       "description": "Cup Overflows / 30\"x30\" / Oil"
     },
     "R0028": {
@@ -113,7 +113,7 @@
       "description": "Be of One Mind / 2014 / 30\"x30\" / Oil"
     },
     "R0029": {
-      "saleStatus": "F",
+      "saleStatus": "T",
       "description": "Cornerstones / 2014 / 30\"x30\" / Oil"
     },
     "R0030": {
@@ -137,13 +137,13 @@
       "description": "My Lovely Wife / 20\"x17\" / Pastel"
     },
     "R0035": {
-      "saleStatus": "F",
+      "saleStatus": "T",
       "description": "Cornerstones / Oil"
     }
   },
   "abstract": {
     "A0001": {
-      "saleStatus": "F",
+      "saleStatus": "T",
       "description": "In the Beginning / 2006 / 28.6\"x23.8\" / Acrylic on Canvas"
     },
     "A0002": {
@@ -155,11 +155,11 @@
       "description": "Cloud In The Sky / 2006 / 28.6\"x23.8\" / Acrylic on Canvas"
     },
     "A0004": {
-      "saleStatus": "F",
+      "saleStatus": "T",
       "description": "Grace / 2006 / 28.6\"x23.8\" / Acrylic on Canvas"
     },
     "A0005": {
-      "saleStatus": "F",
+      "saleStatus": "T",
       "description": "The Heavens Speak / 2006 / 28.6\"x23.8\" / Acrylic on Canvas"
     },
     "A0006": {
@@ -171,11 +171,11 @@
       "description": "River From Rock / 2003 / 18\"x14\" / Acrylic on Canvas"
     },
     "A0008": {
-      "saleStatus": "F",
+      "saleStatus": "T",
       "description": "Shelter / 2006 / 25.9\"x28.6\" / Acrylic on Canvas"
     },
     "A0009": {
-      "saleStatus": "F",
+      "saleStatus": "T",
       "description": "Flower and Grass / 2003 / 18\"x14\" / Acrylic on Canvas"
     },
     "A0010": {
@@ -187,15 +187,15 @@
       "description": "Garden / 2006 / 45.9\"x35.7\" / Acrylic on Canvas"
     },
     "A0012": {
-      "saleStatus": "F",
+      "saleStatus": "T",
       "description": "Prodigal Son / 2006 / 45.9\"x35.7\" / Oil on Canvas"
     },
     "A0013": {
-      "saleStatus": "F",
+      "saleStatus": "T",
       "description": "Prayer / 1986 / 39.3\"x28.6\" / Oil on Canvas"
     },
     "A0014": {
-      "saleStatus": "F",
+      "saleStatus": "T",
       "description": "Carry The Cross / 2013 / 116.70cm x 90.90cm / Acrylic"
     },
     "A0015": {
@@ -207,7 +207,7 @@
       "description": "Light Of The World / 39x31.5 / Acrylic"
     },
     "A0017": {
-      "saleStatus": "F",
+      "saleStatus": "T",
       "description": "Piercing the Darkness / 24x19 / Acrylic"
     },
     "A0018": {
@@ -219,19 +219,19 @@
       "description": "Prayer / 2013 / Acrylics / 91.30x72.80cm"
     },
     "A0020": {
-      "saleStatus": "F",
+      "saleStatus": "T",
       "description": "Rebirth / 44x57 / Oil"
     },
     "A0021": {
-      "saleStatus": "F",
+      "saleStatus": "T",
       "description": "The Colors of Autumn / 12\"x12\" / Acrylic"
     },
     "A0022": {
-      "saleStatus": "F",
+      "saleStatus": "T",
       "description": "Life the Fiery Furnace / 44\"x57\" / Oil"
     },
     "A0023": {
-      "saleStatus": "F",
+      "saleStatus": "T",
       "description": "Marine Pollution / 16\"x16\" / Acrylics"
     },
     "A0024": {
@@ -251,35 +251,35 @@
       "description": "Lashes / 1993 / 50F / Oil"
     },
     "A0028": {
-      "saleStatus": "F",
+      "saleStatus": "T",
       "description": "Loss / 1983 / 54.5x39.5cm / Pastel"
     },
     "A0029": {
-      "saleStatus": "F",
+      "saleStatus": "T",
       "description": "The Cross / 1985 / 54.5x39.5cm / Acrylic"
     },
     "A0030": {
-      "saleStatus": "F",
+      "saleStatus": "T",
       "description": "Carry the Cross / 1987 / 162x130cm / Oil"
     },
     "A0031": {
-      "saleStatus": "F",
+      "saleStatus": "T",
       "description": "A Warm Embrace / 1993 / 116.5ｘ91.0cm / Oil"
     },
     "A0032": {
-      "saleStatus": "F",
+      "saleStatus": "T",
       "description": "Doubt / 1993 / 116.5ｘ91.0cm / Oil"
     },
     "A0033": {
-      "saleStatus": "F",
+      "saleStatus": "T",
       "description": "Global Warming / 6\"x9\" / Acrylic on Canvas"
     },
     "A0034": {
-      "saleStatus": "F",
+      "saleStatus": "T",
       "description": "Wave in the Heart / 5\" x 7\" / Acrylic"
     },
     "R0035": {
-      "saleStatus": "F",
+      "saleStatus": "T",
       "description": "Humbleness / Oil"
     }
   }
