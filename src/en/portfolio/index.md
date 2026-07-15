@@ -16,14 +16,14 @@ permalink: "/en/portfolio/index.html"
       <div class="media-frame">
         <img
           class="card-media"
-          src="{{ portfolioGallery.realism[0].thumb if portfolioGallery.realism[0] else '/images/placeholder.jpg' }}"
+          src="{{ portfolioGallery.realismForRandom[0].thumb if portfolioGallery.realismForRandom[0] else '/images/placeholder.jpg' }}"
           alt="Realism gallery cover"
           width="500"
           height="350"
           loading="lazy"
           data-random-thumb="realism-thumb-pool"
         />
-        <script id="realism-thumb-pool" type="application/json">{{ portfolioGallery.realism | pluck("thumb") | json | safe }}</script>
+        <script id="realism-thumb-pool" type="application/json">{{ portfolioGallery.realismForRandom | pluck("thumb") | json | safe }}</script>
       </div>
       <div class="card-body">
         <h2>Realism</h2>
@@ -38,14 +38,14 @@ permalink: "/en/portfolio/index.html"
       <div class="media-frame">
         <img
           class="card-media"
-          src="{{ portfolioGallery.abstract[0].thumb if portfolioGallery.abstract[0] else '/images/placeholder.jpg' }}"
+          src="{{ portfolioGallery.abstractForRandom[0].thumb if portfolioGallery.abstractForRandom[0] else '/images/placeholder.jpg' }}"
           alt="Abstract gallery cover"
           width="500"
           height="350"
           loading="lazy"
           data-random-thumb="abstract-thumb-pool"
         />
-        <script id="abstract-thumb-pool" type="application/json">{{ portfolioGallery.abstract | pluck("thumb") | json | safe }}</script>
+        <script id="abstract-thumb-pool" type="application/json">{{ portfolioGallery.abstractForRandom | pluck("thumb") | json | safe }}</script>
       </div>
       <div class="card-body">
         <h2>Abstract</h2>

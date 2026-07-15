@@ -1,7 +1,7 @@
 const portfolioGallery = require("./portfolioGallery.js");
 
 module.exports = [
-  ...portfolioGallery.realism.map((art) => ({
+  ...portfolioGallery.realismForRandom.map((art) => ({
     id: art.id,
     src: art.src,
     titleEn: art.titleEn,
@@ -9,7 +9,7 @@ module.exports = [
     galleryPageEn: "/en/portfolio/realism/",
     galleryPageZh: "/zh/portfolio/realism/"
   })),
-  ...portfolioGallery.abstract.map((art) => ({
+  ...portfolioGallery.abstractForRandom.map((art) => ({
     id: art.id,
     src: art.src,
     titleEn: art.titleEn,

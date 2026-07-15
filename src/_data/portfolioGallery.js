@@ -81,6 +81,18 @@ const legacyZhTitleMap = {
 
 const PORTFOLIO_ROOT = path.join(process.cwd(), "public", "images", "portfolio");
 
+// Images excluded from every image randomizer on the site (hero, portfolio
+// hub thumbs, about inspiration parallax) — still shown in the full gallery listings.
+const RANDOM_EXCLUDE_IDS = new Set([
+  "R0032",
+  "A0031",
+  "A0028",
+  "A0009",
+  "A0004",
+  "A0005",
+  "A0006"
+]);
+
 function fileId(fileName) {
   return path.parse(fileName).name.toUpperCase();
 }
@@ -182,7 +194,12 @@ function loadCategory(category, labels) {
   });
 }
 
+const realism = loadCategory("realism", { en: "Realism", zh: "寫實" });
+const abstract = loadCategory("abstract", { en: "Abstract", zh: "抽象" });
+
 module.exports = {
-  realism: loadCategory("realism", { en: "Realism", zh: "寫實" }),
-  abstract: loadCategory("abstract", { en: "Abstract", zh: "抽象" })
+  realism,
+  abstract,
+  realismForRandom: realism.filter((art) => !RANDOM_EXCLUDE_IDS.has(art.id)),
+  abstractForRandom: abstract.filter((art) => !RANDOM_EXCLUDE_IDS.has(art.id))
 };
