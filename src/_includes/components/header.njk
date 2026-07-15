@@ -22,6 +22,7 @@
       {% endif %}
       <a href="/zh/" {% if currentUrl == '/zh/' %}class="is-active" aria-current="page"{% endif %}>首頁</a>
       <a href="/zh/about/" {% if currentUrl.startsWith('/zh/about/') %}class="is-active" aria-current="page"{% endif %}>關於</a>
+      <a href="/zh/cv/" {% if currentUrl.startsWith('/zh/cv/') %}class="is-active" aria-current="page"{% endif %}>年表</a>
       <div class="nav-item has-submenu">
         <a href="/zh/portfolio/" {% if currentUrl.startsWith('/zh/portfolio/') %}class="is-active" aria-current="page"{% endif %}>作品</a>
         <div class="submenu" role="menu" aria-label="作品子選單">
@@ -47,6 +48,7 @@
       {% endif %}
       <a href="/en/" {% if currentUrl == '/en/' %}class="is-active" aria-current="page"{% endif %}>Home</a>
       <a href="/en/about/" {% if currentUrl.startsWith('/en/about/') %}class="is-active" aria-current="page"{% endif %}>About</a>
+      <a href="/en/cv/" {% if currentUrl.startsWith('/en/cv/') %}class="is-active" aria-current="page"{% endif %}>CV</a>
       <div class="nav-item has-submenu">
         <a href="/en/portfolio/" {% if currentUrl.startsWith('/en/portfolio/') %}class="is-active" aria-current="page"{% endif %}>Portfolio</a>
         <div class="submenu" role="menu" aria-label="Portfolio submenu">
