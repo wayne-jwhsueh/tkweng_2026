@@ -25,11 +25,11 @@ permalink: "/zh/cv/index.html"
     </div>
     <div class="cv-badge">
       <span class="cv-badge-year">2020年至今</span>
-      <span class="cv-badge-text">真光藝術學院創辦人</span>
+      <span class="cv-badge-text"><a href="https://www.gloriousart.ca/" target="_blank" rel="noopener">真光藝術學院</a>創辦人</span>
     </div>
     <div class="cv-badge">
       <span class="cv-badge-year">&nbsp;</span>
-      <span class="cv-badge-text">多次受邀擔任加拿大藝術家聯會展覽評審</span>
+      <span class="cv-badge-text">多次受邀擔任<br />加拿大藝術家聯會展覽評審</span>
     </div>
   </div>
 </section>

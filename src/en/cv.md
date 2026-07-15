@@ -25,7 +25,7 @@ permalink: "/en/cv/index.html"
     </div>
     <div class="cv-badge">
       <span class="cv-badge-year">2020&ndash;Present</span>
-      <span class="cv-badge-text">Founder, Glorious Art Institute, British Columbia, Canada</span>
+      <span class="cv-badge-text">Founder, <a href="https://www.gloriousart.ca/" target="_blank" rel="noopener">Glorious Art Institute</a>, British Columbia, Canada</span>
     </div>
     <div class="cv-badge">
       <span class="cv-badge-year">&nbsp;</span>

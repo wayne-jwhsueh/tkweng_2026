@@ -1771,32 +1771,61 @@ a {
 }
 
 .cv-badge {
-  background: var(--paper);
-  border: 1px solid var(--line);
+  position: relative;
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.14), rgba(255, 255, 255, 0) 40%),
+    linear-gradient(155deg, #a15940 0%, #8b4c39 45%, #5c3125 100%);
+  border: 1px solid rgba(217, 183, 171, 0.35);
   border-radius: 14px;
   padding: 1rem 1.2rem;
-  box-shadow: 0 6px 20px rgba(29, 26, 22, 0.04);
+  box-shadow: 0 10px 26px rgba(60, 30, 20, 0.28), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  overflow: hidden;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .cv-badge:hover {
   transform: translateY(-3px);
-  box-shadow: 0 10px 26px rgba(29, 26, 22, 0.09);
+  box-shadow: 0 14px 32px rgba(60, 30, 20, 0.34), inset 0 1px 0 rgba(255, 255, 255, 0.12);
 }
 
 .cv-badge-year {
   display: block;
+  font-weight: 600;
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.cv-badge .cv-badge-year {
+  color: #e9c9a8;
+  margin-bottom: 0.55rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid rgba(245, 221, 206, 0.28);
+}
+
+.cv-education-line .cv-badge-year {
   color: var(--accent);
-  font-weight: 700;
-  font-size: 0.82rem;
-  letter-spacing: 0.03em;
-  margin-bottom: 0.35rem;
 }
 
 .cv-badge-text {
   display: block;
-  color: var(--ink);
-  font-size: 0.95rem;
+  color: #faf4ec;
+  font-size: 1.04rem;
+  font-weight: 600;
+  line-height: 1.45;
+  letter-spacing: 0.01em;
+}
+
+.cv-badge-text a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: rgba(245, 221, 206, 0.55);
+  text-underline-offset: 3px;
+  transition: text-decoration-color 0.2s ease;
+}
+
+.cv-badge-text a:hover {
+  text-decoration-color: #f5ddce;
 }
 
 .cv-timeline {
