@@ -37,11 +37,11 @@ permalink: "/en/cv/index.html"
 <section class="cv-section">
   <h2 class="section-title"><i class="fa-solid fa-timeline cv-section-icon" aria-hidden="true"></i>Exhibition History</h2>
   <ol class="cv-timeline">
-    <li class="cv-timeline-item cv-timeline-featured">
-      <span class="cv-timeline-dot" aria-hidden="true"><i class="fa-solid fa-star"></i></span>
+    <li class="cv-timeline-item cv-timeline-award">
+      <span class="cv-timeline-dot" aria-hidden="true"><i class="fa-solid fa-trophy"></i></span>
       <div class="cv-timeline-body">
         <span class="cv-timeline-year">2026</span>
-        <p>2026 Medals Exhibition, Federation Gallery, Vancouver &mdash; <strong><em>Light of Hope</em>, Honourable Mention</strong></p>
+        <p>2026 Medals Exhibition, Federation Gallery, Vancouver &mdash; <em>Light of Hope</em>, Honourable Mention</p>
       </div>
     </li>
     <li class="cv-timeline-item">

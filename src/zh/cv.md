@@ -37,11 +37,11 @@ permalink: "/zh/cv/index.html"
 <section class="cv-section">
   <h2 class="section-title"><i class="fa-solid fa-timeline cv-section-icon" aria-hidden="true"></i>展覽與獎項年表</h2>
   <ol class="cv-timeline">
-    <li class="cv-timeline-item cv-timeline-featured">
-      <span class="cv-timeline-dot" aria-hidden="true"><i class="fa-solid fa-star"></i></span>
+    <li class="cv-timeline-item cv-timeline-award">
+      <span class="cv-timeline-dot" aria-hidden="true"><i class="fa-solid fa-trophy"></i></span>
       <div class="cv-timeline-body">
         <span class="cv-timeline-year">2026</span>
-        <p>2026年獎章展，聯邦畫廊，溫哥華　—　<strong>《盼望之光》獲評審團榮譽獎</strong></p>
+        <p>2026年獎章展，聯邦畫廊，溫哥華　—　《盼望之光》獲評審團榮譽獎</p>
       </div>
     </li>
     <li class="cv-timeline-item">
