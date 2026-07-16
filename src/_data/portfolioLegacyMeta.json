@@ -94,7 +94,7 @@
     },
     "R0024": {
       "saleStatus": "T",
-      "description": "Plentiful Harvest / 16x20 Acrylic"
+      "description": "A Plentiful Harvest / 16x20 / Acrylic"
     },
     "R0025": {
       "saleStatus": "T",
@@ -277,10 +277,6 @@
     "A0034": {
       "saleStatus": "T",
       "description": "Wave in the Heart / 5\" x 7\" / Acrylic"
-    },
-    "R0035": {
-      "saleStatus": "T",
-      "description": "Humbleness / Oil"
     }
   }
 }

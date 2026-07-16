@@ -160,6 +160,51 @@ News pages stay flat (no deep folders). Media sections such as Videos/Audios are
 	 - `permalink`
 4. Upload image to `public/images/portfolio/`
 
+### Processing New Artwork Photos (`scripts/process-portfolio-image.js`)
+
+Raw photos from the artist (phone/camera shots of paintings) are usually too
+large for the site and have no copyright protection. Use this script to
+prepare them before dropping them into `public/images/portfolio/`.
+
+**Purpose:**
+
+- Resizes the image so its longest edge is capped at 1800px (never upscales
+  a smaller source)
+- Auto-orients and strips EXIF metadata (removes GPS/camera data some phones
+  embed)
+- Composites a small, semi-transparent `© Teng-Ko Weng` watermark into the
+  bottom-right corner
+- Re-encodes as a JPEG (quality 82, progressive) with the correct lowercase
+  filename Eleventy expects (e.g. `r0036.jpg`)
+
+**Usage:**
+
+```bash
+node scripts/process-portfolio-image.js <sourcePath> <category> <id> [--no-watermark]
+```
+
+- `sourcePath` — path to the raw photo (any filename/extension)
+- `category` — `realism` or `abstract`
+- `id` — target artwork ID, e.g. `r0036` (lowercase; becomes the filename)
+- `--no-watermark` — optional, skips the watermark step
+
+Example:
+
+```bash
+node scripts/process-portfolio-image.js "C:\Users\me\Downloads\R0036 - New Painting.jpg" realism r0036
+```
+
+This writes `public/images/portfolio/realism/r0036.jpg`. Thumbnails are
+generated automatically from that file on the next `npm run build` / `npm run dev`
+(see `generatePortfolioThumbnails()` in `eleventy.config.js`) — no manual
+thumbnail step needed.
+
+**Important:** Since this repository is public, never commit an
+un-watermarked full-resolution image. Keep the raw/original photos only in a
+private location outside the repo (e.g. local disk, private cloud storage) —
+this script's output (with the watermark baked in) is the only version that
+should ever be committed.
+
 ## Image Randomizers
 
 Several spots on the site pick a random image from the portfolio instead of a fixed one:
