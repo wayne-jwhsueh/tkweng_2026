@@ -29,6 +29,10 @@ permalink: "/zh/cv/index.html"
     </div>
     <div class="cv-badge">
       <span class="cv-badge-year">&nbsp;</span>
+      <span class="cv-badge-text">曾任實踐大學推廣教育中心繪畫講師，並執教於台北市YMCA、YWCA，深耕美術教育多年</span>
+    </div>
+    <div class="cv-badge">
+      <span class="cv-badge-year">&nbsp;</span>
       <span class="cv-badge-text">多次受邀擔任<br />加拿大藝術家聯會展覽評審</span>
     </div>
   </div>
@@ -166,7 +170,7 @@ permalink: "/zh/cv/index.html"
       <span class="cv-timeline-dot" aria-hidden="true"><i class="fa-solid fa-trophy"></i></span>
       <div class="cv-timeline-body">
         <span class="cv-timeline-year">1993</span>
-        <p>油畫個展，好來藝術中心，台北　—　同年獲基督教湯清文藝獎宗教藝術獎</p>
+        <p>油畫個展，好來藝術中心，台北　—　同年獲美國基督教湯清文藝獎．宗教藝術繪畫獎</p>
       </div>
     </li>
     <li class="cv-timeline-item">

@@ -23,7 +23,7 @@ permalink: "/en/index.html"
     <p class="hero-eyebrow">{{ site.artistNameEn }} &nbsp;&middot;&nbsp; Artist</p>
     <h1>Painting with<br>Light and Faith</h1>
     <p class="hero-desc">
-      Nearly five decades in painting and beyond &mdash; exhibited internationally.
+      Wholehearted devotion to art &mdash; exhibited internationally.
     </p>
     <div class="cta-row">
       <a class="btn btn-primary" href="/en/portfolio/">View Portfolio</a>

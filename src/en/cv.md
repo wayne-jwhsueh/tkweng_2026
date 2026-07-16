@@ -12,7 +12,7 @@ permalink: "/en/cv/index.html"
     <p class="cv-masthead-role">Teng-Ko Weng &middot; Painter | British Columbia, Canada</p>
   </div>
   <div class="cv-masthead-seal">
-    <img src="/images/about/award_SFCA_2016.jpg" alt="Federation of Canadian Artists SFCA Senior Signature Member recognition" loading="lazy" />
+    <img src="/images/about/award_SFCA_2016.jpg" alt="Federation of Canadian Artists SFCA Senior Fellow member recognition" loading="lazy" />
   </div>
 </section>
 
@@ -21,11 +21,15 @@ permalink: "/en/cv/index.html"
   <div class="cv-badges">
     <div class="cv-badge">
       <span class="cv-badge-year">2016&ndash;Present</span>
-      <span class="cv-badge-text">Senior Signature Member, Federation of Canadian Artists (SFCA)</span>
+      <span class="cv-badge-text">Senior Fellow member, Federation of Canadian Artists (SFCA)</span>
     </div>
     <div class="cv-badge">
       <span class="cv-badge-year">2020&ndash;Present</span>
       <span class="cv-badge-text">Founder, <a href="https://www.gloriousart.ca/" target="_blank" rel="noopener">Glorious Art Institute</a>, British Columbia, Canada</span>
+    </div>
+    <div class="cv-badge">
+      <span class="cv-badge-year">&nbsp;</span>
+      <span class="cv-badge-text">Former painting instructor at Shih Chien University's continuing education center, and taught for many years at the YMCA and YWCA in Taipei</span>
     </div>
     <div class="cv-badge">
       <span class="cv-badge-year">&nbsp;</span>
@@ -55,7 +59,7 @@ permalink: "/en/cv/index.html"
       <span class="cv-timeline-dot" aria-hidden="true"></span>
       <div class="cv-timeline-body">
         <span class="cv-timeline-year">2026</span>
-        <p>Annual International Representational Exhibition, Federation Gallery, Vancouver</p>
+        <p>Annual International Representative Exhibition (AIRE), Federation Gallery, Vancouver</p>
       </div>
     </li>
 
@@ -106,14 +110,14 @@ permalink: "/en/cv/index.html"
       <span class="cv-timeline-dot" aria-hidden="true"><i class="fa-solid fa-trophy"></i></span>
       <div class="cv-timeline-body">
         <span class="cv-timeline-year">2013</span>
-        <p>Annual International Representational Exhibition, Federation Gallery, Vancouver &mdash; Best Still Life Award</p>
+        <p>AIRS International Representative Exhibition, Federation Gallery, Vancouver &mdash; Best Still Life Award</p>
       </div>
     </li>
     <li class="cv-timeline-item">
       <span class="cv-timeline-dot" aria-hidden="true"></span>
       <div class="cv-timeline-body">
         <span class="cv-timeline-year">2012</span>
-        <p>Teng-Ko Weng Teacher-Student Exhibition, Regent Plaza Chinese Christian Centre, Vancouver</p>
+        <p>Teng-Ko Weng and Students Exhibition, Regent Plaza Chinese Cultural Centre, Vancouver</p>
       </div>
     </li>
 
@@ -122,7 +126,7 @@ permalink: "/en/cv/index.html"
       <span class="cv-timeline-dot" aria-hidden="true"></span>
       <div class="cv-timeline-body">
         <span class="cv-timeline-year">2009</span>
-        <p>Teng-Ko Weng Teacher-Student Exhibition, Chinese Christian Centre, Burnaby</p>
+        <p>Teng-Ko Weng and Students Exhibition, Burnaby Chinese Cultural Centre</p>
       </div>
     </li>
     <li class="cv-timeline-item">
@@ -136,7 +140,7 @@ permalink: "/en/cv/index.html"
       <span class="cv-timeline-dot" aria-hidden="true"></span>
       <div class="cv-timeline-body">
         <span class="cv-timeline-year">2003</span>
-        <p>Solo Exhibition and New Works Preview, Cornerstone Gallery, Malaysia</p>
+        <p>Solo Exhibition and New Works Unveiling, Cornerstone Gallery, Malaysia</p>
       </div>
     </li>
     <li class="cv-timeline-item">
@@ -152,21 +156,21 @@ permalink: "/en/cv/index.html"
       <span class="cv-timeline-dot" aria-hidden="true"></span>
       <div class="cv-timeline-body">
         <span class="cv-timeline-year">1995</span>
-        <p>Solo Oil Painting Exhibition, Yong Ya Tang Gallery, Taipei</p>
+        <p>Solo Oil Painting Exhibition, Long Life Art Gallery, Taipei</p>
       </div>
     </li>
     <li class="cv-timeline-item">
       <span class="cv-timeline-dot" aria-hidden="true"></span>
       <div class="cv-timeline-body">
         <span class="cv-timeline-year">1994</span>
-        <p>Solo Oil Painting Exhibition, Yong Ya Tang Gallery, Taipei</p>
+        <p>Solo Oil Painting Exhibition, Long Life Art Gallery, Taipei</p>
       </div>
     </li>
     <li class="cv-timeline-item cv-timeline-award">
       <span class="cv-timeline-dot" aria-hidden="true"><i class="fa-solid fa-trophy"></i></span>
       <div class="cv-timeline-body">
         <span class="cv-timeline-year">1993</span>
-        <p>Solo Oil Painting Exhibition, How-Lai Art Center, Taipei &mdash; Religious Art Award, Tang Ching Christian Literature and Art Awards</p>
+        <p>Solo Oil Painting Exhibition, Hollywood Art Center, Taipei &mdash; same year, received the American Christian Thomas Tang Literary and Art Award, Religious Art Painting Award</p>
       </div>
     </li>
     <li class="cv-timeline-item">

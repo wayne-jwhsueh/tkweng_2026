@@ -23,7 +23,7 @@ permalink: "/zh/index.html"
     <p class="hero-eyebrow">{{ site.artistNameZh }} &nbsp;&middot;&nbsp; 畫家</p>
     <h1>光與信仰<br>交織的筆觸</h1>
     <p class="hero-desc">
-      近半世紀的繪畫創作，及更多元的藝術探索，作品展出足跡遍及國際。
+      全心投入藝術創作，作品展出足跡遍及國際。
     </p>
     <div class="cta-row">
       <a class="btn btn-primary" href="/zh/portfolio/">瀏覽作品</a>

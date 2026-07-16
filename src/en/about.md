@@ -40,11 +40,11 @@ permalink: "/en/about/index.html"
       For more than fifty years, he has continued to respond through his art to faith, life, and the times.
       Through the lens of his Christian faith, he has repeatedly observed how distinction, order, and unity
       coexist within both creation and the creative process, and from this observation he has developed the
-      artistic vision of the Trinity Art Movement.
+      artistic philosophy of Trinitas Pictura, the Trinity Art Movement.
       His works have been exhibited in Taiwan, Canada, the United States, and Malaysia, and are held in the
-      permanent collections of Taipei Veterans General Hospital and a public educational institution in
-      Langley, British Columbia.
-      He is a Senior Signature Member (SFCA) of the Federation of Canadian Artists, and in 2026, his painting
+      permanent collections of Taipei Veterans General Hospital (sculpture) and a public educational institution in
+      Langley, British Columbia (painting).
+      He is a Senior Fellow member (SFCA) of the Federation of Canadian Artists, and in 2026, his painting
       &ldquo;Light of Hope&rdquo; (盼望之光) received the Juror's Honourable Mention Award at the 2026 Medals
       exhibition.
     </p>
