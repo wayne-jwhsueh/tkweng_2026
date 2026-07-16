@@ -22,27 +22,41 @@ Modern bilingual static website for tkweng.com, built with Eleventy.
 src/
 	_data/
 		site.json
+		portfolioGallery.js
+		heroPool.js
+		aboutInspirationPool.js
 	_includes/
 		layouts/
 			base.njk
 		components/
 			header.njk
 			footer.njk
+			news-cards.njk
+			social-links.njk
+			back-to-news.njk
+		partials/
+			seo.njk
+			structured-data.njk
 	assets/
 		css/
 			main.css
+		js/
 	en/
 		index.md
 		about.md
+		cv.md
 		services.md
 		contact.md
+		media.md
 		news/
 		portfolio/
 	zh/
 		index.md
 		about.md
+		cv.md
 		services.md
 		contact.md
+		media.md
 		news/
 		portfolio/
 public/
@@ -145,6 +159,28 @@ News pages stay flat (no deep folders). Media sections such as Videos/Audios are
 	 - `cover`
 	 - `permalink`
 4. Upload image to `public/images/portfolio/`
+
+## Image Randomizers
+
+Several spots on the site pick a random image from the portfolio instead of a fixed one:
+
+- **Hero background** (homepage) — `src/_data/heroPool.js` + `src/assets/js/hero-random.js`
+- **About page inspiration parallax image** — `src/_data/aboutInspirationPool.js` + `src/assets/js/about-inspiration-parallax.js`
+- **Portfolio hub thumbnails** — `src/assets/js/portfolio-thumb-random.js` (reads pools embedded per-thumb via `data-random-thumb`)
+
+All three pools are derived from `src/_data/portfolioGallery.js`, which builds the full `realism`/`abstract` artwork lists from `public/images/portfolio/` and also exports filtered `realismForRandom` / `abstractForRandom` versions.
+
+### Exclusion List
+
+`portfolioGallery.js` has a `RANDOM_EXCLUDE_IDS` set (artwork IDs like `R0032`, `A0031`, etc.) — images in this set are skipped by every randomizer but still appear normally in the full portfolio gallery pages. Use this to keep specific pieces (e.g. sold, sensitive, or lower-quality-photo works) out of random rotation without removing them from the gallery.
+
+To exclude/include an image from random rotation, edit the `RANDOM_EXCLUDE_IDS` set in `src/_data/portfolioGallery.js`. The ID is the uppercased image filename (without extension), e.g. `public/images/portfolio/abstract/a0004.jpg` → `A0004`.
+
+### Notes for Future Maintenance
+
+- Adding a new portfolio image automatically makes it eligible for all randomizers unless its ID is added to `RANDOM_EXCLUDE_IDS`.
+- Randomization happens client-side (pools are serialized to JSON in the page and picked via `Math.random()` in the browser), so the same page load is consistent but differs between visits/reloads.
+- `legacyZhTitleMap` and `portfolioLegacyMeta.json` in `src/_data/` hold migrated per-artwork metadata (titles, sale status, description) keyed by the same uppercased ID — keep IDs consistent across these files when renaming/adding images.
 
 ## GitHub Pages Deployment
 
