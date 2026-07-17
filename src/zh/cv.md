@@ -12,7 +12,7 @@ permalink: "/zh/cv/index.html"
     <p class="cv-masthead-role">翁登科 &middot; 畫家｜加拿大卑詩省</p>
   </div>
   <div class="cv-masthead-seal">
-    <img src="/images/about/award_SFCA_2016.jpg" alt="加拿大藝術家聯會 SFCA 資深簽名會員認證" loading="lazy" />
+    <img src="/images/about/award_SFCA_2016.jpg" alt="加拿大藝術家聯會 SFCA 資深會員認證" loading="lazy" />
   </div>
 </section>
 
@@ -21,7 +21,7 @@ permalink: "/zh/cv/index.html"
   <div class="cv-badges">
     <div class="cv-badge">
       <span class="cv-badge-year">2016年至今</span>
-      <span class="cv-badge-text">加拿大藝術家聯會資深簽名會員（SFCA）</span>
+      <span class="cv-badge-text">加拿大藝術家聯會資深會員（SFCA）</span>
     </div>
     <div class="cv-badge">
       <span class="cv-badge-year">2020年至今</span>

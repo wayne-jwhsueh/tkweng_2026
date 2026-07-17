@@ -12,7 +12,7 @@ permalink: "/zh/about/index.html"
   <div>
     <img class="about-portrait" src="/images/about/weng_0001__473x600.webp" alt="翁登科肖像" loading="lazy" />
     <p class="about-award">
-      <img src="/images/about/award_SFCA_2016.jpg" alt="加拿大藝術家聯會 SFCA 資格認證" loading="lazy" />
+      <img src="/images/about/award_SFCA_2016.jpg" alt="加拿大藝術家聯會 SFCA 資深會員認證" loading="lazy" />
     </p>
     <p class="meta" style="text-align:center;">加拿大藝術家聯會 SFCA 最高榮譽資深藝術家</p>
   </div>
@@ -36,7 +36,7 @@ permalink: "/zh/about/index.html"
       透過信仰的眼光，他反覆看見創作與受造世界中，差異、次序與合一三者同時並存的痕跡，
       並將這份觀察發展為「三一畫派 Trinity Art Movement」的藝術理念。
       作品曾於台灣、加拿大、美國與馬來西亞展出，並獲台北榮民總醫院（雕塑）與卑詩省蘭里一所公立教育機構
-      （繪畫）等單位永久收藏。他是加拿大藝術家聯會資深簽名會員（SFCA），2026年，作品《盼望之光》於加拿大
+      （繪畫）等單位永久收藏。他是加拿大藝術家聯會資深會員（SFCA），2026年，作品《盼望之光》於加拿大
       藝術家聯會主辦的「2026年獎章展」中，榮獲評審團榮譽獎。
     </p>
     <p>
