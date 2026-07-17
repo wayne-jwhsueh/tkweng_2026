@@ -9,7 +9,6 @@ permalink: "/zh/portfolio/abstract/index.html"
 
 <h1>抽象</h1>
 <p class="meta">抽象作品完整檔案。點擊任一作品可開啟燈箱檢視。</p>
-<p><a class="btn" href="/zh/portfolio/">返回作品總覽</a></p>
 
 <section class="art-gallery" data-gallery tabindex="-1" aria-label="抽象作品畫廊">
   <div class="art-grid">
@@ -44,3 +43,5 @@ permalink: "/zh/portfolio/abstract/index.html"
     {% endfor %}
   </div>
 </section>
+
+<p class="portfolio-back-footer"><a class="btn btn-primary" href="/zh/portfolio/">返回作品總覽</a></p>

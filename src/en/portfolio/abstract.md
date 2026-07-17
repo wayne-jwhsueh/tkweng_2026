@@ -9,7 +9,6 @@ permalink: "/en/portfolio/abstract/index.html"
 
 <h1>Abstract</h1>
 <p class="meta">A full archive of abstract works. Click any artwork to view in lightbox mode.</p>
-<p><a class="btn" href="/en/portfolio/">Back to Portfolio</a></p>
 
 <section class="art-gallery" data-gallery tabindex="-1" aria-label="Abstract artwork gallery">
   <div class="art-grid">
@@ -44,3 +43,5 @@ permalink: "/en/portfolio/abstract/index.html"
     {% endfor %}
   </div>
 </section>
+
+<p class="portfolio-back-footer"><a class="btn btn-primary" href="/en/portfolio/">Back to Portfolio</a></p>
