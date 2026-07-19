@@ -19,11 +19,15 @@ document.querySelectorAll("[data-gallery]").forEach((gallery) => {
 
   const dataSource = items.map((btn) => ({
     src: btn.dataset.full || btn.dataset.thumb,
-    msrc: btn.dataset.thumb,
+    // No msrc: the gallery thumbnail is a fixed square crop, but artwork
+    // aspect ratios vary. PhotoSwipe stretches msrc uniformly assuming it
+    // matches the full image's aspect ratio, so a square placeholder for a
+    // non-square artwork visibly "pops" to the right shape once the full
+    // image loads. Omitting it uses a plain placeholder sized to the real
+    // width/height instead, so there's nothing to pop.
     width: Number(btn.dataset.width) || 1600,
     height: Number(btn.dataset.height) || 1200,
     alt: btn.dataset.title || "",
-    cropped: true,
     _year: btn.dataset.year || "",
     _size: btn.dataset.size || "",
     _medium: btn.dataset.medium || "",
@@ -43,7 +47,29 @@ document.querySelectorAll("[data-gallery]").forEach((gallery) => {
       const img = btn.querySelector("img");
       if (!img) return;
       const rect = img.getBoundingClientRect();
-      return { x: rect.left, y: rect.top + window.scrollY, w: rect.width };
+      const imageWidth = Number(btn.dataset.width) || rect.width;
+      const imageHeight = Number(btn.dataset.height) || rect.height;
+
+      // Thumbnail is cropped via object-fit: cover, so replicate PhotoSwipe's
+      // own cropped-bounds math (fill the thumb box, center-crop) rather than
+      // just returning the thumb's raw box — otherwise the opening animation
+      // starts from the wrong shape/position and visibly "pops" once
+      // PhotoSwipe recalculates the real bounds.
+      const fillZoomLevel = Math.max(rect.width / imageWidth, rect.height / imageHeight);
+      const offsetX = (rect.width - imageWidth * fillZoomLevel) / 2;
+      const offsetY = (rect.height - imageHeight * fillZoomLevel) / 2;
+
+      return {
+        x: rect.left + offsetX,
+        y: rect.top + offsetY,
+        w: imageWidth * fillZoomLevel,
+        innerRect: {
+          w: rect.width,
+          h: rect.height,
+          x: offsetX,
+          y: offsetY,
+        },
+      };
     },
   });
 
