@@ -85,7 +85,7 @@
       "description": "Loaves & Cup / 15F / Oil on Canvas"
     },
     "R0022": {
-      "saleStatus": "F",
+      "saleStatus": "T",
       "description": "Pot & Fruits / 10F / Oil on Canvas"
     },
     "R0023": {
@@ -139,6 +139,10 @@
     "R0035": {
       "saleStatus": "T",
       "description": "Cornerstones / Oil"
+    },
+    "R0036": {
+      "saleStatus": "F",
+      "description": "Light of Hope / 2026 / 30\"x40\" / Acrylic on Canvas"
     }
   },
   "abstract": {
