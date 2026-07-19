@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /**
  * Resize, strip metadata from, and watermark a source photo of an artwork,
- * then write it into public/images/portfolio/<category>/<id>.jpg.
+ * then write it into public/images/portfolio/<category>/<id>.webp.
  *
  * Usage:
  *   node scripts/process-portfolio-image.js <sourcePath> <category> <id> [--no-watermark]
@@ -14,7 +14,7 @@ const path = require("path");
 const sharp = require("sharp");
 
 const MAX_DIMENSION = 1800;
-const JPEG_QUALITY = 82;
+const WEBP_QUALITY = 82;
 const WATERMARK_TEXT = "© Teng-Ko Weng";
 
 function buildWatermarkSvg(width, height) {
@@ -42,7 +42,7 @@ function buildWatermarkSvg(width, height) {
 
 async function processPortfolioImage(sourcePath, category, id, { watermark = true } = {}) {
   const outputDir = path.join(process.cwd(), "public", "images", "portfolio", category);
-  const outputPath = path.join(outputDir, `${id.toLowerCase()}.jpg`);
+  const outputPath = path.join(outputDir, `${id.toLowerCase()}.webp`);
 
   const sourceMeta = await sharp(sourcePath).rotate().metadata();
   const sourceWidth = sourceMeta.width;
@@ -64,7 +64,7 @@ async function processPortfolioImage(sourcePath, category, id, { watermark = tru
   }
 
   await fs.mkdir(outputDir, { recursive: true });
-  await pipeline.jpeg({ quality: JPEG_QUALITY, progressive: true }).toFile(outputPath);
+  await pipeline.webp({ quality: WEBP_QUALITY }).toFile(outputPath);
 
   return outputPath;
 }

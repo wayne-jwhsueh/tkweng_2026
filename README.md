@@ -174,8 +174,8 @@ prepare them before dropping them into `public/images/portfolio/`.
   embed)
 - Composites a small, semi-transparent `© Teng-Ko Weng` watermark into the
   bottom-right corner
-- Re-encodes as a JPEG (quality 82, progressive) with the correct lowercase
-  filename Eleventy expects (e.g. `r0036.jpg`)
+- Re-encodes as a WebP (quality 82, matching the site's thumbnail compression)
+  with the correct lowercase filename Eleventy expects (e.g. `r0036.webp`)
 
 **Usage:**
 
@@ -194,7 +194,7 @@ Example:
 node scripts/process-portfolio-image.js "C:\Users\me\Downloads\R0036 - New Painting.jpg" realism r0036
 ```
 
-This writes `public/images/portfolio/realism/r0036.jpg`. Thumbnails are
+This writes `public/images/portfolio/realism/r0036.webp`. Thumbnails are
 generated automatically from that file on the next `npm run build` / `npm run dev`
 (see `generatePortfolioThumbnails()` in `eleventy.config.js`) — no manual
 thumbnail step needed.
