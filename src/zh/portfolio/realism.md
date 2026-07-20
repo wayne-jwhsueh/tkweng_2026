@@ -25,7 +25,7 @@ permalink: "/zh/portfolio/realism/index.html"
       data-year="{{ art.year }}"
       data-size="{{ art.size }}"
       data-medium="{{ art.medium }}"
-      data-status="{{ art.saleStatus }}"
+      data-private="{{ 'true' if art.privateCollection else 'false' }}"
       data-width="{{ art.width }}"
       data-height="{{ art.height }}"
       aria-label="開啟 {{ art.titleZh }}"
@@ -37,12 +37,11 @@ permalink: "/zh/portfolio/realism/index.html"
         onerror="this.onerror=null;this.src='/images/placeholder.jpg'"
       />
       <span class="art-label">{{ art.id }}</span>
-      <span class="art-status art-status-{{ art.saleStatus | lower }}">
-        {% if art.saleStatus == 'T' %}已售{% elseif art.saleStatus == 'F' %}可洽購{% else %}畫家珍藏{% endif %}
-      </span>
     </button>
     {% endfor %}
   </div>
 </section>
+
+<p class="portfolio-contact-note">作品收藏、展覽及合作邀請，歡迎<a href="/zh/contact/">與藝術家聯絡</a>。</p>
 
 <p class="portfolio-back-footer"><a class="btn btn-primary" href="/zh/portfolio/">返回作品總覽</a></p>

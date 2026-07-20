@@ -25,7 +25,7 @@ permalink: "/en/portfolio/abstract/index.html"
       data-year="{{ art.year }}"
       data-size="{{ art.size }}"
       data-medium="{{ art.medium }}"
-      data-status="{{ art.saleStatus }}"
+      data-private="{{ 'true' if art.privateCollection else 'false' }}"
       data-width="{{ art.width }}"
       data-height="{{ art.height }}"
       aria-label="Open {{ art.titleEn }}"
@@ -37,12 +37,11 @@ permalink: "/en/portfolio/abstract/index.html"
         onerror="this.onerror=null;this.src='/images/placeholder.jpg'"
       />
       <span class="art-label">{{ art.id }}</span>
-      <span class="art-status art-status-{{ art.saleStatus | lower }}">
-        {% if art.saleStatus == 'T' %}Sold{% elseif art.saleStatus == 'F' %}For Sale{% else %}Artist Collection{% endif %}
-      </span>
     </button>
     {% endfor %}
   </div>
 </section>
+
+<p class="portfolio-contact-note">For collection, exhibition, or collaboration inquiries, please feel free to <a href="/en/contact/">contact the artist</a>.</p>
 
 <p class="portfolio-back-footer"><a class="btn btn-primary" href="/en/portfolio/">Back to Portfolio</a></p>

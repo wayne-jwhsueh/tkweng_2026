@@ -3,10 +3,7 @@ import PhotoSwipe from "/assets/js/photoswipe.esm.min.js";
 
 const pageLang = document.documentElement.lang === "zh" ? "zh" : "en";
 
-const statusLabels = {
-  en: { T: "Sold", F: "For Sale", N: "Artist Collection" },
-  zh: { T: "已售", F: "可洽購", N: "畫家珍藏" },
-};
+const privateCollectionLabel = { en: "Private Collection", zh: "私人收藏" };
 
 const metaLabels = {
   en: { year: "Year", size: "Size", medium: "Medium", status: "Status" },
@@ -49,13 +46,12 @@ document.querySelectorAll("[data-gallery]").forEach((gallery) => {
     _year: btn.dataset.year || "",
     _size: btn.dataset.size || "",
     _medium: btn.dataset.medium || "",
-    _status: btn.dataset.status || "N",
+    _privateCollection: btn.dataset.private === "true",
     _desc: descMap[btn.dataset.id] || "",
   }));
 
   const lang = pageLang;
   const labels = metaLabels[lang];
-  const statusMap = statusLabels[lang];
 
   const lightbox = new PhotoSwipeLightbox({
     pswpModule: PhotoSwipe,
@@ -105,17 +101,19 @@ document.querySelectorAll("[data-gallery]").forEach((gallery) => {
         function updateCaption() {
           const item = pswp.currSlide && pswp.currSlide.data;
           if (!item) return;
-          const statusText = statusMap[item._status] || statusMap["N"];
+          const statusLi = item._privateCollection
+            ? `<li><span>${labels.status}</span><strong>${privateCollectionLabel[lang]}</strong></li>`
+            : "";
           el.innerHTML = `<div class="pswp-caption">
   <div class="pswp-caption-title">
     <span class="pswp-caption-name">${item.alt}</span>
     <span class="pswp-caption-count">${pswp.currIndex + 1}\u2009/\u2009${dataSource.length}</span>
   </div>
-  <ul class="pswp-meta-list">
+  <ul class="pswp-meta-list${item._privateCollection ? "" : " pswp-meta-list--3col"}">
     <li><span>${labels.year}</span><strong>${item._year || "\u2014"}</strong></li>
     <li><span>${labels.size}</span><strong>${item._size || "\u2014"}</strong></li>
     <li><span>${labels.medium}</span><strong>${item._medium || "\u2014"}</strong></li>
-    <li><span>${labels.status}</span><strong>${statusText}</strong></li>
+    ${statusLi}
   </ul>
 </div>`;
         }

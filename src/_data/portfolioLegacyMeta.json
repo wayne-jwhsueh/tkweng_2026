@@ -126,6 +126,7 @@
     },
     "R0032": {
       "saleStatus": "N",
+      "privateCollection": true,
       "description": "My Grandma / 1985 / 89x59cm / Pastel"
     },
     "R0033": {
@@ -134,6 +135,7 @@
     },
     "R0034": {
       "saleStatus": "N",
+      "privateCollection": true,
       "description": "My Lovely Wife / 20\"x17\" / Pastel"
     },
     "R0035": {
@@ -242,6 +244,7 @@
     },
     "A0024": {
       "saleStatus": "N",
+      "privateCollection": true,
       "description": "Prayer at Gethsemane / 16x20 / Acrylics"
     },
     "A0025": {
@@ -283,6 +286,9 @@
     "A0034": {
       "saleStatus": "T",
       "description": "Wave in the Heart / 5\" x 7\" / Acrylic"
+    },
+    "A0035": {
+      "privateCollection": true
     }
   }
 }

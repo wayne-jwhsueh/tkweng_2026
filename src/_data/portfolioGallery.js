@@ -193,6 +193,7 @@ function loadCategory(category, labels) {
       descEn: meta.descEn || "",
       descZh: meta.descZh || "",
       saleStatus: meta.saleStatus || "N",
+      privateCollection: meta.privateCollection === true,
       width: imgWidth,
       height: imgHeight
     };
