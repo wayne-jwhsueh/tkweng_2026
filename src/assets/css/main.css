@@ -893,9 +893,11 @@ a {
 }
 
 .pswp-desc-panel-inner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
   max-width: 32rem;
   max-height: 100%;
-  overflow-y: auto;
   padding: 1.2rem 1.4rem;
   background: rgba(12, 9, 7, 0.96);
   border: 1px solid #3b3127;
@@ -906,20 +908,25 @@ a {
   cursor: auto;
 }
 
-.pswp-desc-panel-inner a {
+.pswp-desc-panel-body {
+  overflow-y: auto;
+  min-height: 0;
+}
+
+.pswp-desc-panel-body a {
   color: var(--accent-soft);
   text-decoration: underline;
 }
 
-.pswp-desc-panel-inner a:hover,
-.pswp-desc-panel-inner a:focus-visible {
+.pswp-desc-panel-body a:hover,
+.pswp-desc-panel-body a:focus-visible {
   color: #f4ece0;
 }
 
 .pswp-desc-panel-close {
   position: absolute;
-  top: 0.9rem;
-  right: 0.9rem;
+  top: -0.9rem;
+  right: -0.9rem;
   width: 2.3rem;
   height: 2.3rem;
   display: flex;
@@ -941,17 +948,23 @@ a {
 }
 
 /* Info toggle button: distinct warm accent color (default PhotoSwipe icons
-   are all off-white) plus a soft repeating ripple so it reads as a
-   noticeable call-to-action rather than blending in with zoom/close/arrows.
-   The ripple is drawn on a small circular ::after sized/positioned to match
-   the drawn "i" circle exactly (the button itself is a 50x60 rectangle, not
-   square, so animating its own box-shadow would stretch into an oval and
-   start well outside the icon's actual edge). */
+   are all off-white), enlarged for visibility, plus a soft repeating ripple
+   so it reads as a noticeable call-to-action rather than blending in with
+   zoom/close/arrows. The ripple is drawn on a circular ::after
+   sized/positioned to match the drawn "i" circle exactly (the button itself
+   is widened to fit the bigger icon, not square, so animating its own
+   box-shadow would stretch into an oval and start well outside the icon's
+   actual edge). */
 .pswp__button--artwork-desc-toggle {
   opacity: 1;
+  width: 64px;
 }
 
 .pswp__button--artwork-desc-toggle .pswp__icn {
+  top: 8px;
+  left: 10px;
+  width: 44px;
+  height: 44px;
   fill: #f4c98a;
   color: #f4c98a;
 }
@@ -960,10 +973,10 @@ a {
   content: "";
   position: absolute;
   top: 30px;
-  left: 25px;
-  width: 22px;
-  height: 22px;
-  margin: -11px 0 0 -11px;
+  left: 32px;
+  width: 30px;
+  height: 30px;
+  margin: -15px 0 0 -15px;
   border-radius: 50%;
   pointer-events: none;
   animation: pswp-desc-ping 2.2s ease-out infinite;
@@ -974,7 +987,7 @@ a {
     box-shadow: 0 0 0 0 rgba(244, 201, 138, 0.6);
   }
   100% {
-    box-shadow: 0 0 0 8px rgba(244, 201, 138, 0);
+    box-shadow: 0 0 0 18px rgba(244, 201, 138, 0);
   }
 }
 

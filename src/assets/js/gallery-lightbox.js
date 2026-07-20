@@ -159,8 +159,10 @@ document.querySelectorAll("[data-gallery]").forEach((gallery) => {
           const item = pswp.currSlide && pswp.currSlide.data;
           el.classList.remove("is-open");
           el.innerHTML = item && item._desc
-            ? `<button type="button" class="pswp-desc-panel-close" aria-label="${descCloseLabels[lang]}">&times;</button>`
-              + `<div class="pswp-desc-panel-inner">${item._desc}</div>`
+            ? `<div class="pswp-desc-panel-inner">`
+              + `<button type="button" class="pswp-desc-panel-close" aria-label="${descCloseLabels[lang]}">&times;</button>`
+              + `<div class="pswp-desc-panel-body">${item._desc}</div>`
+              + `</div>`
             : "";
         }
         pswp.on("change", updateDescPanel);
