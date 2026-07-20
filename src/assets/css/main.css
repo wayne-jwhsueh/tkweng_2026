@@ -860,6 +860,124 @@ a {
   text-overflow: ellipsis;
 }
 
+.pswp__artwork-desc-panel {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4.5rem 1.2rem;
+  background: rgba(8, 6, 5, 0.6);
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+/* PhotoSwipe's own .pswp .pswp__hide-on-close rule (2-class specificity, in
+   photoswipe.css) sets z-index: 10, opacity: 1 and pointer-events: auto
+   whenever the UI chrome is visible, which would both show this panel (and
+   let it intercept clicks) immediately on open, and cap it level with the
+   top bar/arrows (also z-index: 10, DOM order would then decide the
+   winner). Match that selector's specificity here (loaded after
+   photoswipe.css, so this wins ties) to keep the panel closed by default
+   and reliably above the rest of the UI, as a true modal layer, once
+   .is-open is toggled. */
+.pswp__artwork-desc-panel.pswp__hide-on-close {
+  z-index: 20;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.pswp__artwork-desc-panel.is-open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.pswp-desc-panel-inner {
+  max-width: 32rem;
+  max-height: 100%;
+  overflow-y: auto;
+  padding: 1.2rem 1.4rem;
+  background: rgba(12, 9, 7, 0.96);
+  border: 1px solid #3b3127;
+  border-radius: 12px;
+  color: #f4ece0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  cursor: auto;
+}
+
+.pswp-desc-panel-inner a {
+  color: var(--accent-soft);
+  text-decoration: underline;
+}
+
+.pswp-desc-panel-inner a:hover,
+.pswp-desc-panel-inner a:focus-visible {
+  color: #f4ece0;
+}
+
+.pswp-desc-panel-close {
+  position: absolute;
+  top: 0.9rem;
+  right: 0.9rem;
+  width: 2.3rem;
+  height: 2.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 1px solid #3b3127;
+  background: rgba(26, 21, 16, 0.92);
+  color: #f4ece0;
+  font-size: 1.5rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.pswp-desc-panel-close:hover,
+.pswp-desc-panel-close:focus-visible {
+  background: rgba(26, 21, 16, 1);
+  color: var(--accent-soft);
+}
+
+/* Info toggle button: distinct warm accent color (default PhotoSwipe icons
+   are all off-white) plus a soft repeating ripple so it reads as a
+   noticeable call-to-action rather than blending in with zoom/close/arrows.
+   The ripple is drawn on a small circular ::after sized/positioned to match
+   the drawn "i" circle exactly (the button itself is a 50x60 rectangle, not
+   square, so animating its own box-shadow would stretch into an oval and
+   start well outside the icon's actual edge). */
+.pswp__button--artwork-desc-toggle {
+  opacity: 1;
+}
+
+.pswp__button--artwork-desc-toggle .pswp__icn {
+  fill: #f4c98a;
+  color: #f4c98a;
+}
+
+.pswp__button--artwork-desc-toggle::after {
+  content: "";
+  position: absolute;
+  top: 30px;
+  left: 25px;
+  width: 22px;
+  height: 22px;
+  margin: -11px 0 0 -11px;
+  border-radius: 50%;
+  pointer-events: none;
+  animation: pswp-desc-ping 2.2s ease-out infinite;
+}
+
+@keyframes pswp-desc-ping {
+  0% {
+    box-shadow: 0 0 0 0 rgba(244, 201, 138, 0.6);
+  }
+  100% {
+    box-shadow: 0 0 0 8px rgba(244, 201, 138, 0);
+  }
+}
+
 .card {
   background: var(--paper);
   border: 1px solid var(--line);
@@ -1711,6 +1829,15 @@ a {
 
   .pswp__artwork-caption {
     padding: 2.5rem 0.8rem 0.75rem;
+  }
+
+  .pswp__artwork-desc-panel {
+    padding: 3.5rem 0.8rem;
+  }
+
+  .pswp-desc-panel-inner {
+    padding: 1rem;
+    font-size: 0.9rem;
   }
 }
 

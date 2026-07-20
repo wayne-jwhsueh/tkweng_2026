@@ -11,6 +11,7 @@ permalink: "/en/portfolio/realism/index.html"
 <p class="meta">A full archive of realism works. Click any artwork to view in lightbox mode.</p>
 
 <section class="art-gallery" data-gallery tabindex="-1" aria-label="Realism artwork gallery">
+  <script type="application/json" data-gallery-descriptions>{{ portfolioGallery.realismDescEn | json | safe }}</script>
   <div class="art-grid">
     {% for art in portfolioGallery.realism %}
     <button

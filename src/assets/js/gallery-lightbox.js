@@ -13,9 +13,27 @@ const metaLabels = {
   zh: { year: "年份", size: "尺寸", medium: "媒材", status: "狀態" },
 };
 
+const descToggleLabels = {
+  en: "Show description",
+  zh: "顯示描述",
+};
+
+const descCloseLabels = {
+  en: "Close description",
+  zh: "關閉描述",
+};
+
 document.querySelectorAll("[data-gallery]").forEach((gallery) => {
   const items = Array.from(gallery.querySelectorAll("[data-gallery-item]"));
   if (!items.length) return;
+
+  const descMapScript = gallery.querySelector("[data-gallery-descriptions]");
+  let descMap = {};
+  try {
+    descMap = descMapScript ? JSON.parse(descMapScript.textContent || "{}") : {};
+  } catch (_) {
+    descMap = {};
+  }
 
   const dataSource = items.map((btn) => ({
     src: btn.dataset.full || btn.dataset.thumb,
@@ -32,6 +50,7 @@ document.querySelectorAll("[data-gallery]").forEach((gallery) => {
     _size: btn.dataset.size || "",
     _medium: btn.dataset.medium || "",
     _status: btn.dataset.status || "N",
+    _desc: descMap[btn.dataset.id] || "",
   }));
 
   const lang = pageLang;
@@ -73,7 +92,9 @@ document.querySelectorAll("[data-gallery]").forEach((gallery) => {
     },
   });
 
-  // Custom bottom caption bar with artwork metadata
+  // Custom bottom caption bar with artwork metadata, plus a toggleable
+  // description panel (only for items that have a descEn/descZh) shown on
+  // top of the image rather than inline, since descriptions can be long.
   lightbox.on("uiRegister", () => {
     lightbox.pswp.ui.registerElement({
       name: "artwork-caption",
@@ -99,6 +120,76 @@ document.querySelectorAll("[data-gallery]").forEach((gallery) => {
 </div>`;
         }
         pswp.on("change", updateCaption);
+      },
+    });
+
+    let descPanelEl = null;
+
+    lightbox.pswp.ui.registerElement({
+      name: "artwork-desc-panel",
+      order: 8,
+      isButton: false,
+      appendTo: "root",
+      onInit: (el, pswp) => {
+        el.classList.add("pswp-desc-panel");
+        descPanelEl = el;
+
+        function closeDescPanel() {
+          el.classList.remove("is-open");
+        }
+
+        // Backdrop click (anywhere that isn't the text box or its contents,
+        // e.g. a link) closes the panel, same as an explicit close button.
+        el.addEventListener("click", (e) => {
+          if (e.target === el || e.target.closest(".pswp-desc-panel-close")) {
+            closeDescPanel();
+          }
+        });
+
+        // PhotoSwipe attaches an unconditional wheel listener on its root
+        // element that always preventDefault()s to pan/zoom the image —
+        // stopping propagation here (before it bubbles that far) both keeps
+        // the background image still and lets the browser natively scroll
+        // the description text normally.
+        el.addEventListener("wheel", (e) => {
+          e.stopPropagation();
+        });
+
+        function updateDescPanel() {
+          const item = pswp.currSlide && pswp.currSlide.data;
+          el.classList.remove("is-open");
+          el.innerHTML = item && item._desc
+            ? `<button type="button" class="pswp-desc-panel-close" aria-label="${descCloseLabels[lang]}">&times;</button>`
+              + `<div class="pswp-desc-panel-inner">${item._desc}</div>`
+            : "";
+        }
+        pswp.on("change", updateDescPanel);
+      },
+    });
+
+    lightbox.pswp.ui.registerElement({
+      name: "artwork-desc-toggle",
+      title: descToggleLabels[lang],
+      ariaLabel: descToggleLabels[lang],
+      order: 8,
+      isButton: true,
+      html: {
+        isCustomSVG: true,
+        inner: '<circle cx="16" cy="16" r="11" fill="none" stroke="currentColor" stroke-width="2"/>'
+          + '<line x1="16" y1="14.5" x2="16" y2="22" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>'
+          + '<circle cx="16" cy="10" r="1.6" fill="currentColor"/>',
+        outlineID: "pswp__icn-desc",
+      },
+      onClick: () => {
+        if (descPanelEl) descPanelEl.classList.toggle("is-open");
+      },
+      onInit: (el, pswp) => {
+        function updateVisibility() {
+          const item = pswp.currSlide && pswp.currSlide.data;
+          el.style.display = item && item._desc ? "" : "none";
+        }
+        pswp.on("change", updateVisibility);
+        updateVisibility();
       },
     });
   });

@@ -11,6 +11,7 @@ permalink: "/en/portfolio/abstract/index.html"
 <p class="meta">A full archive of abstract works. Click any artwork to view in lightbox mode.</p>
 
 <section class="art-gallery" data-gallery tabindex="-1" aria-label="Abstract artwork gallery">
+  <script type="application/json" data-gallery-descriptions>{{ portfolioGallery.abstractDescEn | json | safe }}</script>
   <div class="art-grid">
     {% for art in portfolioGallery.abstract %}
     <button

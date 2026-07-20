@@ -226,6 +226,7 @@ To exclude/include an image from random rotation, edit the `RANDOM_EXCLUDE_IDS` 
 - Adding a new portfolio image automatically makes it eligible for all randomizers unless its ID is added to `RANDOM_EXCLUDE_IDS`.
 - Randomization happens client-side (pools are serialized to JSON in the page and picked via `Math.random()` in the browser), so the same page load is consistent but differs between visits/reloads.
 - `legacyZhTitleMap` and `portfolioLegacyMeta.json` in `src/_data/` hold migrated per-artwork metadata (titles, sale status, description) keyed by the same uppercased ID — keep IDs consistent across these files when renaming/adding images.
+- Add an optional `descEn` / `descZh` string field to any entry in `portfolioLegacyMeta.json` to give that artwork a longer description/story. When set, a small toggle button appears in the lightbox toolbar for that artwork; clicking it reveals the description in a panel over the image. Items without these fields show no toggle button. These fields may contain raw HTML (e.g. `<a href="...">read more here</a>`) — the HTML is rendered as-is, not escaped, so keep it valid and trusted (never paste unsanitized user input here), and avoid the literal text `</script>` inside the value. Keep `descEn`/`descZh` in sync when both are set, per the site's bilingual content rule.
 
 ## GitHub Pages Deployment
 

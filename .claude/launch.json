@@ -7,6 +7,12 @@
       "runtimeArgs": ["run", "dev", "--", "--port=8123"],
       "port": 8123,
       "autoPort": true
+    },
+    {
+      "name": "static",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["serve", "_site", "-l", "8124"],
+      "port": 8124
     }
   ]
 }

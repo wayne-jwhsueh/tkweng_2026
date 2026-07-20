@@ -86,6 +86,8 @@ const PORTFOLIO_ROOT = path.join(process.cwd(), "public", "images", "portfolio")
 // hub thumbs, about inspiration parallax) — still shown in the full gallery listings.
 const RANDOM_EXCLUDE_IDS = new Set([
   "R0032",
+  "R0033",
+  "R0034",
   "A0031",
   "A0028",
   "A0009",
@@ -188,11 +190,23 @@ function loadCategory(category, labels) {
       size: details.size,
       medium: details.medium,
       legacyDescription: meta.description || "",
+      descEn: meta.descEn || "",
+      descZh: meta.descZh || "",
       saleStatus: meta.saleStatus || "N",
       width: imgWidth,
       height: imgHeight
     };
   });
+}
+
+// Builds an id -> description lookup containing only artworks that have one,
+// so the emitted per-page JSON stays small and templates need no conditional logic.
+function buildDescMap(items, field) {
+  const map = {};
+  items.forEach((art) => {
+    if (art[field]) map[art.id] = art[field];
+  });
+  return map;
 }
 
 const realism = loadCategory("realism", { en: "Realism", zh: "寫實" });
@@ -202,5 +216,9 @@ module.exports = {
   realism,
   abstract,
   realismForRandom: realism.filter((art) => !RANDOM_EXCLUDE_IDS.has(art.id)),
-  abstractForRandom: abstract.filter((art) => !RANDOM_EXCLUDE_IDS.has(art.id))
+  abstractForRandom: abstract.filter((art) => !RANDOM_EXCLUDE_IDS.has(art.id)),
+  realismDescEn: buildDescMap(realism, "descEn"),
+  realismDescZh: buildDescMap(realism, "descZh"),
+  abstractDescEn: buildDescMap(abstract, "descEn"),
+  abstractDescZh: buildDescMap(abstract, "descZh")
 };
