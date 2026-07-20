@@ -836,6 +836,61 @@ a {
   text-overflow: ellipsis;
 }
 
+.pswp-caption-row {
+  display: flex;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.pswp-caption-row .pswp-meta-list {
+  flex: 1 1 240px;
+  min-width: 0;
+}
+
+.pswp-desc-cta {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1.1rem;
+  min-height: 44px;
+  background: rgba(244, 201, 138, 0.14);
+  border: 1px solid #f4c98a;
+  border-radius: 8px;
+  color: #f4c98a;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: background-color 0.15s ease, color 0.15s ease;
+  animation: pswp-desc-ping 2.2s ease-out infinite;
+}
+
+.pswp-desc-cta-icon {
+  flex-shrink: 0;
+}
+
+.pswp-desc-cta:hover,
+.pswp-desc-cta:focus-visible {
+  background: #f4c98a;
+  color: #1a1510;
+}
+
+@keyframes pswp-desc-ping {
+  0% {
+    box-shadow: 0 0 0 0 rgba(244, 201, 138, 0.55);
+  }
+  70% {
+    box-shadow: 0 0 0 16px rgba(244, 201, 138, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 16px rgba(244, 201, 138, 0);
+  }
+}
+
 .pswp__artwork-desc-panel {
   position: absolute;
   inset: 0;
@@ -923,49 +978,6 @@ a {
   color: var(--accent-soft);
 }
 
-/* Info toggle button: distinct warm accent color (default PhotoSwipe icons
-   are all off-white), enlarged for visibility, plus a soft repeating ripple
-   so it reads as a noticeable call-to-action rather than blending in with
-   zoom/close/arrows. The ripple is drawn on a circular ::after
-   sized/positioned to match the drawn "i" circle exactly (the button itself
-   is widened to fit the bigger icon, not square, so animating its own
-   box-shadow would stretch into an oval and start well outside the icon's
-   actual edge). */
-.pswp__button--artwork-desc-toggle {
-  opacity: 1;
-  width: 64px;
-}
-
-.pswp__button--artwork-desc-toggle .pswp__icn {
-  top: 8px;
-  left: 10px;
-  width: 44px;
-  height: 44px;
-  fill: #f4c98a;
-  color: #f4c98a;
-}
-
-.pswp__button--artwork-desc-toggle::after {
-  content: "";
-  position: absolute;
-  top: 30px;
-  left: 32px;
-  width: 30px;
-  height: 30px;
-  margin: -15px 0 0 -15px;
-  border-radius: 50%;
-  pointer-events: none;
-  animation: pswp-desc-ping 2.2s ease-out infinite;
-}
-
-@keyframes pswp-desc-ping {
-  0% {
-    box-shadow: 0 0 0 0 rgba(244, 201, 138, 0.6);
-  }
-  100% {
-    box-shadow: 0 0 0 18px rgba(244, 201, 138, 0);
-  }
-}
 
 .card {
   background: var(--paper);

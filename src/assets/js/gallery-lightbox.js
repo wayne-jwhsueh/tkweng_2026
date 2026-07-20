@@ -11,8 +11,8 @@ const metaLabels = {
 };
 
 const descToggleLabels = {
-  en: "Show description",
-  zh: "顯示描述",
+  en: "Inspiration",
+  zh: "靈感",
 };
 
 const descCloseLabels = {
@@ -104,18 +104,36 @@ document.querySelectorAll("[data-gallery]").forEach((gallery) => {
           const statusLi = item._privateCollection
             ? `<li><span>${labels.status}</span><strong>${privateCollectionLabel[lang]}</strong></li>`
             : "";
+          const descButton = item._desc
+            ? `<button type="button" class="pswp-desc-cta">
+        <svg class="pswp-desc-cta-icon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+          <path d="M12 2a7 7 0 0 0-4 12.7c.6.5.9 1.2.9 2v.3a1 1 0 0 0 1 1h4.2a1 1 0 0 0 1-1v-.3c0-.8.3-1.5.9-2A7 7 0 0 0 12 2z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+          <line x1="10" y1="21" x2="14" y2="21" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+          <line x1="10.5" y1="18.3" x2="13.5" y2="18.3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+        </svg>
+        <span>${descToggleLabels[lang]}</span>
+      </button>`
+            : "";
           el.innerHTML = `<div class="pswp-caption">
   <div class="pswp-caption-title">
     <span class="pswp-caption-name">${item.alt}</span>
     <span class="pswp-caption-count">${pswp.currIndex + 1}\u2009/\u2009${dataSource.length}</span>
   </div>
-  <ul class="pswp-meta-list${item._privateCollection ? "" : " pswp-meta-list--3col"}">
-    <li><span>${labels.year}</span><strong>${item._year || "\u2014"}</strong></li>
-    <li><span>${labels.size}</span><strong>${item._size || "\u2014"}</strong></li>
-    <li><span>${labels.medium}</span><strong>${item._medium || "\u2014"}</strong></li>
-    ${statusLi}
-  </ul>
+  <div class="pswp-caption-row">
+    <ul class="pswp-meta-list${item._privateCollection ? "" : " pswp-meta-list--3col"}">
+      <li><span>${labels.year}</span><strong>${item._year || "\u2014"}</strong></li>
+      <li><span>${labels.size}</span><strong>${item._size || "\u2014"}</strong></li>
+      <li><span>${labels.medium}</span><strong>${item._medium || "\u2014"}</strong></li>
+      ${statusLi}
+    </ul>
+    ${descButton}
+  </div>
 </div>`;
+          if (item._desc) {
+            el.querySelector(".pswp-desc-cta").addEventListener("click", () => {
+              if (descPanelEl) descPanelEl.classList.toggle("is-open");
+            });
+          }
         }
         pswp.on("change", updateCaption);
       },
@@ -164,32 +182,6 @@ document.querySelectorAll("[data-gallery]").forEach((gallery) => {
             : "";
         }
         pswp.on("change", updateDescPanel);
-      },
-    });
-
-    lightbox.pswp.ui.registerElement({
-      name: "artwork-desc-toggle",
-      title: descToggleLabels[lang],
-      ariaLabel: descToggleLabels[lang],
-      order: 8,
-      isButton: true,
-      html: {
-        isCustomSVG: true,
-        inner: '<circle cx="16" cy="16" r="11" fill="none" stroke="currentColor" stroke-width="2"/>'
-          + '<line x1="16" y1="14.5" x2="16" y2="22" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>'
-          + '<circle cx="16" cy="10" r="1.6" fill="currentColor"/>',
-        outlineID: "pswp__icn-desc",
-      },
-      onClick: () => {
-        if (descPanelEl) descPanelEl.classList.toggle("is-open");
-      },
-      onInit: (el, pswp) => {
-        function updateVisibility() {
-          const item = pswp.currSlide && pswp.currSlide.data;
-          el.style.display = item && item._desc ? "" : "none";
-        }
-        pswp.on("change", updateVisibility);
-        updateVisibility();
       },
     });
   });

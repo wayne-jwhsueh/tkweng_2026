@@ -80,6 +80,16 @@ const legacyZhTitleMap = {
   }
 };
 
+const mediumZhMap = {
+  "Acrylic": "壓克力顏料",
+  "Acrylics": "壓克力顏料",
+  "Acrylic on Canvas": "壓克力顏料畫布",
+  "Oil": "油彩",
+  "Oil on Canvas": "油彩畫布",
+  "Pastel": "粉彩",
+  "Watercolor": "水彩"
+};
+
 const PORTFOLIO_ROOT = path.join(process.cwd(), "public", "images", "portfolio");
 
 // Images excluded from every image randomizer on the site (hero, portfolio
@@ -189,6 +199,7 @@ function loadCategory(category, labels) {
       year: details.year,
       size: details.size,
       medium: details.medium,
+      mediumZh: mediumZhMap[details.medium] || details.medium,
       legacyDescription: meta.description || "",
       descEn: meta.descEn || "",
       descZh: meta.descZh || "",
