@@ -8,7 +8,7 @@ permalink: "/zh/portfolio/realism/index.html"
 ---
 
 <h1>寫實</h1>
-<p class="meta">寫實作品完整檔案。點擊任一作品可開啟燈箱檢視。</p>
+<p class="meta">寫實作品完整檔案。點擊任一作品可放大檢視。</p>
 
 <section class="art-gallery" data-gallery tabindex="-1" aria-label="寫實作品畫廊">
   <script type="application/json" data-gallery-descriptions>{{ portfolioGallery.realismDescZh | json | safe }}</script>

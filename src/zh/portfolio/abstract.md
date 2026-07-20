@@ -8,7 +8,7 @@ permalink: "/zh/portfolio/abstract/index.html"
 ---
 
 <h1>抽象</h1>
-<p class="meta">抽象作品完整檔案。點擊任一作品可開啟燈箱檢視。</p>
+<p class="meta">抽象作品完整檔案。點擊任一作品可放大檢視。</p>
 
 <section class="art-gallery" data-gallery tabindex="-1" aria-label="抽象作品畫廊">
   <script type="application/json" data-gallery-descriptions>{{ portfolioGallery.abstractDescZh | json | safe }}</script>
