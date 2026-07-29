@@ -27,7 +27,7 @@ permalink: "/en/news/2026-06-30--01--award-light-of-hope/"
 <p>My painting "Light of Hope" received an Honorable Mention at the 2026 Federation of Canadian Artists Medals Exhibition. I offer a grateful heart and give all the glory to God.</p>
 <p>This painting was born out of the days spent accompanying my son through his fight against illness. Stone carries wounds &mdash; every crack a mark left by life's heavy weight. Yet light can still pass through those broken seams, warm, enduring, and full of hope. As Isaiah 53:5 says, by His wounds we are healed. Thank God, we were never alone on this journey; His grace has faithfully carried us all the way here.</p>
 <p>May this work stand as a testimony, and may every friend walking through sickness and pain find, within it, light and hope.</p>
-<p><em>"Light of Hope"<br>Acrylic on canvas, 20 x 24 inches<br>2026 Medals Exhibition &mdash; Honorable Mention</em></p>
+<p><em>"Light of Hope"<br>Acrylic on canvas, 24 x 20 inches<br>2026 Medals Exhibition &mdash; Honorable Mention</em></p>
 <p><a href="/en/portfolio/realism/#r0036">View painting</a></p>
 
 {% from "components/back-to-news.njk" import backToNews %}
