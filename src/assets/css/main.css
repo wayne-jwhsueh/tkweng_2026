@@ -471,7 +471,7 @@ a {
   text-decoration-color: var(--accent);
 }
 
-.about-copy p:first-of-type::first-letter {
+.about-intro .about-copy p:first-of-type::first-letter {
   float: left;
   font-family: var(--serif, Georgia, "Noto Serif TC", serif);
   font-size: 3.4rem;
@@ -482,6 +482,30 @@ a {
 
 .about-inspiration {
   margin: 2rem 0 4rem;
+}
+
+.about-continued .about-copy::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.about-award-figure {
+  float: right;
+  width: min(240px, 42%);
+  margin: 0.15rem 0 1.25rem 1.75rem;
+}
+
+.about-award-figure img {
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+}
+
+.about-award-figure figcaption {
+  margin-top: 0.5rem;
+  text-align: center;
 }
 
 .about-inspiration-title {
@@ -1768,6 +1792,12 @@ a {
 
   .about-intro {
     grid-template-columns: 1fr;
+  }
+
+  .about-award-figure {
+    float: none;
+    width: min(220px, 60%);
+    margin: 0 auto 1.25rem;
   }
 
   .grid {
