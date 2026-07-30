@@ -80,14 +80,21 @@ const legacyZhTitleMap = {
   }
 };
 
+// New portfolioLegacyMeta.json entries must use one of these exact strings
+// as the trailing medium token so variants (e.g. "Acrylics", "Oil on Canvas")
+// never get reintroduced.
+const Medium = Object.freeze({
+  OIL: "Oil",
+  ACRYLIC: "Acrylic",
+  PASTEL: "Pastel",
+  WATERCOLOR: "Watercolor"
+});
+
 const mediumZhMap = {
-  "Acrylic": "壓克力顏料",
-  "Acrylics": "壓克力顏料",
-  "Acrylic on Canvas": "壓克力顏料畫布",
-  "Oil": "油彩",
-  "Oil on Canvas": "油彩畫布",
-  "Pastel": "粉彩",
-  "Watercolor": "水彩"
+  [Medium.OIL]: "油彩",
+  [Medium.ACRYLIC]: "壓克力",
+  [Medium.PASTEL]: "粉彩",
+  [Medium.WATERCOLOR]: "水彩"
 };
 
 const PORTFOLIO_ROOT = path.join(process.cwd(), "public", "images", "portfolio");
