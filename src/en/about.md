@@ -58,23 +58,26 @@ permalink: "/en/about/index.html"
       <figcaption class="meta">Federation of Canadian Artists (SFCA) Senior Member</figcaption>
     </figure>
     <p>
-      In 1995, Teng-Ko Weng was approved by the Canadian government to immigrate under the Outstanding Artist
-      category, and now lives in Burnaby, British Columbia.
-      For more than fifty years, he has continued to respond through his art to faith, life, and the times.
-      Through the lens of his Christian faith, he has repeatedly observed how distinction, order, and unity
-      coexist within both creation and the creative process, and from this observation he has developed the
-      artistic philosophy of Trinitas Pictura, the Trinity Art Movement.
-      His works have been exhibited in Taiwan, Canada, the United States, and Malaysia, and are held in the
-      permanent collections of Taipei Veterans General Hospital (sculpture) and a public educational institution in
-      Langley, British Columbia (painting).
-      He is a Senior Fellow member (SFCA) of the Federation of Canadian Artists, and in 2026, his painting
-      &ldquo;Light of Hope&rdquo; (盼望之光) received the Juror's Honourable Mention Award at the 2026 Medals
-      exhibition.
+      In 1995, Teng-Ko Weng was approved by the Government of Canada to immigrate as a distinguished artist,
+      and he now lives in Burnaby, British Columbia.
+      For more than fifty years, he has used his art to respond to faith, life, and the times.
+      Through the eyes of faith, he repeatedly sees traces of uniqueness, order, and unity existing together,
+      both in the act of creating and in the created world, and from this observation he has developed the
+      artistic vision of the Trinity Art Movement (三一畫派).
     </p>
     <p>
-      In 2020, he founded <a class="about-link" href="https://www.gloriousart.ca/" target="_blank" rel="noopener">Glorious Art Institute</a>, where he continues to teach and create, guiding students to
-      build not only technical skill, but a vision that sees the light of life itself.
-      It is his hope that every step of his life, whether hardship, gift, or achievement, would point toward God.
+      His works have been exhibited in Taiwan, Canada, the United States, and Malaysia, and are held in
+      permanent collections including Taipei Veterans General Hospital (sculpture) and a public educational
+      institution in Langley, British Columbia (painting).
+      He is a Senior Signature Member of the Federation of Canadian Artists (SFCA).
+      In 2026, his painting &ldquo;Light of Hope&rdquo; (盼望之光) received the Jury's Honourable Mention at
+      the Federation of Canadian Artists' 2026 Medals Show.
+    </p>
+    <p>
+      In 2020, he founded <a class="about-link" href="https://www.gloriousart.ca/" target="_blank" rel="noopener">Glorious Art Institute</a>, where through creating and teaching he continues to help students
+      develop a sense of beauty, artistic technique, and eyes to see the light of life.
+      He hopes that every step of his life, whether suffering, gifts, or achievements, will become a sign
+      pointing to God.
     </p>
   </div>
 </section>

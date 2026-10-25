@@ -12,7 +12,7 @@ permalink: "/en/cv/index.html"
     <p class="cv-masthead-role">Teng-Ko Weng &middot; Painter | British Columbia, Canada</p>
   </div>
   <div class="cv-masthead-seal">
-    <img src="/images/about/award_SFCA_2016.jpg" alt="Federation of Canadian Artists SFCA Senior Fellow member recognition" loading="lazy" />
+    <img src="/images/about/award_SFCA_2016.jpg" alt="Federation of Canadian Artists SFCA Senior Signature Member recognition" loading="lazy" />
   </div>
 </section>
 
@@ -21,7 +21,7 @@ permalink: "/en/cv/index.html"
   <div class="cv-badges">
     <div class="cv-badge">
       <span class="cv-badge-year">2016&ndash;Present</span>
-      <span class="cv-badge-text">Senior Fellow member, Federation of Canadian Artists (SFCA)</span>
+      <span class="cv-badge-text">Senior Signature Member, Federation of Canadian Artists (SFCA)</span>
     </div>
     <div class="cv-badge">
       <span class="cv-badge-year">2020&ndash;Present</span>
