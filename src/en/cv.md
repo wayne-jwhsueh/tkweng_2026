@@ -9,10 +9,10 @@ permalink: "/en/cv/index.html"
 <section class="cv-masthead">
   <div>
     <h1>CV</h1>
-    <p class="cv-masthead-role">Teng-Ko Weng &middot; Painter | British Columbia, Canada</p>
+    <p class="cv-masthead-role">Teng-Ko Weng, SFCA &middot; Contemporary Artist | Art Educator | Founder of Trinitas Pictura</p>
   </div>
   <div class="cv-masthead-seal">
-    <img src="/images/about/award_SFCA_2016.jpg" alt="Federation of Canadian Artists SFCA Senior Fellow member recognition" loading="lazy" />
+    <img src="/images/about/award_SFCA_2016.jpg" alt="Federation of Canadian Artists SFCA Senior Signature Member recognition" loading="lazy" />
   </div>
 </section>
 
@@ -21,11 +21,15 @@ permalink: "/en/cv/index.html"
   <div class="cv-badges">
     <div class="cv-badge">
       <span class="cv-badge-year">2016&ndash;Present</span>
-      <span class="cv-badge-text">Senior Fellow member, Federation of Canadian Artists (SFCA)</span>
+      <span class="cv-badge-text">Senior Signature Member, Federation of Canadian Artists (SFCA)</span>
     </div>
     <div class="cv-badge">
       <span class="cv-badge-year">2020&ndash;Present</span>
       <span class="cv-badge-text">Founder, <a href="https://www.gloriousart.ca/" target="_blank" rel="noopener">Glorious Art Institute</a>, British Columbia, Canada</span>
+    </div>
+    <div class="cv-badge">
+      <span class="cv-badge-year">&nbsp;</span>
+      <span class="cv-badge-text">Founder, Trinitas Pictura art movement</span>
     </div>
     <div class="cv-badge">
       <span class="cv-badge-year">&nbsp;</span>
@@ -45,21 +49,42 @@ permalink: "/en/cv/index.html"
       <span class="cv-timeline-dot" aria-hidden="true"><i class="fa-solid fa-trophy"></i></span>
       <div class="cv-timeline-body">
         <span class="cv-timeline-year">2026</span>
-        <p>2026 Medals Exhibition, Federation Gallery, Vancouver &mdash; <em>Light of Hope</em>, Honourable Mention</p>
+        <p>FCA Medals Exhibition, Federation Gallery, Vancouver. <em>Light of Hope</em>, Honourable Mention</p>
       </div>
     </li>
     <li class="cv-timeline-item">
       <span class="cv-timeline-dot" aria-hidden="true"></span>
       <div class="cv-timeline-body">
         <span class="cv-timeline-year">2026</span>
-        <p>On the Edge Exhibition, Federation Gallery, Vancouver</p>
+        <p>On The Edge Exhibition, Federation of Canadian Artists</p>
       </div>
     </li>
     <li class="cv-timeline-item">
       <span class="cv-timeline-dot" aria-hidden="true"></span>
       <div class="cv-timeline-body">
         <span class="cv-timeline-year">2026</span>
-        <p>Annual International Representative Exhibition (AIRE), Federation Gallery, Vancouver</p>
+        <p>AIRE International Exhibition, Federation of Canadian Artists</p>
+      </div>
+    </li>
+    <li class="cv-timeline-item">
+      <span class="cv-timeline-dot" aria-hidden="true"></span>
+      <div class="cv-timeline-body">
+        <span class="cv-timeline-year">2022</span>
+        <p>Artists&rsquo; Choice Exhibition, Federation of Canadian Artists</p>
+      </div>
+    </li>
+    <li class="cv-timeline-item">
+      <span class="cv-timeline-dot" aria-hidden="true"></span>
+      <div class="cv-timeline-body">
+        <span class="cv-timeline-year">2022</span>
+        <p>Western Canada Taiwanese Artists Association Group Exhibition, Vancouver</p>
+      </div>
+    </li>
+    <li class="cv-timeline-item">
+      <span class="cv-timeline-dot" aria-hidden="true"></span>
+      <div class="cv-timeline-body">
+        <span class="cv-timeline-year">2021</span>
+        <p>New Life, Beauty of Creation, Vancouver Christian Artists Group Exhibition</p>
       </div>
     </li>
 
@@ -68,7 +93,14 @@ permalink: "/en/cv/index.html"
       <span class="cv-timeline-dot" aria-hidden="true"><i class="fa-solid fa-trophy"></i></span>
       <div class="cv-timeline-body">
         <span class="cv-timeline-year">2019</span>
-        <p>Vancouver Arts Carnival &mdash; Best Technique Award, Most Favourite Work Award, Best Popularity Award</p>
+        <p>Vancouver Arts Carnival. Best Technique Award, Most Favourite Work Award, Best Popularity Award</p>
+      </div>
+    </li>
+    <li class="cv-timeline-item">
+      <span class="cv-timeline-dot" aria-hidden="true"></span>
+      <div class="cv-timeline-body">
+        <span class="cv-timeline-year">2018</span>
+        <p>North American Artists Invitational Exhibition, Taipei Economic and Cultural Office, Toronto</p>
       </div>
     </li>
     <li class="cv-timeline-item">
@@ -82,14 +114,35 @@ permalink: "/en/cv/index.html"
       <span class="cv-timeline-dot" aria-hidden="true"></span>
       <div class="cv-timeline-body">
         <span class="cv-timeline-year">2017</span>
-        <p>North American Artists Invitational Exhibition, New York</p>
+        <p>North American Artists Invitational Exhibition, &ldquo;Forward,&rdquo; First Bank Gallery, New York</p>
       </div>
     </li>
     <li class="cv-timeline-item">
       <span class="cv-timeline-dot" aria-hidden="true"></span>
       <div class="cv-timeline-body">
         <span class="cv-timeline-year">2016</span>
-        <p>North American Artists Group Exhibition, National Taiwan Arts Education Center, Taipei</p>
+        <p>Federation of Canadian Artists 75th Anniversary Exhibition</p>
+      </div>
+    </li>
+    <li class="cv-timeline-item">
+      <span class="cv-timeline-dot" aria-hidden="true"></span>
+      <div class="cv-timeline-body">
+        <span class="cv-timeline-year">2016</span>
+        <p>Federation of Canadian Artists 365 Days Online Exhibition and Calendar Project</p>
+      </div>
+    </li>
+    <li class="cv-timeline-item">
+      <span class="cv-timeline-dot" aria-hidden="true"></span>
+      <div class="cv-timeline-body">
+        <span class="cv-timeline-year">2016</span>
+        <p>&ldquo;From Life&rdquo; Group Exhibition, Federation of Canadian Artists</p>
+      </div>
+    </li>
+    <li class="cv-timeline-item cv-timeline-award">
+      <span class="cv-timeline-dot" aria-hidden="true"><i class="fa-solid fa-trophy"></i></span>
+      <div class="cv-timeline-body">
+        <span class="cv-timeline-year">2016</span>
+        <p>Awarded Senior Signature Member (SFCA), Federation of Canadian Artists</p>
       </div>
     </li>
     <li class="cv-timeline-item">
@@ -99,25 +152,18 @@ permalink: "/en/cv/index.html"
         <p>Art! Vancouver International Art Fair, Vancouver Convention Centre</p>
       </div>
     </li>
-    <li class="cv-timeline-item cv-timeline-award">
-      <span class="cv-timeline-dot" aria-hidden="true"><i class="fa-solid fa-trophy"></i></span>
+    <li class="cv-timeline-item">
+      <span class="cv-timeline-dot" aria-hidden="true"></span>
       <div class="cv-timeline-body">
         <span class="cv-timeline-year">2015</span>
-        <p>First Canada&ndash;China Art Bridge Painting and Calligraphy Competition &mdash; Bronze Award</p>
+        <p>Signature Members Medal Exhibition, Federation of Canadian Artists</p>
       </div>
     </li>
     <li class="cv-timeline-item cv-timeline-award">
       <span class="cv-timeline-dot" aria-hidden="true"><i class="fa-solid fa-trophy"></i></span>
       <div class="cv-timeline-body">
         <span class="cv-timeline-year">2013</span>
-        <p>AIRS International Representative Exhibition, Federation Gallery, Vancouver &mdash; Best Still Life Award</p>
-      </div>
-    </li>
-    <li class="cv-timeline-item">
-      <span class="cv-timeline-dot" aria-hidden="true"></span>
-      <div class="cv-timeline-body">
-        <span class="cv-timeline-year">2012</span>
-        <p>Teng-Ko Weng and Students Exhibition, Regent Plaza Chinese Cultural Centre, Vancouver</p>
+        <p>AIRE International Exhibition, Federation Gallery, Vancouver. Best Still Life Award, First Prize</p>
       </div>
     </li>
 
@@ -125,75 +171,24 @@ permalink: "/en/cv/index.html"
     <li class="cv-timeline-item">
       <span class="cv-timeline-dot" aria-hidden="true"></span>
       <div class="cv-timeline-body">
-        <span class="cv-timeline-year">2009</span>
-        <p>Teng-Ko Weng and Students Exhibition, Burnaby Chinese Cultural Centre</p>
-      </div>
-    </li>
-    <li class="cv-timeline-item">
-      <span class="cv-timeline-dot" aria-hidden="true"></span>
-      <div class="cv-timeline-body">
-        <span class="cv-timeline-year">2005</span>
-        <p>International Ornithological Society Oil Painting Group Exhibition, Canada</p>
-      </div>
-    </li>
-    <li class="cv-timeline-item">
-      <span class="cv-timeline-dot" aria-hidden="true"></span>
-      <div class="cv-timeline-body">
         <span class="cv-timeline-year">2003</span>
-        <p>Solo Exhibition and New Works Unveiling, Cornerstone Gallery, Malaysia</p>
+        <p>Solo Exhibition, Cornerstone Gallery, Malaysia</p>
       </div>
     </li>
     <li class="cv-timeline-item">
       <span class="cv-timeline-dot" aria-hidden="true"></span>
       <div class="cv-timeline-body">
         <span class="cv-timeline-year">2000</span>
-        <p>3rd Christian Artists Group Exhibition, Los Angeles</p>
-      </div>
-    </li>
-
-    <li class="cv-era-divider">1990s</li>
-    <li class="cv-timeline-item">
-      <span class="cv-timeline-dot" aria-hidden="true"></span>
-      <div class="cv-timeline-body">
-        <span class="cv-timeline-year">1995</span>
-        <p>Solo Oil Painting Exhibition, Long Life Art Gallery, Taipei</p>
-      </div>
-    </li>
-    <li class="cv-timeline-item">
-      <span class="cv-timeline-dot" aria-hidden="true"></span>
-      <div class="cv-timeline-body">
-        <span class="cv-timeline-year">1994</span>
-        <p>Solo Oil Painting Exhibition, Long Life Art Gallery, Taipei</p>
-      </div>
-    </li>
-    <li class="cv-timeline-item cv-timeline-award">
-      <span class="cv-timeline-dot" aria-hidden="true"><i class="fa-solid fa-trophy"></i></span>
-      <div class="cv-timeline-body">
-        <span class="cv-timeline-year">1993</span>
-        <p>Solo Oil Painting Exhibition, Hollywood Art Center, Taipei &mdash; same year, received the American Christian Thomas Tang Literary and Art Award, Religious Art Painting Award</p>
-      </div>
-    </li>
-    <li class="cv-timeline-item">
-      <span class="cv-timeline-dot" aria-hidden="true"></span>
-      <div class="cv-timeline-body">
-        <span class="cv-timeline-year">1992</span>
-        <p>Solo Oil Painting Exhibition, Capital Art Center, Taichung</p>
+        <p>Christian Artists Group Exhibition, Los Angeles, USA</p>
       </div>
     </li>
 
     <li class="cv-era-divider">1980s</li>
-    <li class="cv-timeline-item cv-timeline-award">
-      <span class="cv-timeline-dot" aria-hidden="true"><i class="fa-solid fa-trophy"></i></span>
+    <li class="cv-timeline-item">
+      <span class="cv-timeline-dot" aria-hidden="true"></span>
       <div class="cv-timeline-body">
-        <span class="cv-timeline-year">1986</span>
-        <p>First Prize, Taipei Outdoor Painters Competition; exhibited at Taipei Fine Arts Museum</p>
-      </div>
-    </li>
-    <li class="cv-timeline-item cv-timeline-award">
-      <span class="cv-timeline-dot" aria-hidden="true"><i class="fa-solid fa-trophy"></i></span>
-      <div class="cv-timeline-body">
-        <span class="cv-timeline-year">1985</span>
-        <p>First Prize, Taipei Outdoor Painters Competition; exhibited at Taipei Fine Arts Museum</p>
+        <span class="cv-timeline-year">1988</span>
+        <p>Chinese Culture and Art Visiting Delegation, Huntington Library, Los Angeles, USA</p>
       </div>
     </li>
   </ol>

@@ -9,7 +9,7 @@ permalink: "/zh/cv/index.html"
 <section class="cv-masthead">
   <div>
     <h1>年表</h1>
-    <p class="cv-masthead-role">翁登科 &middot; 畫家｜加拿大卑詩省</p>
+    <p class="cv-masthead-role">翁登科 SFCA &middot; 當代藝術家｜藝術教育工作者｜三一畫派創始人</p>
   </div>
   <div class="cv-masthead-seal">
     <img src="/images/about/award_SFCA_2016.jpg" alt="加拿大藝術家聯會 SFCA 資深會員認證" loading="lazy" />
@@ -29,6 +29,10 @@ permalink: "/zh/cv/index.html"
     </div>
     <div class="cv-badge">
       <span class="cv-badge-year">&nbsp;</span>
+      <span class="cv-badge-text">三一畫派（Trinitas Pictura）創始人</span>
+    </div>
+    <div class="cv-badge">
+      <span class="cv-badge-year">&nbsp;</span>
       <span class="cv-badge-text">曾任實踐大學推廣教育中心繪畫講師，並執教於台北市YMCA、YWCA，深耕美術教育多年</span>
     </div>
     <div class="cv-badge">
@@ -45,21 +49,42 @@ permalink: "/zh/cv/index.html"
       <span class="cv-timeline-dot" aria-hidden="true"><i class="fa-solid fa-trophy"></i></span>
       <div class="cv-timeline-body">
         <span class="cv-timeline-year">2026</span>
-        <p>2026年獎章展，聯邦畫廊，溫哥華　—　《盼望之光》獲評審團榮譽獎</p>
+        <p>加拿大藝術家聯會獎章展，《盼望之光》獲榮譽獎</p>
       </div>
     </li>
     <li class="cv-timeline-item">
       <span class="cv-timeline-dot" aria-hidden="true"></span>
       <div class="cv-timeline-body">
         <span class="cv-timeline-year">2026</span>
-        <p>邊緣藝術展（On the Edge Exhibition），聯邦畫廊，溫哥華</p>
+        <p>加拿大藝術家聯會「On The Edge」展</p>
       </div>
     </li>
     <li class="cv-timeline-item">
       <span class="cv-timeline-dot" aria-hidden="true"></span>
       <div class="cv-timeline-body">
         <span class="cv-timeline-year">2026</span>
-        <p>年度國際代表展（AIRE），聯邦畫廊，溫哥華</p>
+        <p>加拿大藝術家聯會 AIRE 國際展</p>
+      </div>
+    </li>
+    <li class="cv-timeline-item">
+      <span class="cv-timeline-dot" aria-hidden="true"></span>
+      <div class="cv-timeline-body">
+        <span class="cv-timeline-year">2022</span>
+        <p>加拿大藝術家聯會「Artists&rsquo; Choice」展</p>
+      </div>
+    </li>
+    <li class="cv-timeline-item">
+      <span class="cv-timeline-dot" aria-hidden="true"></span>
+      <div class="cv-timeline-body">
+        <span class="cv-timeline-year">2022</span>
+        <p>加西台灣藝術家協會聯展，溫哥華</p>
+      </div>
+    </li>
+    <li class="cv-timeline-item">
+      <span class="cv-timeline-dot" aria-hidden="true"></span>
+      <div class="cv-timeline-body">
+        <span class="cv-timeline-year">2021</span>
+        <p>「新生命．創造之美」溫哥華基督徒藝術家聯展</p>
       </div>
     </li>
 
@@ -75,6 +100,13 @@ permalink: "/zh/cv/index.html"
       <span class="cv-timeline-dot" aria-hidden="true"></span>
       <div class="cv-timeline-body">
         <span class="cv-timeline-year">2018</span>
+        <p>北美藝術家邀請展，多倫多台北經濟文化辦事處</p>
+      </div>
+    </li>
+    <li class="cv-timeline-item">
+      <span class="cv-timeline-dot" aria-hidden="true"></span>
+      <div class="cv-timeline-body">
+        <span class="cv-timeline-year">2018</span>
         <p>國際藝術博覽會，台北世界貿易中心</p>
       </div>
     </li>
@@ -82,42 +114,56 @@ permalink: "/zh/cv/index.html"
       <span class="cv-timeline-dot" aria-hidden="true"></span>
       <div class="cv-timeline-body">
         <span class="cv-timeline-year">2017</span>
-        <p>北美藝術家邀請展，紐約</p>
+        <p>北美藝術家邀請展「躍進」，一銀畫廊，紐約</p>
       </div>
     </li>
     <li class="cv-timeline-item">
       <span class="cv-timeline-dot" aria-hidden="true"></span>
       <div class="cv-timeline-body">
         <span class="cv-timeline-year">2016</span>
-        <p>北美藝術家聯展，國立台灣藝術教育館，台北</p>
+        <p>加拿大藝術家聯會75週年紀念展</p>
       </div>
     </li>
     <li class="cv-timeline-item">
       <span class="cv-timeline-dot" aria-hidden="true"></span>
       <div class="cv-timeline-body">
         <span class="cv-timeline-year">2016</span>
-        <p>加拿大溫哥華國際藝術博覽會（Art! Vancouver），溫哥華會議中心</p>
+        <p>加拿大藝術家聯會365天線上展暨年曆計畫</p>
+      </div>
+    </li>
+    <li class="cv-timeline-item">
+      <span class="cv-timeline-dot" aria-hidden="true"></span>
+      <div class="cv-timeline-body">
+        <span class="cv-timeline-year">2016</span>
+        <p>加拿大藝術家聯會「From Life」聯展</p>
       </div>
     </li>
     <li class="cv-timeline-item cv-timeline-award">
       <span class="cv-timeline-dot" aria-hidden="true"><i class="fa-solid fa-trophy"></i></span>
       <div class="cv-timeline-body">
+        <span class="cv-timeline-year">2016</span>
+        <p>獲頒加拿大藝術家聯會資深會員（SFCA）</p>
+      </div>
+    </li>
+    <li class="cv-timeline-item">
+      <span class="cv-timeline-dot" aria-hidden="true"></span>
+      <div class="cv-timeline-body">
+        <span class="cv-timeline-year">2016</span>
+        <p>溫哥華國際藝術博覽會</p>
+      </div>
+    </li>
+    <li class="cv-timeline-item">
+      <span class="cv-timeline-dot" aria-hidden="true"></span>
+      <div class="cv-timeline-body">
         <span class="cv-timeline-year">2015</span>
-        <p>第一屆加中藝術橋書畫大賽　—　獲銅獎</p>
+        <p>加拿大藝術家聯會簽署會員獎章展</p>
       </div>
     </li>
     <li class="cv-timeline-item cv-timeline-award">
       <span class="cv-timeline-dot" aria-hidden="true"><i class="fa-solid fa-trophy"></i></span>
       <div class="cv-timeline-body">
         <span class="cv-timeline-year">2013</span>
-        <p>AIRS國際代表性藝術展，聯邦畫廊，溫哥華　—　獲最佳靜物獎</p>
-      </div>
-    </li>
-    <li class="cv-timeline-item">
-      <span class="cv-timeline-dot" aria-hidden="true"></span>
-      <div class="cv-timeline-body">
-        <span class="cv-timeline-year">2012</span>
-        <p>翁登科師生畫展，麗晶廣場中信中心，溫哥華</p>
+        <p>加拿大藝術家聯會 AIRE 國際展，獲最佳靜物獎首獎</p>
       </div>
     </li>
 
@@ -125,75 +171,24 @@ permalink: "/zh/cv/index.html"
     <li class="cv-timeline-item">
       <span class="cv-timeline-dot" aria-hidden="true"></span>
       <div class="cv-timeline-body">
-        <span class="cv-timeline-year">2009</span>
-        <p>翁登科師生畫展，本拿比中信中心</p>
-      </div>
-    </li>
-    <li class="cv-timeline-item">
-      <span class="cv-timeline-dot" aria-hidden="true"></span>
-      <div class="cv-timeline-body">
-        <span class="cv-timeline-year">2005</span>
-        <p>加拿大國際觀鳥協會油畫聯展</p>
-      </div>
-    </li>
-    <li class="cv-timeline-item">
-      <span class="cv-timeline-dot" aria-hidden="true"></span>
-      <div class="cv-timeline-body">
         <span class="cv-timeline-year">2003</span>
-        <p>個人畫展及新畫發表會，房角石，馬來西亞</p>
+        <p>個人畫展，馬來西亞房角石</p>
       </div>
     </li>
     <li class="cv-timeline-item">
       <span class="cv-timeline-dot" aria-hidden="true"></span>
       <div class="cv-timeline-body">
         <span class="cv-timeline-year">2000</span>
-        <p>第三屆基督教藝術家作品聯展，洛杉磯</p>
-      </div>
-    </li>
-
-    <li class="cv-era-divider">1990年代</li>
-    <li class="cv-timeline-item">
-      <span class="cv-timeline-dot" aria-hidden="true"></span>
-      <div class="cv-timeline-body">
-        <span class="cv-timeline-year">1995</span>
-        <p>油畫個展，雍雅堂畫廊，台北</p>
-      </div>
-    </li>
-    <li class="cv-timeline-item">
-      <span class="cv-timeline-dot" aria-hidden="true"></span>
-      <div class="cv-timeline-body">
-        <span class="cv-timeline-year">1994</span>
-        <p>油畫個展，雍雅堂畫廊，台北</p>
-      </div>
-    </li>
-    <li class="cv-timeline-item cv-timeline-award">
-      <span class="cv-timeline-dot" aria-hidden="true"><i class="fa-solid fa-trophy"></i></span>
-      <div class="cv-timeline-body">
-        <span class="cv-timeline-year">1993</span>
-        <p>油畫個展，好來藝術中心，台北　—　同年獲美國基督教湯清文藝獎．宗教藝術繪畫獎</p>
-      </div>
-    </li>
-    <li class="cv-timeline-item">
-      <span class="cv-timeline-dot" aria-hidden="true"></span>
-      <div class="cv-timeline-body">
-        <span class="cv-timeline-year">1992</span>
-        <p>油畫個展，首都藝術中心，台中</p>
+        <p>基督教藝術家聯展，洛杉磯，美國</p>
       </div>
     </li>
 
     <li class="cv-era-divider">1980年代</li>
-    <li class="cv-timeline-item cv-timeline-award">
-      <span class="cv-timeline-dot" aria-hidden="true"><i class="fa-solid fa-trophy"></i></span>
+    <li class="cv-timeline-item">
+      <span class="cv-timeline-dot" aria-hidden="true"></span>
       <div class="cv-timeline-body">
-        <span class="cv-timeline-year">1986</span>
-        <p>台北市戶外畫家作品第一名，作品展出於台北市立美術館</p>
-      </div>
-    </li>
-    <li class="cv-timeline-item cv-timeline-award">
-      <span class="cv-timeline-dot" aria-hidden="true"><i class="fa-solid fa-trophy"></i></span>
-      <div class="cv-timeline-body">
-        <span class="cv-timeline-year">1985</span>
-        <p>台北市戶外畫家作品第一名，作品展出於台北市立美術館</p>
+        <span class="cv-timeline-year">1988</span>
+        <p>中華文化藝術訪問團，Huntington Library，洛杉磯，美國</p>
       </div>
     </li>
   </ol>
